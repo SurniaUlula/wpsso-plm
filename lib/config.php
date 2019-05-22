@@ -119,7 +119,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_place_day_publicholidays'       => 0,
 					'plm_place_day_publicholidays_open'  => '09:00',
 					'plm_place_day_publicholidays_close' => '17:00',
-					'plm_place_midday_close'             => '',		// Closed Mid-day
+					'plm_place_midday_close'             => '',		// Closes Mid-Day
 					'plm_place_midday_open'              => '',
 					'plm_place_season_from_date'         => '',		// Seasonal Dates
 					'plm_place_season_to_date'           => '',

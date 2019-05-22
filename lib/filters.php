@@ -983,6 +983,12 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					break;
 
+				case 'tooltip-plm_place_midday_hours':
+
+					$text = __( 'This place / location closes temporarily mid-day (for example, between 12:00 and 13:00 for lunch).', 'wpsso-plm' );
+
+					break;
+
 				case 'tooltip-plm_place_season_dates':	// Seasonal Dates
 
 					$text = __( 'If this place is open seasonally, select the open and close dates of the season.', 'wpsso-plm' );

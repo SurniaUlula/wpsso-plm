@@ -56,7 +56,7 @@ The WPSSO Organization Markup (aka WPSSO ORG) add-on is required to select a pla
 	* Place Image ID
 	* or Place Image URL
 	* Open Days / Hours
-	* Open Dates (Seasonal)
+	* Seasonal Dates
 	* Local Business:
 		* Service Radius
 		* Currencies Accepted
@@ -116,6 +116,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.2.0-dev.3 (2019/05/22)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* None.
+
 **Version 3.1.0 (2019/05/20)**
 
 * *New Features*
@@ -128,6 +139,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Update for code changes in WPSSO Core v4.31.0.
 
 == Upgrade Notice ==
+
+= 3.2.0-dev.3 =
+
+(2019/05/22) None.
 
 = 3.1.0 =
 

@@ -121,7 +121,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Added a new "Closes Mid-Day" option.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
@@ -142,7 +142,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 3.2.0-dev.3 =
 
-(2019/05/22) None.
+(2019/05/22) Added a new "Closes Mid-Day" option.
 
 = 3.1.0 =
 

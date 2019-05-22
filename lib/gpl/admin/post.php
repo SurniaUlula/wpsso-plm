@@ -122,10 +122,11 @@ if ( ! class_exists( 'WpssoPlmGplAdminPost' ) ) {
 			}
 
 			$table_rows[ 'plm_place_season_dates' ] = '' . 
-			$form->get_th_html( _x( 'Open Dates (Seasonal)', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_season_dates' ) .  
+			$form->get_th_html( _x( 'Seasonal Dates', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_season_dates' ) .  
 			'<td class="blank" colspan="2">' .
-				__( 'Open from', 'wpsso-plm' ) . ' ' . $form->get_no_input_date() . ' ' . 
-				__( 'through', 'wpsso-plm' ) . ' ' . $form->get_no_input_date() .
+			__( 'Open from', 'wpsso-plm' ) . ' ' . $form->get_no_input_date() . ' ' . 
+			__( 'through', 'wpsso-plm' ) . ' ' . $form->get_no_input_date() .
+			__( 'inclusively', 'wpsso-plm' ) .
 			'</td>';
 
 			$table_rows[ 'subsection_local_business' ] = '<th class="medium"></th>' . 

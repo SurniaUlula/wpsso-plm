@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '3.1.0',	// Plugin version.
+					'version'     => '3.2.0-dev.3',	// Plugin version.
 					'opt_version' => '23',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place / Location and Local Business Meta',
@@ -119,7 +119,9 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_place_day_publicholidays'       => 0,
 					'plm_place_day_publicholidays_open'  => '09:00',
 					'plm_place_day_publicholidays_close' => '17:00',
-					'plm_place_season_from_date'         => '',
+					'plm_place_midday_close'             => '',		// Closed Mid-day
+					'plm_place_midday_open'              => '',
+					'plm_place_season_from_date'         => '',		// Seasonal Dates
 					'plm_place_season_to_date'           => '',
 					'plm_place_service_radius'           => '',
 					'plm_place_currencies_accepted'      => '',

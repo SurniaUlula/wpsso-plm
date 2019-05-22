@@ -237,11 +237,19 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 							$row_number++;
 						}
 		
+						$table_rows[ 'plm_place_midday_hours_' . $id ] = $tr_hide_place_html . 
+						$this->form->get_th_html( _x( 'Closed Mid-day', 'option label', 'wpsso-plm' ), '', 'plm_place_midday_hours' ) .  
+						'<td colspan="2">' . __( 'Closed from', 'wpsso-plm' ) . ' ' .
+						$this->form->get_select( 'plm_place_midday_close_' . $id, $half_hours, 'hour_mins', '', true ) . ' ' . 
+						__( 'to', 'wpsso-plm' ) . ' ' .
+						$this->form->get_select( 'plm_place_midday_open_' . $id, $half_hours, 'hour_mins', '', true ) . '</td>';
+		
 						$table_rows[ 'plm_place_season_dates_' . $id ] = $tr_hide_place_html . 
-						$this->form->get_th_html( _x( 'Open Dates (Seasonal)', 'option label', 'wpsso-plm' ), '', 'plm_place_season_dates' ) .  
+						$this->form->get_th_html( _x( 'Seasonal Dates', 'option label', 'wpsso-plm' ), '', 'plm_place_season_dates' ) .  
 						'<td colspan="2">' . 
-							__( 'Open from', 'wpsso-plm' ) . ' ' . $this->form->get_input_date( 'plm_place_season_from_date_' . $id ) . ' ' . 
-							__( 'through', 'wpsso-plm' ) . ' ' . $this->form->get_input_date( 'plm_place_season_to_date_' . $id ) .
+						__( 'Open from', 'wpsso-plm' ) . ' ' . $this->form->get_input_date( 'plm_place_season_from_date_' . $id ) . ' ' . 
+						__( 'through', 'wpsso-plm' ) . ' ' . $this->form->get_input_date( 'plm_place_season_to_date_' . $id ) . ' ' .
+						__( 'inclusively', 'wpsso-plm' ) .
 						'</td>';
 		
 						$table_rows[ 'subsection_local_business_' . $id ] = $tr_hide_local_business_html . '<th></th>' . 

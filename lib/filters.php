@@ -983,7 +983,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					break;
 
-				case 'tooltip-plm_place_season_dates':
+				case 'tooltip-plm_place_season_dates':	// Seasonal Dates
 
 					$text = __( 'If this place is open seasonally, select the open and close dates of the season.', 'wpsso-plm' );
 

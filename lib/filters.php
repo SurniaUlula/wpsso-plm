@@ -868,7 +868,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					break;
 
-				case 'tooltip-plm_place_schema_type':	// Place Schema Type
+				case 'tooltip-plm_place_schema_type':	// Place Schema Type.
 
 					$text = __( 'You may optionally choose a different Schema type for this place / location (default is LocalBusiness).', 'wpsso-plm' );
 
@@ -955,7 +955,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					break;
 
-				case 'tooltip-plm_place_img_id':	// Place Image ID
+				case 'tooltip-plm_place_img_id':	// Place Image ID.
 
 					$text = __( 'An image ID and media library selection for this place (ie. an image of the business storefront or location).', 'wpsso-plm' ) . ' ';
 
@@ -965,7 +965,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					break;
 
-				case 'tooltip-plm_place_img_url':	// or Place Image URL
+				case 'tooltip-plm_place_img_url':	// or Place Image URL.
 
 					$text = __( 'You can enter a place image URL (including the http:// prefix) instead of choosing an image ID &mdash; if a place image ID is specified, it has precedence and the image URL option is disabled.', 'wpsso-plm' ) . ' ';
 					
@@ -977,19 +977,19 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					break;
 
-				case 'tooltip-plm_place_days':		// Open Days / Hours
+				case 'tooltip-plm_place_days':		// Open Days / Hours.
 
 					$text = __( 'Select the days and hours this place / location is open.', 'wpsso-plm' );
 
 					break;
 
-				case 'tooltip-plm_place_midday_hours':
+				case 'tooltip-plm_place_midday_hours':	// Closes Mid-Day.
 
 					$text = __( 'This place / location closes temporarily mid-day (for example, between 12:00 and 13:00 for lunch).', 'wpsso-plm' );
 
 					break;
 
-				case 'tooltip-plm_place_season_dates':	// Seasonal Dates
+				case 'tooltip-plm_place_season_dates':	// Seasonal Dates.
 
 					$text = __( 'If this place is open seasonally, select the open and close dates of the season.', 'wpsso-plm' );
 

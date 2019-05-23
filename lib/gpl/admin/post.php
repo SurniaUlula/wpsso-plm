@@ -112,14 +112,25 @@ if ( ! class_exists( 'WpssoPlmGplAdminPost' ) ) {
 				}
 
 				$table_rows[ 'plm_place_day_' . $day ] = $th_cell_html . 
-					'<td class="blank weekday">' . $form->get_no_checkbox( 'plm_place_day_' . $day ) . ' ' . $day_label_transl . '</td>' . 
-					'<td class="blank">' . __( 'Opens at', 'wpsso-plm' ) . ' ' .
-					$form->get_no_select( 'plm_place_day_' . $day . '_open', $half_hours, 'hour_mins', '', true ) . ' ' . 
-					__( 'and closes at', 'wpsso-plm' ) . ' ' .
-					$form->get_no_select( 'plm_place_day_' . $day . '_close', $half_hours, 'hour_mins', '', true ) . '</td>';
+				'<td class="blank weekday">' . $form->get_no_checkbox( 'plm_place_day_' . $day ) . ' ' . $day_label_transl . '</td>' . 
+				'<td class="blank">' .
+				__( 'Opens at', 'wpsso-plm' ) . ' ' .
+				$form->get_no_select( 'plm_place_day_' . $day . '_open', $half_hours, 'hour_mins', '', true ) . ' ' . 
+				__( 'and closes at', 'wpsso-plm' ) . ' ' .
+				$form->get_no_select( 'plm_place_day_' . $day . '_close', $half_hours, 'hour_mins', '', true ) .
+				'</td>';
 
 				$row_number++;
 			}
+
+			$table_rows[ 'plm_place_midday_hours' ] = $tr_hide_place_html . 
+			$form->get_th_html( _x( 'Closes Mid-Day', 'option label', 'wpsso-plm' ), '', 'plm_place_midday_hours' ) .  
+			'<td class="blank" colspan="2">' .
+			__( 'Closes from', 'wpsso-plm' ) . ' ' .
+			$form->get_no_select( 'plm_place_midday_close', $half_hours, 'hour_mins', '', true ) . ' ' . 
+			__( 'to', 'wpsso-plm' ) . ' ' .
+			$form->get_no_select( 'plm_place_midday_open', $half_hours, 'hour_mins', '', true ) .
+			'</td>';
 
 			$table_rows[ 'plm_place_season_dates' ] = '' . 
 			$form->get_th_html( _x( 'Seasonal Dates', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_season_dates' ) .  
@@ -135,7 +146,7 @@ if ( ! class_exists( 'WpssoPlmGplAdminPost' ) ) {
 			$table_rows[ 'plm_place_service_radius' ] = '' .
 			$form->get_th_html( _x( 'Service Radius', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_service_radius' ) .  
 			'<td class="blank" colspan="2">' . $form->get_no_input_value( '', 'medium' ) . ' ' . 
-				_x( 'meters from location', 'option comment', 'wpsso-plm' ) . '</td>';
+			_x( 'meters from location', 'option comment', 'wpsso-plm' ) . '</td>';
 
 			foreach ( array(
 				'currencies_accepted' => _x( 'Currencies Accepted', 'option label', 'wpsso-plm' ),

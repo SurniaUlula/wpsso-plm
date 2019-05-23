@@ -229,20 +229,24 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 		
 							$table_rows[ $day_opt_prefix . '_' . $id ] = $th_cell_html . 
 							'<td class="weekday">' . $this->form->get_checkbox( $day_opt_prefix . '_' . $id ) . ' ' . $day_label_transl . '</td>' . 
-							'<td>' . __( 'Opens at', 'wpsso-plm' ) . ' ' .
+							'<td>' .
+							__( 'Opens at', 'wpsso-plm' ) . ' ' .
 							$this->form->get_select( $day_opt_prefix . '_open_' . $id, $half_hours, 'hour_mins', '', true ) . ' ' . 
 							__( 'and closes at', 'wpsso-plm' ) . ' ' .
-							$this->form->get_select( $day_opt_prefix . '_close_' . $id, $half_hours, 'hour_mins', '', true ) . '</td>';
+							$this->form->get_select( $day_opt_prefix . '_close_' . $id, $half_hours, 'hour_mins', '', true ) .
+							'</td>';
 
 							$row_number++;
 						}
 		
 						$table_rows[ 'plm_place_midday_hours_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Closes Mid-Day', 'option label', 'wpsso-plm' ), '', 'plm_place_midday_hours' ) .  
-						'<td colspan="2">' . __( 'Closes from', 'wpsso-plm' ) . ' ' .
+						'<td colspan="2">' .
+						__( 'Closes from', 'wpsso-plm' ) . ' ' .
 						$this->form->get_select( 'plm_place_midday_close_' . $id, $half_hours, 'hour_mins', '', true ) . ' ' . 
 						__( 'to', 'wpsso-plm' ) . ' ' .
-						$this->form->get_select( 'plm_place_midday_open_' . $id, $half_hours, 'hour_mins', '', true ) . '</td>';
+						$this->form->get_select( 'plm_place_midday_open_' . $id, $half_hours, 'hour_mins', '', true ) .
+						'</td>';
 		
 						$table_rows[ 'plm_place_season_dates_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Seasonal Dates', 'option label', 'wpsso-plm' ), '', 'plm_place_season_dates' ) .  

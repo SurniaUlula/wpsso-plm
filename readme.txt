@@ -56,6 +56,7 @@ The WPSSO Organization Markup (aka WPSSO ORG) add-on is required to select a pla
 	* Place Image ID
 	* or Place Image URL
 	* Open Days / Hours
+	* Closes Mid-Day
 	* Seasonal Dates
 	* Local Business:
 		* Service Radius

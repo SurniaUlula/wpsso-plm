@@ -55,6 +55,7 @@
 <li>Place Image ID</li>
 <li>or Place Image URL</li>
 <li>Open Days / Hours</li>
+<li>Closes Mid-Day</li>
 <li>Seasonal Dates</li>
 <li>Local Business:
 

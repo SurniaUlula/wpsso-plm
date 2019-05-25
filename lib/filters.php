@@ -190,11 +190,11 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 				foreach( array( 'place:location', 'og' ) as $mt_prefix ) {
 
-					$mt_og[$mt_prefix . ':latitude' ]  = $place_opts[ 'plm_place_latitude' ];
-					$mt_og[$mt_prefix . ':longitude' ] = $place_opts[ 'plm_place_longitude' ];
+					$mt_og[ $mt_prefix . ':latitude' ]  = $place_opts[ 'plm_place_latitude' ];
+					$mt_og[ $mt_prefix . ':longitude' ] = $place_opts[ 'plm_place_longitude' ];
 
 					if ( ! empty( $place_opts[ 'plm_altitude' ] ) ) {
-						$mt_og[$mt_prefix . ':altitude' ] = $place_opts[ 'plm_place_altitude' ];
+						$mt_og[ $mt_prefix . ':altitude' ] = $place_opts[ 'plm_place_altitude' ];
 					}
 				}
 			}
@@ -213,7 +213,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 						$mt_key  = 'place:opening_hours:day:' . $weekday . ':' . $hour;
 						$opt_key = 'plm_place_day_' . $weekday . '_' . $hour;
 
-						$mt_og[$mt_key] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : $place_defs[ $opt_key ];
+						$mt_og[ $mt_key ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : $place_defs[ $opt_key ];
 					}
 				}
 			}
@@ -315,7 +315,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				'plm_place_phone' => 'telephone',	// Place phone number.
 			) as $opt_key => $mt_name ) {
 
-				$mt_schema[$mt_name] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
+				$mt_schema[ $mt_name ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
 			}
 
 			/**
@@ -333,7 +333,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					'plm_place_price_range'         => 'priceRange',
 				) as $opt_key => $mt_name ) {
 
-					$mt_schema[$mt_name] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
+					$mt_schema[ $mt_name ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
 				}
 
 			} elseif ( $this->p->debug->enabled ) {
@@ -356,9 +356,9 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				) as $opt_key => $mt_name ) {
 
 					if ( $opt_key === 'plm_place_accept_res' ) {
-						$mt_schema[$mt_name] = empty( $place_opts[ $opt_key ] ) ? 'false' : 'true';
+						$mt_schema[ $mt_name ] = empty( $place_opts[ $opt_key ] ) ? 'false' : 'true';
 					} else {
-						$mt_schema[$mt_name] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
+						$mt_schema[ $mt_name ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
 					}
 				}
 			}
@@ -408,10 +408,10 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 								'place:opening_hours:season:to_date'             => 'openinghoursspecification.validthrough',
 							) as $mt_key => $prop_name ) {
 
-								if ( isset( $mt_opening_hours[$mt_key] ) ) {
+								if ( isset( $mt_opening_hours[ $mt_key ] ) ) {
 
 									$mt_weekday[] = $this->p->head->get_single_mt( 'meta', 'itemprop',
-										$prop_name, $mt_opening_hours[$mt_key], '', $mod );
+										$prop_name, $mt_opening_hours[ $mt_key ], '', $mod );
 								}
 							}
 	
@@ -465,7 +465,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->log( 'adding schema type id "' . $type_id . '"' );
 			}
 
-			$type_ids[$type_id] = true;
+			$type_ids[ $type_id ] = true;
 
 			return $type_ids;
 		}

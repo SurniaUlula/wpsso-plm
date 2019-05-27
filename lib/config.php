@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.31.1',
+						'min_version' => '4.31.2-dev.5',
 					),
 					'assets' => array(
 						'icons' => array(

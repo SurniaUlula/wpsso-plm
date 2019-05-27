@@ -117,7 +117,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.2.0-dev.4 (2019/05/22)**
+**Version 3.2.0-dev.5 (2019/05/27)**
 
 * *New Features*
 	* None.
@@ -141,9 +141,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.2.0-dev.4 =
+= 3.2.0-dev.5 =
 
-(2019/05/22) Added a new "Closes Mid-Day" option.
+(2019/05/27) Added a new "Closes Mid-Day" option.
 
 = 3.1.0 =
 

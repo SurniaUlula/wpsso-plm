@@ -117,11 +117,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.2.0-dev.5 (2019/05/27)**
+**Version 3.2.0-dev.6 (2019/05/29)**
 
 * *New Features*
 	* None.
 * *Improvements*
+	* Added support for Schema Place mid-day closure.
 	* Added a new "Closes Mid-Day" option.
 * *Bugfixes*
 	* None.
@@ -141,9 +142,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.2.0-dev.5 =
+= 3.2.0-dev.6 =
 
-(2019/05/27) Added a new "Closes Mid-Day" option.
+(2019/05/29) Added support for Schema Place mid-day closure. Added a new "Closes Mid-Day" option.
 
 = 3.1.0 =
 

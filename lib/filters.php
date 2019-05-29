@@ -219,6 +219,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			foreach ( array(
+				'plm_place_midday_close'        => 'place:opening_hours:midday:close',
+				'plm_place_midday_open'         => 'place:opening_hours:midday:open',
 				'plm_place_season_from_date'    => 'place:opening_hours:season:from_date',
 				'plm_place_season_to_date'      => 'place:opening_hours:season:to_date',
 				'plm_place_service_radius'      => 'place:business:service_radius',
@@ -378,6 +380,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			 *	[place:opening_hours:day:monday:close]         => 17:00
 			 *	[place:opening_hours:day:publicholidays:open]  => 09:00
 			 *	[place:opening_hours:day:publicholidays:close] => 17:00
+			 *	[place:opening_hours:midday:close]             => 12:00
+			 *	[place:opening_hours:midday:open]              => 13:00
 			 *	[place:opening_hours:season:from_date]         => 2016-04-01
 			 *	[place:opening_hours:season:to_date]           => 2016-05-01
 			 * )
@@ -390,35 +394,61 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $weekday => $label ) {
 
-						$mt_weekday = array();
+						$mt_weekday_spec = array();
 
 						if ( ! empty( $mt_opening_hours[ 'place:opening_hours:day:' . $weekday . ':open' ] ) &&
 							! empty( $mt_opening_hours[ 'place:opening_hours:day:' . $weekday . ':close' ] ) ) {
 	
-							$mt_weekday[] = array( array( '<noscript itemprop="openingHoursSpecification" ' . 
-								'itemscope itemtype="https://schema.org/OpeningHoursSpecification">' . "\n" ) );
+							$open_close = array();
 
-							$mt_weekday[] = $this->p->head->get_single_mt( 'meta', 'itemprop',
-								'openinghoursspecification.dayofweek', $weekday, '', $mod );
-	
-							foreach ( array(
-								'place:opening_hours:day:' . $weekday . ':open'  => 'openinghoursspecification.opens',
-								'place:opening_hours:day:' . $weekday . ':close' => 'openinghoursspecification.closes',
-								'place:opening_hours:season:from_date'           => 'openinghoursspecification.validfrom',
-								'place:opening_hours:season:to_date'             => 'openinghoursspecification.validthrough',
-							) as $mt_key => $prop_name ) {
+error_log( $mt_opening_hours[ 'place:opening_hours:midday:close' ] );
+error_log( $mt_opening_hours[ 'place:opening_hours:midday:open' ] );
 
-								if ( isset( $mt_opening_hours[ $mt_key ] ) ) {
+							if ( ! empty( $mt_opening_hours[ 'place:opening_hours:midday:close' ] ) &&
+								! empty( $mt_opening_hours[ 'place:opening_hours:midday:open' ] ) ) {
 
-									$mt_weekday[] = $this->p->head->get_single_mt( 'meta', 'itemprop',
-										$prop_name, $mt_opening_hours[ $mt_key ], '', $mod );
-								}
+								$open_close[ $mt_opening_hours[ 'place:opening_hours:day:' . $weekday . ':open' ] ] =
+									$mt_opening_hours[ 'place:opening_hours:midday:close' ];
+
+								$open_close[ $mt_opening_hours[ 'place:opening_hours:midday:open' ] ] =
+									$mt_opening_hours[ 'place:opening_hours:day:' . $weekday . ':close' ];
+
+							} else {
+								$open_close[ $mt_opening_hours[ 'place:opening_hours:day:' . $weekday . ':open' ] ] =
+									$mt_opening_hours[ 'place:opening_hours:day:' . $weekday . ':close' ];
 							}
+
+							foreach ( $open_close as $open => $close ) {
+
+								$mt_weekday_spec[] = array( array( '<noscript itemprop="openingHoursSpecification" ' . 
+									'itemscope itemtype="https://schema.org/OpeningHoursSpecification">' . "\n" ) );
+
+								$mt_weekday_spec[] = $this->p->head->get_single_mt( 'meta', 'itemprop',
+									'openinghoursspecification.dayofweek', $weekday, '', $mod );
 	
-							$mt_weekday[] = array( array( '</noscript>' . "\n" ) );
+								$mt_weekday_spec[] = $this->p->head->get_single_mt( 'meta', 'itemprop',
+									'openinghoursspecification.opens', $open, '', $mod );
+	
+								$mt_weekday_spec[] = $this->p->head->get_single_mt( 'meta', 'itemprop',
+									'openinghoursspecification.closes', $close, '', $mod );
+	
+								foreach ( array(
+									'openinghoursspecification.validfrom'    => 'place:opening_hours:season:from_date',
+									'openinghoursspecification.validthrough' => 'place:opening_hours:season:to_date',
+								) as $prop_name => $mt_key ) {
+
+									if ( isset( $mt_opening_hours[ $mt_key ] ) ) {
+
+										$mt_weekday_spec[] = $this->p->head->get_single_mt( 'meta', 'itemprop',
+											$prop_name, $mt_opening_hours[ $mt_key ], '', $mod );
+									}
+								}
+		
+								$mt_weekday_spec[] = array( array( '</noscript>' . "\n" ) );
+							}
 						}
 
-						foreach ( $mt_weekday as $arr ) {
+						foreach ( $mt_weekday_spec as $arr ) {
 							foreach ( $arr as $val ) {
 								$ret[] = $val;
 							}

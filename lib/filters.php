@@ -396,7 +396,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 						$mt_weekday_spec = array();
 
-						$open_close = SucomUtil::get_opts_open_close(
+						$open_close = SucomUtil::get_open_close(
 							$mt_opening_hours,
 							'place:opening_hours:day:' . $weekday . ':open',
 							'place:opening_hours:midday:close',

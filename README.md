@@ -22,13 +22,11 @@
 <p><strong>The WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) add-on can be used in two different ways:</strong></p>
 
 <ul>
-<li><p>To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location).</p></li>
 <li><p>To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).</p></li>
+<li><p>To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro version).</p></li>
 </ul>
 
-<p>The Free version of WPSSO PLM can provide location information for the <a href="https://wordpress.org/plugins/wpsso-organization/">WPSSO Organization Markup</a> (aka WPSSO ORG) add-on.</p>
-
-<p>The WPSSO Organization Markup (aka WPSSO ORG) add-on is required to select a place / location for an organization / local business.</p>
+<p>The Free version of WPSSO PLM provides location information for the <a href="https://wordpress.org/plugins/wpsso-organization/">WPSSO Organization Markup</a> (aka WPSSO ORG) add-on, and the WPSSO ORG add-on is required to select a place / location for an organization / local business.</p>
 
 <h3>WPSSO PLM Standard Features</h3>
 

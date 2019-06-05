@@ -24,13 +24,11 @@ Include Pinterest Rich Pin *Place*, Facebook / Open Graph *Location*, and Google
 
 **The WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) add-on can be used in two different ways:**
 
-* To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location).
-
 * To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).
 
-The Free version of WPSSO PLM can provide location information for the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on.
+* To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro version).
 
-The WPSSO Organization Markup (aka WPSSO ORG) add-on is required to select a place / location for an organization / local business.
+The Free version of WPSSO PLM provides location information for the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on, and the WPSSO ORG add-on is required to select a place / location for an organization / local business.
 
 <h3>WPSSO PLM Standard Features</h3>
 

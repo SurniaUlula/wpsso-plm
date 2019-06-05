@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoPlmGplAdminPost' ) ) {
 				$row_number++;
 			}
 
-			$table_rows[ 'plm_place_midday_hours' ] = $tr_hide_place_html . 
+			$table_rows[ 'plm_place_midday_hours' ] = '' . 
 			$form->get_th_html( _x( 'Closes Mid-Day', 'option label', 'wpsso-plm' ), '', 'plm_place_midday_hours' ) .  
 			'<td class="blank" colspan="2">' .
 			__( 'Closes from', 'wpsso-plm' ) . ' ' .

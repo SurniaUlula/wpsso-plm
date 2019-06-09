@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.2.1-dev.1 (2019/06/05)**
+**Version 3.2.1-b.1 (2019/06/09)**
 
 * *New Features*
 	* None.
@@ -140,9 +140,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.2.1-dev.1 =
+= 3.2.1-b.1 =
 
-(2019/06/05) Fixed an undefined variable error when a editing post in the Free version.
+(2019/06/09) Fixed an undefined variable error when a editing post in the Free version.
 
 = 3.2.0 =
 

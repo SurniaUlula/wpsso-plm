@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.2.1-rc.1 (2019/06/10)**
+**Version 3.2.1 (2019/06/12)**
 
 * *New Features*
 	* None.
@@ -140,11 +140,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.2.1-rc.1 =
+= 3.2.1 =
 
-(2019/06/10) Fixed an undefined variable error when a editing post in the Free version.
-
-= 3.2.0 =
-
-(2019/05/31) Added support for Schema Place mid-day closure.
+(2019/06/12) Fixed an undefined variable error when a editing post in the Free version.
 

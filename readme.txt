@@ -26,7 +26,7 @@ Include Pinterest Rich Pin *Place*, Facebook / Open Graph *Location*, and Google
 
 * To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).
 
-* To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro version).
+* To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro / Premium version).
 
 The Free version of WPSSO PLM provides location information for the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on, and the WPSSO ORG add-on is required to select a place / location for an organization / local business.
 
@@ -67,7 +67,7 @@ The Free version of WPSSO PLM provides location information for the [WPSSO Organ
 		* Food Menu URL
 		* Order Action URL(s)
 
-<h3>WPSSO PLM Additional Features (Pro version)</h3>
+<h3>WPSSO PLM Pro / Premium Features</h3>
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
@@ -115,6 +115,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.0.0-dev.1 (2019/06/17)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Maintenance release for WPSSO Core v5.0.0.
+
 **Version 3.2.1 (2019/06/12)**
 
 * *New Features*
@@ -139,6 +150,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 4.0.0-dev.1 =
+
+(2019/06/17) Maintenance release for WPSSO Core v5.0.0.
 
 = 3.2.1 =
 

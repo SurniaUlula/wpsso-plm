@@ -23,7 +23,7 @@
 
 <ul>
 <li><p>To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).</p></li>
-<li><p>To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro version).</p></li>
+<li><p>To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro / Premium version).</p></li>
 </ul>
 
 <p>The Free version of WPSSO PLM provides location information for the <a href="https://wordpress.org/plugins/wpsso-organization/">WPSSO Organization Markup</a> (aka WPSSO ORG) add-on, and the WPSSO ORG add-on is required to select a place / location for an organization / local business.</p>
@@ -74,7 +74,7 @@
 </ul></li>
 </ul>
 
-<h3>WPSSO PLM Additional Features (Pro version)</h3>
+<h3>WPSSO PLM Pro / Premium Features</h3>
 
 <ul>
 <li><p>Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).</p></li>

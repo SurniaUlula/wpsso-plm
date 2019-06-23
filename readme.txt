@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.0.0-b.1 (2019/06/22)**
+**Version 4.0.0-b.1 (2019/06/23)**
 
 * *New Features*
 	* None.
@@ -154,7 +154,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.0.0-b.1 =
 
-(2019/06/22) Maintenance release for WPSSO Core v5.0.0.
+(2019/06/23) Maintenance release for WPSSO Core v5.0.0.
 
 = 3.2.1 =
 

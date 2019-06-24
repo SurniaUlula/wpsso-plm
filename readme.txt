@@ -26,7 +26,7 @@ Include Pinterest Rich Pin *Place*, Facebook / Open Graph *Location*, and Google
 
 * To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).
 
-* To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro / Premium version).
+* To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Premium add-on).
 
 Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on is required to select a place / location for an organization / local business.
 
@@ -77,7 +77,7 @@ Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-or
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (Standard or Premium version).
+WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 
@@ -91,7 +91,7 @@ WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) is an add-on for 
 == Screenshots ==
 
 01. The settings page includes options to manage location addresses, geo location, business hours, service radius, price and currency information, restaurant menu URL, and more.
-02. When editing a post / page, the Schema Place tab provides options to manage custom location addresses, geo location, business hours, service radius, price and currency information, restaurant menu URL, and more (Premium version).
+02. When editing a post / page, the Schema Place tab provides options to manage custom location addresses, geo location, business hours, service radius, price and currency information, restaurant menu URL, and more (Premium add-on).
 
 == Changelog ==
 
@@ -130,7 +130,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* Fixed an undefined variable error when a editing post in the Standard version.
+	* Fixed an undefined variable error when a editing post in the Free / Standard add-on.
 * *Developer Notes*
 	* None.
 

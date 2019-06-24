@@ -28,11 +28,11 @@ Include Pinterest Rich Pin *Place*, Facebook / Open Graph *Location*, and Google
 
 * To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Pro / Premium version).
 
-The Free version of WPSSO PLM provides location information for the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on, and the WPSSO ORG add-on is required to select a place / location for an organization / local business.
+Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on is required to select a place / location for an organization / local business.
 
 <h3>WPSSO PLM Free / Standard Features</h3>
 
-* Extends the features of the WPSSO Core Free or Pro plugin.
+* Extends the features of the WPSSO Core plugin.
 
 * Manage multiple place / location information:
 
@@ -130,7 +130,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* Fixed an undefined variable error when a editing post in the Free version.
+	* Fixed an undefined variable error when a editing post in the Standard version.
 * *Developer Notes*
 	* None.
 

@@ -104,7 +104,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {bugfix} = Backwards-compatible bug fixes or small improvements.
 * {stage}.{level} = Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
 
-<h3>Free / Standard Add-on Repositories</h3>
+<h3>Standard Add-on Repositories</h3>
 
 * [GitHub](https://surniaulula.github.io/wpsso-plm/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-plm/)
@@ -130,7 +130,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Improvements*
 	* None.
 * *Bugfixes*
-	* Fixed an undefined variable error when a editing post in the Free / Standard add-on.
+	* Fixed an undefined variable error when a editing post in the Standard add-on.
 * *Developer Notes*
 	* None.
 

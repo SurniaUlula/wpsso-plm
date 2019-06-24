@@ -10,7 +10,7 @@ Tags: local seo, local business, knowledge graph, location, place, address, venu
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2.1
-Stable Tag: 3.2.1
+Stable Tag: 4.0.0
 
 WPSSO Core add-on provides Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
@@ -124,8 +124,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Maintenance release for WPSSO Core v5.0.0.
 	* Renamed the 'gpl' library sub-folder to 'std'.
+	* Maintenance release for WPSSO Core v5.0.0.
 
 **Version 3.2.1 (2019/06/12)**
 
@@ -155,8 +155,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.0.0 =
 
 (2019/06/24) Maintenance release for WPSSO Core v5.0.0.
-
-= 3.2.1 =
-
-(2019/06/12) Fixed an undefined variable error when a editing post in the Free version.
 

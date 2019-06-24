@@ -67,7 +67,7 @@ Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-or
 		* Food Menu URL
 		* Order Action URL(s)
 
-<h3>WPSSO PLM Pro / Premium Features</h3>
+<h3>WPSSO PLM Premium Features</h3>
 
 * Adds a Schema Place tab in the Document SSO metabox to select an address or enter custom address information for the content.
 
@@ -104,7 +104,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {bugfix} = Backwards-compatible bug fixes or small improvements.
 * {stage}.{level} = Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
 
-<h3>Free / Standard Version Repositories</h3>
+<h3>Free / Standard Add-on Repositories</h3>
 
 * [GitHub](https://surniaulula.github.io/wpsso-plm/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-plm/)

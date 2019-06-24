@@ -74,7 +74,7 @@
 </ul></li>
 </ul>
 
-<h3>WPSSO PLM Pro / Premium Features</h3>
+<h3>WPSSO PLM Premium Features</h3>
 
 <ul>
 <li>Adds a Schema Place tab in the Document SSO metabox to select an address or enter custom address information for the content.</li>

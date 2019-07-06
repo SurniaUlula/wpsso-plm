@@ -127,6 +127,7 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 		}
 
 		public static function wpsso_init_textdomain() {
+
 			load_plugin_textdomain( 'wpsso-plm', false, 'wpsso-plm/languages/' );
 		}
 
@@ -138,7 +139,9 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			$info = WpssoPlmConfig::$cf[ 'plugin' ][ 'wpssoplm' ];
 
 			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
+
 				$this->have_req_min = false;
+
 				return $cf;
 			}
 
@@ -157,14 +160,16 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
-				$this->p->avail['p_ext']['plm'] = false;	// Signal that this extension / add-on is not available.
+
+				$this->p->avail[ 'p_ext' ][ 'plm' ] = false;	// Signal that this extension / add-on is not available.
+
 				return;
 			}
 
-			$this->p->avail['p_ext']['plm'] = true;	// Signal that this extension / add-on is available.
+			$this->p->avail[ 'p_ext' ][ 'plm' ] = true;		// Signal that this extension / add-on is available.
 
 			if ( is_admin() ) {
-				$this->p->avail['admin'][ 'post' ] = true;
+				$this->p->avail[ 'admin' ][ 'post' ] = true;
 			}
 		}
 

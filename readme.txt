@@ -113,38 +113,38 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 **Version 4.0.0 (2019/06/24)**
 
-* *New Features*
+* **New Features**
 	* None.
-* *Improvements*
+* **Improvements**
 	* Renamed "Pro" distribution to "Premium".
 	* Renamed "Free" distribution to "Standard".
-* *Bugfixes*
+* **Bugfixes**
 	* None.
-* *Developer Notes*
+* **Developer Notes**
 	* Renamed the 'gpl' library sub-folder to 'std'.
 	* Maintenance release for WPSSO Core v5.0.0.
 
 **Version 3.2.1 (2019/06/12)**
 
-* *New Features*
+* **New Features**
 	* None.
-* *Improvements*
+* **Improvements**
 	* None.
-* *Bugfixes*
+* **Bugfixes**
 	* Fixed an undefined variable error when a editing post in the Standard add-on.
-* *Developer Notes*
+* **Developer Notes**
 	* None.
 
 **Version 3.2.0 (2019/05/31)**
 
-* *New Features*
+* **New Features**
 	* None.
-* *Improvements*
+* **Improvements**
 	* Added support for Schema Place mid-day closure.
 	* Added a new "Closes Mid-Day" option when editing a Place / Location.
-* *Bugfixes*
+* **Bugfixes**
 	* None.
-* *Developer Notes*
+* **Developer Notes**
 	* None.
 
 == Upgrade Notice ==

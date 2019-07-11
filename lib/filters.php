@@ -715,7 +715,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			$context_transl     = sprintf( __( 'saving place "%1$s"', 'wpsso-plm' ), $name_transl );
 			$settings_page_link = $this->p->util->get_admin_url( 'plm-general' );
 
-			$this->p->notice->set_ref( $settings_page_link, null, $context_transl );
+			$this->p->notice->set_ref( $settings_page_link, false, $context_transl );
 
 			/**
 			 * Returns an image array:

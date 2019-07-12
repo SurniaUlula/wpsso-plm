@@ -13,7 +13,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 	class WpssoPlmFilters {
 
-		protected $p;
+		private $p;
 
 		public function __construct( &$plugin ) {
 
@@ -51,11 +51,11 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					'messages_tooltip'       => 2,
 					'messages_tooltip_post'  => 2,
 					'form_cache_place_names' => 1,
-				), 1000 );
+				), $prio = 1000 );
 
 				$this->p->util->add_plugin_filters( $this, array( 
 					'status_pro_features' => 4,
-				), 10, 'wpssoplm' ); // Hook into our own filters.
+				), $prio = 10, $ext = 'wpssoplm' );	// Hook into our own filters.
 			}
 		}
 
@@ -605,22 +605,17 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			$md_opts[ 'og_type' ] = 'place';	// Overwrite the WPSSO option value.
 
-			if ( $is_admin ) {
-				$md_opts[ 'og_type:is' ] = 'disabled';
-			}
+			$md_opts[ 'og_type:is' ] = 'disabled';
 
 			if ( $place_type ) {
 
 				$md_opts[ 'schema_type' ] = $place_type;
 
+				$md_opts[ 'schema_type:is' ] = 'disabled';
+
 				$md_opts[ 'schema_organization_org_id' ] = 'none';
 
-				if ( $is_admin ) {
-
-					$md_opts[ 'schema_type:is' ] = 'disabled';
-
-					$md_opts[ 'schema_organization_org_id:is' ] = 'disabled';
-				}
+				$md_opts[ 'schema_organization_org_id:is' ] = 'disabled';
 			}
 
 			return $md_opts;

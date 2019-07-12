@@ -13,6 +13,8 @@ if ( ! class_exists( 'WpssoPlmStdAdminPost' ) ) {
 
 	class WpssoPlmStdAdminPost {
 
+		private $p;
+
 		public function __construct( &$plugin ) {
 
 			$this->p =& $plugin;

@@ -64,18 +64,6 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_add_to_attachment'          => 0,
 				),
 			),
-			/*
-			'wp' => array(				// WordPress
-				'transient' => array(
-					'wpsso_p_' => array(
-						'label'       => 'Place Details',
-						'text_domain' => 'wpsso-plm',
-						'opt_key'     => 'plugin_place_details_cache_exp',
-						'filter'      => 'wpsso_cache_expire_place_details',
-					),
-				),
-			),
-			*/
 			'form' => array(
 				'plm_place_opts' => array(
 					'plm_place_schema_type'              => 'local.business',	// Place Schema Type
@@ -188,4 +176,3 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		}
 	}
 }
-

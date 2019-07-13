@@ -582,7 +582,7 @@ msgctxt "option label"
 msgid "Default Country"
 msgstr ""
 
-#: lib/submenu/plm-general.php:318
+#: lib/submenu/plm-general.php:319
 msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr ""

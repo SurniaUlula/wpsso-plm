@@ -266,8 +266,8 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 		
 						foreach ( array(
 							'currencies_accepted' => _x( 'Currencies Accepted', 'option label', 'wpsso-plm' ),
-							'payment_accepted' => _x( 'Payment Accepted', 'option label', 'wpsso-plm' ),
-							'price_range' => _x( 'Price Range', 'option label', 'wpsso-plm' ),
+							'payment_accepted'    => _x( 'Payment Accepted', 'option label', 'wpsso-plm' ),
+							'price_range'         => _x( 'Price Range', 'option label', 'wpsso-plm' ),
 						) as $opt_name => $opt_label ) {
 
 							$table_rows[ 'plm_place_' . $opt_name . '_' . $id ] = $tr_hide_local_business_html . 
@@ -307,6 +307,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 					$add_to_checkboxes = '';
 
 					foreach ( $this->p->util->get_post_types( 'objects' ) as $pt ) {
+
 						$add_to_checkboxes .= '<p>' .
 							$this->form->get_checkbox( 'plm_add_to_' . $pt->name ) . ' ' .
 							( empty( $pt->label ) ? '' : $pt->label ) . 	// Just in case.

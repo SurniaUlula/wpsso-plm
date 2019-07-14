@@ -111,6 +111,19 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.0.1 (2019/07/14)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed an incorrect 'og:type' variable definition in WpssoPlmFilters::filter_og_seed().
+* **Developer Notes**
+	* None.
+
+== Upgrade Notice ==
+
 **Version 4.0.0 (2019/06/24)**
 
 * **New Features**
@@ -124,32 +137,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Renamed the 'gpl' library sub-folder to 'std'.
 	* Maintenance release for WPSSO Core v5.0.0.
 
-**Version 3.2.1 (2019/06/12)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed an undefined variable error when a editing post in the Standard add-on.
-* **Developer Notes**
-	* None.
-
-**Version 3.2.0 (2019/05/31)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added support for Schema Place mid-day closure.
-	* Added a new "Closes Mid-Day" option when editing a Place / Location.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
-= 4.0.0 =
+= 4.0.1 =
 
-(2019/06/24) Maintenance release for WPSSO Core v5.0.0.
+(2019/07/14) Fixed an incorrect 'og:type' variable definition in WpssoPlmFilters::filter_og_seed().
 

@@ -161,7 +161,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			/**
 			 * og:type
 			 */
-			$og[ 'og:type' ] = 'place';	// Pre-define to optimize.
+			$mt_og[ 'og:type' ] = 'place';	// Pre-define to optimize.
 
 			/**
 			 * place:name

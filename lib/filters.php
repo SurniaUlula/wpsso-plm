@@ -76,10 +76,14 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$md_defs = array_merge( $md_defs, WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], array(
-				'plm_place_id'      => 'none',
-				'plm_place_country' => $this->p->options[ 'plm_def_country' ],
-			) );
+			$md_defs = array_merge(
+				$md_defs,
+				WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
+				array(
+					'plm_place_id'      => 'none',
+					'plm_place_country' => $this->p->options[ 'plm_def_country' ],
+				)
+			);
 
 			return $md_defs;
 		}
@@ -282,7 +286,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			$def_schema_type = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ][ 'plm_place_schema_type' ];
 
-			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ? $def_schema_type : $place_opts[ 'plm_place_schema_type' ];
+			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ?
+				$def_schema_type : $place_opts[ 'plm_place_schema_type' ];
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'returning schema type id "' . $type_id . '"' );
@@ -474,7 +479,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			 */
 			$def_schema_type = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ][ 'plm_place_schema_type' ];
 
-			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ? $def_schema_type : $place_opts[ 'plm_place_schema_type' ];
+			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ?
+				$def_schema_type : $place_opts[ 'plm_place_schema_type' ];
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'adding schema type id "' . $type_id . '"' );
@@ -580,9 +586,10 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$is_admin   = is_admin();
-			$place_id   = isset( $md_opts[ 'plm_place_id' ] ) ? $md_opts[ 'plm_place_id' ] : 'none';
-			$place_type = false;
+			$is_admin        = is_admin();
+			$place_id        = isset( $md_opts[ 'plm_place_id' ] ) ? $md_opts[ 'plm_place_id' ] : 'none';
+			$place_type      = false;
+			$def_schema_type = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ][ 'plm_place_schema_type' ];
 
 			if ( $place_id === '' || $place_id === 'none' ) {	// Nothing to do.
 
@@ -634,17 +641,17 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				return $opts;	// Nothing to do.
 			}
 
-			$plm_place_names = SucomUtil::get_multi_key_locale( 'plm_place_name', $opts, $add_none = false );
-			$plm_last_num    = SucomUtil::get_last_num( $plm_place_names );
+			$place_names    = SucomUtil::get_multi_key_locale( 'plm_place_name', $opts, $add_none = false );
+			$place_last_num = SucomUtil::get_last_num( $place_names );
 
-			foreach ( $plm_place_names as $place_id => $name ) {
+			foreach ( $place_names as $place_id => $name ) {
 
 				$name = trim( $name );
 
 				/**
 				 * Remove empty "New Place".
 				 */
-				if ( ! empty( $opts[ 'plm_place_delete_' . $place_id] ) || ( $name === '' && $place_id === $plm_last_num ) ) {
+				if ( ! empty( $opts[ 'plm_place_delete_' . $place_id ] ) || ( $name === '' && $place_id === $place_last_num ) ) {
 
 					/**
 					 * Maybe reset the currently selected place ID.
@@ -668,7 +675,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					$name = sprintf( _x( 'Place #%d', 'option value', 'wpsso-plm' ), $place_id );
 				}
 
-				$opts[ 'plm_place_name_' . $place_id] = $name;
+				$opts[ 'plm_place_name_' . $place_id ] = $name;
 
 				if ( ! empty( $opts[ 'plm_place_img_id_' . $place_id] ) ) {	// Image id 0 is not valid.
 

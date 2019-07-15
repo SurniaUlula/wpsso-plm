@@ -36,7 +36,11 @@ if ( ! class_exists( 'WpssoPlmStdAdminPost' ) ) {
 
 			$place_names_select = array( 'none' => $this->p->cf[ 'form' ][ 'place_select' ][ 'none' ] );
 			$place_types_select = $this->p->util->get_form_cache( 'place_types_select' );
-			$half_hours         = $this->p->util->get_form_cache( 'half_hours' );
+
+			/**
+			 * Returns an array of times without a 'none' value.
+			 */
+			$half_hours = $this->p->util->get_form_cache( 'half_hours' );
 
 			unset( $form->options[ 'plm_place_id' ] );
 
@@ -116,10 +120,10 @@ if ( ! class_exists( 'WpssoPlmStdAdminPost' ) ) {
 				$table_rows[ 'plm_place_day_' . $day ] = $th_cell_html . 
 				'<td class="blank weekday">' . $form->get_no_checkbox( 'plm_place_day_' . $day ) . ' ' . $day_label_transl . '</td>' . 
 				'<td class="blank">' .
-				__( 'Opens at', 'wpsso-plm' ) . ' ' .
-				$form->get_no_select( 'plm_place_day_' . $day . '_open', $half_hours, 'hour_mins', '', true ) . ' ' . 
-				__( 'and closes at', 'wpsso-plm' ) . ' ' .
-				$form->get_no_select( 'plm_place_day_' . $day . '_close', $half_hours, 'hour_mins', '', true ) .
+				__( 'Opens at', 'wpsso-plm' ) . ' ' . $form->get_no_select( 'plm_place_day_' . $day . '_open',
+					$half_hours, $css_class = 'hour_mins', $css_id = '', $is_assoc = true ) . ' ' . 
+				__( 'and closes at', 'wpsso-plm' ) . ' ' . $form->get_no_select( 'plm_place_day_' . $day . '_close',
+					$half_hours, $css_class = 'hour_mins', $css_id = '', $is_assoc = true ) .
 				'</td>';
 
 				$row_number++;
@@ -128,10 +132,10 @@ if ( ! class_exists( 'WpssoPlmStdAdminPost' ) ) {
 			$table_rows[ 'plm_place_midday_hours' ] = '' . 
 			$form->get_th_html( _x( 'Closes Mid-Day', 'option label', 'wpsso-plm' ), '', 'plm_place_midday_hours' ) .  
 			'<td class="blank" colspan="2">' .
-			__( 'Closes from', 'wpsso-plm' ) . ' ' .
-			$form->get_no_select( 'plm_place_midday_close', $half_hours, 'hour_mins', '', true ) . ' ' . 
-			__( 'to', 'wpsso-plm' ) . ' ' .
-			$form->get_no_select( 'plm_place_midday_open', $half_hours, 'hour_mins', '', true ) .
+			__( 'Closes from', 'wpsso-plm' ) . ' ' . $form->get_no_select( 'plm_place_midday_close',
+				$half_hours, $css_class = 'hour_mins', $css_id = '', $is_assoc = true ) . ' ' . 
+			__( 'to', 'wpsso-plm' ) . ' ' . $form->get_no_select( 'plm_place_midday_open',
+				$half_hours, $css_class = 'hour_mins', $css_id = '', $is_assoc = true ) .
 			'</td>';
 
 			$table_rows[ 'plm_place_season_dates' ] = '' . 

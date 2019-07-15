@@ -13,7 +13,7 @@
  * Description: WPSSO Core add-on provides Pinterest Place, Facebook / Open Graph Location, Schema Local Business and Local SEO meta tags.
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
- * Version: 4.0.1
+ * Version: 4.1.0-dev.3
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *

@@ -111,6 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.1.0-dev.3 (2019/07/14)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Maintenance release for WPSSO Core v5.3.0.
+
 **Version 4.0.1 (2019/07/14)**
 
 * **New Features**
@@ -138,6 +149,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release for WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.1.0-dev.3 =
+
+(2019/07/14) Maintenance release for WPSSO Core v5.3.0.
 
 = 4.0.1 =
 

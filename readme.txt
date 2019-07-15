@@ -111,16 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.1.0-dev.3 (2019/07/14)**
+**Version 4.1.0-dev.4 (2019/07/15)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Optimized the "Open Days / Hours" and "Closes Mid-Day" options.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Maintenance release for WPSSO Core v5.3.0.
+	* Maintenance release for WPSSO Core v5.3.0:
+		* Updated the "Open Days / Hours" and "Closes Mid-Day" selects to use the 'on_focus_load_json' event.
 
 **Version 4.0.1 (2019/07/14)**
 
@@ -150,9 +151,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.1.0-dev.3 =
+= 4.1.0-dev.4 =
 
-(2019/07/14) Maintenance release for WPSSO Core v5.3.0.
+(2019/07/15) Maintenance release for WPSSO Core v5.3.0.
 
 = 4.0.1 =
 

@@ -104,15 +104,15 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						}
 
 						$tr_hide_place_html = '<!-- place id ' . $id . ' -->' . 
-							'<tr class="hide_plm_place_id hide_plm_place_id_' . $id . '" style="display:none">';
+							'<tr class="hide_plm_place_id hide_plm_place_id_' . $id . '" style="display:none;">';
 
 						$tr_hide_local_business_html = '<!-- place id ' . $id . ' -->' . 
 							'<tr class="hide_plm_place_id ' . $this->p->schema->get_children_css_class( 'local.business',
-								'hide_plm_place_schema_type_' . $id ) . '" style="display:none">';
+								'hide_plm_place_schema_type_' . $id ) . '" style="display:none;">';
 
 						$tr_hide_food_establishment_html = '<!-- place id ' . $id . ' -->' . 
 							'<tr class="hide_plm_place_id ' . $this->p->schema->get_children_css_class( 'food.establishment',
-								'hide_plm_place_schema_type_' . $id ) . '" style="display:none">';
+								'hide_plm_place_schema_type_' . $id ) . '" style="display:none;">';
 
 						$table_rows[ 'plm_place_delete_' . $id ] = $tr_hide_place_html .
 						$this->form->get_th_html() . 

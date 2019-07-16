@@ -111,14 +111,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.1.0-dev.4 (2019/07/15)**
+**Version 4.1.0-dev.5 (2019/07/15)**
 
 * **New Features**
 	* None.
 * **Improvements**
 	* Optimized the "Open Days / Hours" and "Closes Mid-Day" options.
 * **Bugfixes**
-	* None.
+	* Fixed automatic unhiding of business / restaurant options (depending on Schema type) when loading the Place / Location settings page.
 * **Developer Notes**
 	* Maintenance release for WPSSO Core v5.3.0:
 		* Updated the "Open Days / Hours" and "Closes Mid-Day" selects to use the 'on_focus_load_json' event.
@@ -151,9 +151,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.1.0-dev.4 =
+= 4.1.0-dev.5 =
 
-(2019/07/15) Maintenance release for WPSSO Core v5.3.0.
+(2019/07/15) Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
 
 = 4.0.1 =
 

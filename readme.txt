@@ -111,12 +111,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.1.0-b.1 (2019/07/16)**
+**Version 4.1.0-b.2 (2019/07/17)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Optimized the "Open Days / Hours" and "Closes Mid-Day" options.
+	* Optimized the "Open Days / Hours" and "Closes Mid-Day" options with jQuery to load the selects as needed.
 * **Bugfixes**
 	* Fixed automatic unhiding of business / restaurant options (depending on Schema type) when loading the Place / Location settings page.
 * **Developer Notes**
@@ -151,9 +151,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.1.0-b.1 =
+= 4.1.0-b.2 =
 
-(2019/07/16) Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
+(2019/07/17) Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
 
 = 4.0.1 =
 

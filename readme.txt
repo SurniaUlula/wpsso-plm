@@ -120,8 +120,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* Fixed automatic unhiding of business / restaurant options (depending on Schema type) when loading the Place / Location settings page.
 * **Developer Notes**
-	* Maintenance release for WPSSO Core v5.3.0:
-		* Updated the "Open Days / Hours" and "Closes Mid-Day" selects to use the 'on_focus_load_json' event.
+	* None.
 
 **Version 4.0.1 (2019/07/14)**
 
@@ -153,7 +152,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.1.0-rc.1 =
 
-(2019/07/18) Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
+(2019/07/18) Optimized the "Open Days / Hours" and "Closes Mid-Day" options with jQuery to load the selects as needed. Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
 
 = 4.0.1 =
 

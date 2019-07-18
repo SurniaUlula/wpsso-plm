@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.1.0-rc.1 (2019/07/18)**
+**Version 4.1.0 (2019/07/18)**
 
 * **New Features**
 	* None.
@@ -150,11 +150,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.1.0-rc.1 =
+= 4.1.0 =
 
 (2019/07/18) Optimized the "Open Days / Hours" and "Closes Mid-Day" options with jQuery to load the selects as needed. Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
-
-= 4.0.1 =
-
-(2019/07/14) Fixed an incorrect 'og:type' variable definition in WpssoPlmFilters::filter_og_seed().
 

@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.1.0-b.2 (2019/07/17)**
+**Version 4.1.0-rc.1 (2019/07/18)**
 
 * **New Features**
 	* None.
@@ -151,9 +151,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.1.0-b.2 =
+= 4.1.0-rc.1 =
 
-(2019/07/17) Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
+(2019/07/18) Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
 
 = 4.0.1 =
 

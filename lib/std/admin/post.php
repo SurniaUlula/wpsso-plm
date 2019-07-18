@@ -50,7 +50,7 @@ if ( ! class_exists( 'WpssoPlmStdAdminPost' ) ) {
 			$table_rows[ 'plm_place_schema_type' ] = '' . 
 			$form->get_th_html( _x( 'Place Schema Type', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_schema_type' ) .  
 			'<td class="blank" colspan="2">' . $form->get_no_select( 'plm_place_schema_type', $place_types_select,
-				'schema_type', '', true ) . '</td>';
+				$css_class = 'schema_type', $css_id = '', $is_assoc = true ) . '</td>';
 
 			$table_rows[ 'plm_place_name_alt' ] = '' . 
 			$form->get_th_html( _x( 'Place Alternate Name', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_name_alt' ) .  

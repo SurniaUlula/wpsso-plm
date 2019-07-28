@@ -86,7 +86,7 @@
 <li><a href="http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/">Markup Example for a Restaurant</a> using the WPSSO PLM add-on to manage the Place / Location information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).</li>
 </ul>
 
-<h3>WPSSO Core Plugin Prerequisite</h3>
+<h3>WPSSO Core Plugin Required</h3>
 
 <p>WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
 

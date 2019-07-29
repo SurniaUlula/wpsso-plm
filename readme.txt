@@ -1,4 +1,4 @@
-=== WPSSO Place / Location and Local Business Meta for Facebook, Google Rich Results and Pinterest ===
+=== WPSSO Place / Location and Local Business Meta ===
 Plugin Name: WPSSO Place / Location and Local Business Meta
 Plugin Slug: wpsso-plm
 Text Domain: wpsso-plm

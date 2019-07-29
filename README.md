@@ -1,4 +1,4 @@
-<h1>WPSSO Place / Location and Local Business Meta for Facebook, Google Rich Results and Pinterest</h1>
+<h1>WPSSO Place / Location and Local Business Meta</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Place / Location and Local Business Meta</td></tr>

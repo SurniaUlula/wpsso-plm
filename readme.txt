@@ -111,6 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.2.0-b.3 (2019/08/01)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the "post.php" library file to "post-edit.php" for WPSSO Core v5.4.0.
+
 **Version 4.1.0 (2019/07/18)**
 
 * **New Features**
@@ -133,8 +144,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 
-== Upgrade Notice ==
-
 **Version 4.0.0 (2019/06/24)**
 
 * **New Features**
@@ -149,6 +158,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release for WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
+
+= 4.2.0-b.3 =
+
+(2019/08/01) Renamed the "post.php" library file to "post-edit.php" for WPSSO Core v5.4.0.
 
 = 4.1.0 =
 

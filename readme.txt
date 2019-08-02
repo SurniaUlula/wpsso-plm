@@ -1,4 +1,4 @@
-=== WPSSO Place / Location and Local Business Meta ===
+=== Place / Location and Local Business Meta | WPSSO Add-on ===
 Plugin Name: WPSSO Place / Location and Local Business Meta
 Plugin Slug: wpsso-plm
 Text Domain: wpsso-plm
@@ -12,7 +12,7 @@ Requires At Least: 3.8
 Tested Up To: 5.2.2
 Stable Tag: 4.2.0
 
-WPSSO Core add-on provides Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
+Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
 == Description ==
 

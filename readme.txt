@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.2.0-rc.1 (2019/08/01)**
+**Version 4.2.0 (2019/08/02)**
 
 * **New Features**
 	* None.
@@ -133,37 +133,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 
-**Version 4.0.1 (2019/07/14)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed an incorrect 'og:type' variable definition in WpssoPlmFilters::filter_og_seed().
-* **Developer Notes**
-	* None.
-
-**Version 4.0.0 (2019/06/24)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Renamed "Pro" distribution to "Premium".
-	* Renamed "Free" distribution to "Standard".
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the 'gpl' library sub-folder to 'std'.
-	* Maintenance release for WPSSO Core v5.0.0.
-
 == Upgrade Notice ==
 
-= 4.2.0-rc.1 =
+= 4.2.0 =
 
-(2019/08/01) Renamed the "post.php" library file to "post-edit.php" for WPSSO Core v5.4.0.
-
-= 4.1.0 =
-
-(2019/07/18) Optimized the "Open Days / Hours" and "Closes Mid-Day" options with jQuery to load the selects as needed. Fixed automatic unhiding of business / restaurant options when loading the Place / Location settings page.
+(2019/08/02) Renamed the "post.php" library file to "post-edit.php" for WPSSO Core v5.4.0.
 

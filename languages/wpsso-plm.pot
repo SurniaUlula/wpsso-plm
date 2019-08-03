@@ -617,8 +617,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on provides Pinterest Place, Facebook / Open Graph Location, "
-"Schema Local Business and Local SEO meta tags."
+"Facebook / Open Graph Location, Pinterest Place, Schema Local Business and "
+"Local SEO meta tags."
 msgstr ""
 
 #. Author of the plugin/theme

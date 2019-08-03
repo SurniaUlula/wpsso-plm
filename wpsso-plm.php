@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on provides Pinterest Place, Facebook / Open Graph Location, Schema Local Business and Local SEO meta tags.
+ * Description: Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
  * Version: 4.2.0

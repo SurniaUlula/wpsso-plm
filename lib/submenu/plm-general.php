@@ -96,11 +96,11 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 						foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $day => $day_label ) {
 
-							$day_opt_prefix = 'plm_place_day_' . $day;
+							$day_opt_pre = 'plm_place_day_' . $day;
 
-							$this->form->defaults[ $day_opt_prefix . '_' . $id ]       = '0';
-							$this->form->defaults[ $day_opt_prefix . '_open_' . $id ]  = '09:00';
-							$this->form->defaults[ $day_opt_prefix . '_close_' . $id ] = '17:00';
+							$this->form->defaults[ $day_opt_pre . '_' . $id ]       = '0';
+							$this->form->defaults[ $day_opt_pre . '_open_' . $id ]  = '09:00';
+							$this->form->defaults[ $day_opt_pre . '_close_' . $id ] = '17:00';
 						}
 
 						$tr_hide_place_html = '<!-- place id ' . $id . ' -->' . 
@@ -200,7 +200,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 						foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $day => $day_label ) {
 
-							$day_opt_prefix   = 'plm_place_day_' . $day;
+							$day_opt_pre   = 'plm_place_day_' . $day;
 							$day_label_transl = _x( $day_label, 'option value', 'wpsso' );
 
 							if ( $row_number === 1 ) {
@@ -210,11 +210,11 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 								$th_cell_html = $tr_hide_place_html . '<th></th>';
 							}
 		
-							$table_rows[ $day_opt_prefix . '_' . $id ] = $th_cell_html . 
-							'<td class="weekday">' . $this->form->get_checkbox( $day_opt_prefix . '_' . $id ) . ' ' . $day_label_transl . '</td>' . 
+							$table_rows[ $day_opt_pre . '_' . $id ] = $th_cell_html . 
+							'<td class="weekday">' . $this->form->get_checkbox( $day_opt_pre . '_' . $id ) . ' ' . $day_label_transl . '</td>' . 
 							'<td>' .
-							__( 'Opens at', 'wpsso-plm' ) . ' ' . $this->form->get_select_time( $day_opt_prefix . '_open_' . $id ) .
-							__( 'and closes at', 'wpsso-plm' ) . ' ' . $this->form->get_select_time( $day_opt_prefix . '_close_' . $id ) .
+							__( 'Opens at', 'wpsso-plm' ) . ' ' . $this->form->get_select_time( $day_opt_pre . '_open_' . $id ) .
+							__( 'and closes at', 'wpsso-plm' ) . ' ' . $this->form->get_select_time( $day_opt_pre . '_close_' . $id ) .
 							'</td>';
 
 							$row_number++;

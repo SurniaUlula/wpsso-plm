@@ -167,11 +167,11 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				/**
 				 * Get the list of non-localized option names.
 				 */
-				foreach ( SucomUtil::preg_grep_keys( '/^(plm_place_.*_)' . $place_id . '(#.*)?$/', $wpsso->options, false, '$1' ) as $opt_prefix => $value ) {
+				foreach ( SucomUtil::preg_grep_keys( '/^(plm_place_.*_)' . $place_id . '(#.*)?$/', $wpsso->options, false, '$1' ) as $opt_pre => $value ) {
 
-					$opt_key = rtrim( $opt_prefix, '_' );
+					$opt_key = rtrim( $opt_pre, '_' );
 
-					$place_opts[ $opt_key ] = SucomUtil::get_key_value( $opt_prefix . $place_id, $wpsso->options, $mixed );
+					$place_opts[ $opt_key ] = SucomUtil::get_key_value( $opt_pre . $place_id, $wpsso->options, $mixed );
 				}
 
 				if ( $wpsso->debug->enabled ) {

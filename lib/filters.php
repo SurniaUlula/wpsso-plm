@@ -192,13 +192,13 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( isset( $place_opts[ 'plm_place_latitude' ] ) && $place_opts[ 'plm_place_latitude' ] !== '' && 
 				isset( $place_opts[ 'plm_place_longitude' ] ) && $place_opts[ 'plm_place_longitude' ] !== '' ) {
 
-				foreach( array( 'place:location', 'og' ) as $mt_prefix ) {
+				foreach( array( 'place:location', 'og' ) as $mt_pre ) {
 
-					$mt_og[ $mt_prefix . ':latitude' ]  = $place_opts[ 'plm_place_latitude' ];
-					$mt_og[ $mt_prefix . ':longitude' ] = $place_opts[ 'plm_place_longitude' ];
+					$mt_og[ $mt_pre . ':latitude' ]  = $place_opts[ 'plm_place_latitude' ];
+					$mt_og[ $mt_pre . ':longitude' ] = $place_opts[ 'plm_place_longitude' ];
 
 					if ( ! empty( $place_opts[ 'plm_altitude' ] ) ) {
-						$mt_og[ $mt_prefix . ':altitude' ] = $place_opts[ 'plm_place_altitude' ];
+						$mt_og[ $mt_pre . ':altitude' ] = $place_opts[ 'plm_place_altitude' ];
 					}
 				}
 			}

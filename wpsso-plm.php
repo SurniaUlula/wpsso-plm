@@ -13,7 +13,7 @@
  * Description: Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
- * Version: 4.2.1
+ * Version: 4.2.2-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -174,10 +174,6 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			}
 
 			$this->p->avail[ 'p_ext' ][ 'plm' ] = true;		// Signal that this extension / add-on is available.
-
-			if ( is_admin() ) {
-				$this->p->avail[ 'admin' ][ 'post-edit' ] = true;
-			}
 		}
 
 		public function wpsso_init_objects() {

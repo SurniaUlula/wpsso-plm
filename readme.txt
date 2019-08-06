@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.2.2-dev.1 (2019/08/05)**
+**Version 4.2.2-dev.2 (2019/08/05)**
 
 * **New Features**
 	* None.
@@ -135,7 +135,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.2.2-dev.1 =
+= 4.2.2-dev.2 =
 
 (2019/08/05) Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 

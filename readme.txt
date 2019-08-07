@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.2.2-rc.1 (2019/08/07)**
+**Version 4.2.2 (2019/08/07)**
 
 * **New Features**
 	* None.
@@ -122,24 +122,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 
-**Version 4.2.1 (2019/08/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed missing admin library loader definition for 'post-edit'.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
-= 4.2.2-rc.1 =
+= 4.2.2 =
 
 (2019/08/07) Minor update for "fr_FR" translations. Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
-
-= 4.2.1 =
-
-(2019/08/04) Fixed missing admin library loader definition for 'post-edit'.
 

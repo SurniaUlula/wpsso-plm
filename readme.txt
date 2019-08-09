@@ -111,6 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.2.3-b.2 (2019/08/09)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Changed the "required" input field CSS class name to "value_req".
+
 **Version 4.2.2 (2019/08/07)**
 
 * **New Features**
@@ -123,6 +134,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 
 == Upgrade Notice ==
+
+= 4.2.3-b.2 =
+
+(2019/08/09) Changed the "required" input field CSS class name to "value_req".
 
 = 4.2.2 =
 

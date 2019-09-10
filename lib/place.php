@@ -38,8 +38,8 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 		}
 
 		/**
-		 * Return an associative array of organization IDs and names.
-		 * Optionally add 'none', 'new', and 'custom' at the top of the array.
+		 * Return an associative array of organization IDs and names. Optionally add 'none', 'new', and 'custom' at the top
+		 * of the array.
 		 */
 		public static function get_names( $schema_type = '', $add_none = false, $add_new = false, $add_custom = false ) {
 
@@ -111,8 +111,8 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 		}
 
 		/**
-		 * Get a specific place id. Returns an array of localized values.
-		 * If $place_id is 'custom' then $mixed must be a $mod array.
+		 * Get a specific place id. Returns an array of localized values. If $place_id is 'custom' then $mixed must be a
+		 * $mod array.
 		 *
 		 * $place_id = 'custom' | place ID.
 		 * $mixed    = 'default' | 'current' | post ID | $mod array.

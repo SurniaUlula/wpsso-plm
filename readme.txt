@@ -111,6 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.2.4-dev.1 (2019/09/19)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed the "delete this place" checkbox to be unchecked after deleting the default "New Place".
+* **Developer Notes**
+	* None.
+
 **Version 4.2.3 (2019/08/10)**
 
 * **New Features**
@@ -122,18 +133,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Changed the "required" input field CSS class name to "value_req".
 
-**Version 4.2.2 (2019/08/07)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor update for "fr_FR" translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
-
 == Upgrade Notice ==
+
+= 4.2.4-dev.1 =
+
+(2019/09/19) Fixed the "delete this place" checkbox to be unchecked after deleting the default "New Place".
 
 = 4.2.3 =
 

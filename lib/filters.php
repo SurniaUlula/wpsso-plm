@@ -209,7 +209,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $weekday => $label ) {
 
-				if ( ! empty( $place_opts[ 'plm_place_day_' . $weekday] ) ) {
+				if ( ! empty( $place_opts[ 'plm_place_day_' . $weekday ] ) ) {
 
 					foreach ( array( 'open', 'close' ) as $hour ) {
 
@@ -585,7 +585,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					/**
 					 * Remove the place, including all localized keys.
 					 */
-					$opts = SucomUtil::preg_grep_keys( '/^plm_place_.*_' . $place_id . '(#.*)?$/', $opts, true );	// $invert is true.
+					$opts = SucomUtil::preg_grep_keys( '/^plm_place_.*_' . $place_id . '(#.*)?$/', $opts, $invert = true );
 
 					continue;	// Check the next place.
 				}
@@ -599,15 +599,15 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 				$opts[ 'plm_place_name_' . $place_id ] = $name;
 
-				if ( ! empty( $opts[ 'plm_place_img_id_' . $place_id] ) ) {	// Image id 0 is not valid.
+				if ( ! empty( $opts[ 'plm_place_img_id_' . $place_id ] ) ) {	// Image id 0 is not valid.
 
 					/**
 					 * Remove the image url options if we have an image id.
 					 */
 					unset(
-						$opts[ 'plm_place_img_url_' . $place_id],
-						$opts[ 'plm_place_img_url:width_' . $place_id],
-						$opts[ 'plm_place_img_url:height_' . $place_id]
+						$opts[ 'plm_place_img_url_' . $place_id ],
+						$opts[ 'plm_place_img_url:width_' . $place_id ],
+						$opts[ 'plm_place_img_url:height_' . $place_id ]
 					);
 
 					/**
@@ -619,6 +619,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					}
 				}
 			}
+
+			$opts = SucomUtil::preg_grep_keys( '/^plm_place_delete_/', $opts, $invert = true );	// Just in case.
 
 			return $opts;
 		}

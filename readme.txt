@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.2.4-rc.1 (2019/09/22)**
+**Version 4.2.4 (2019/09/22)**
 
 * **New Features**
 	* None.
@@ -122,24 +122,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 
-**Version 4.2.3 (2019/08/10)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Changed the "required" input field CSS class name to "value_req".
-
 == Upgrade Notice ==
 
-= 4.2.4-rc.1 =
+= 4.2.4 =
 
 (2019/09/22) Fixed the "delete this place" checkbox to be unchecked after deleting the default "New Place".
-
-= 4.2.3 =
-
-(2019/08/10) Changed the "required" input field CSS class name to "value_req".
 

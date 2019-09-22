@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.2.4-b.1 (2019/09/22)**
+**Version 4.2.4-rc.1 (2019/09/22)**
 
 * **New Features**
 	* None.
@@ -135,7 +135,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.2.4-b.1 =
+= 4.2.4-rc.1 =
 
 (2019/09/22) Fixed the "delete this place" checkbox to be unchecked after deleting the default "New Place".
 

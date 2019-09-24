@@ -436,25 +436,34 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			return $action_data;
 		}
 
-		public function filter_get_place_options( $opts, $mod, $place_id ) {
+		public function filter_get_place_options( $place_opts, $mod, $place_id ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 
+			if ( false !== $place_opts ) {	// First come, first served.
+
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'exiting early: place_opts array already defined' );
+				}
+
+				return $place_opts;
+			}
+
 			/**
 			 * $place_id can be 'none', 'custom', or a place ID number.
 			 */
-			if ( false === $opts && ( $place_id === 'custom' || is_numeric( $place_id ) ) ) {	// Allow for place ID 0.
+			if ( $place_id === 'custom' || is_numeric( $place_id ) ) {	// Allow for place ID 0.
 
-				$place_opts = WpssoPlmPlace::get_id( $place_id, $mod );
+				$plm_place_opts = WpssoPlmPlace::get_id( $place_id, $mod );
 
-				if ( is_array( $place_opts ) ) {	// Just in case.
-					return SucomUtil::preg_grep_keys( '/^plm_place_/', $place_opts, false, 'place_' );	// Rename plm_place to place.
+				if ( is_array( $plm_place_opts ) ) {	// Just in case.
+					return SucomUtil::preg_grep_keys( '/^plm_place_/', $plm_place_opts, false, 'place_' );	// Rename plm_place to place.
 				}
 			}
 
-			return $opts;
+			return $place_opts;
 		}
 
 		public function filter_get_event_location_id( $place_id, array $mod, $event_id ) {

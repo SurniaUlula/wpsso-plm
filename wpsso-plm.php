@@ -13,7 +13,7 @@
  * Description: Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
  * Requires At Least: 3.9
  * Tested Up To: 5.2.3
- * Version: 4.2.4
+ * Version: 4.3.0-dev.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *

@@ -111,6 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.3.0-dev.4 (2019/09/25)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Removed the deprecated 'wpsso_get_event_location_id' filter since selecting a Schema Place for the post / page forces the Schema type to a place.
+
 **Version 4.2.4 (2019/09/22)**
 
 * **New Features**
@@ -123,6 +134,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 4.3.0-dev.4 =
+
+(2019/09/25) Removed the deprecated 'wpsso_get_event_location_id' filter.
 
 = 4.2.4 =
 

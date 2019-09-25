@@ -34,7 +34,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				'json_array_schema_type_ids'                 => 2,
 				'json_prop_https_schema_org_potentialaction' => 5,
 				'get_place_options'                          => 3,
-				'get_event_location_id'                      => 3,
 				'rename_options_keys'                        => 1,
 				'rename_md_options_keys'                     => 1,
 			) );
@@ -464,36 +463,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			return $place_opts;
-		}
-
-		public function filter_get_event_location_id( $place_id, array $mod, $event_id ) {
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-
-			$place_opts = WpssoPlmPlace::has_place( $mod );	// Returns false or place array.
-
-			if ( empty( $place_opts ) ) {
-
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'exiting early: no place options found' );
-				}
-
-				return $place_id;	// Stop here.
-			}
-
-			if ( isset( $place_opts[ 'plm_place_id' ] ) && $place_opts[ 'plm_place_id' ] !== 'none' ) {	// Allow for place ID 0.
-
-				$place_id = $place_opts[ 'plm_place_id' ];
-
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'returning place id ' . $place_id . ' ' .
-						( false !== $event_id ? 'for event id ' . $event_id : '(event id is false)' ) );
-				}
-			}
-
-			return $place_id; 
 		}
 
 		/**

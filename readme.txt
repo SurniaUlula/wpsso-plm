@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.3.0-b.1 (2019/09/26)**
+**Version 4.3.0-rc.1 (2019/09/26)**
 
 * **New Features**
 	* None.
@@ -135,7 +135,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.3.0-b.1 =
+= 4.3.0-rc.1 =
 
 (2019/09/26) Removed the deprecated 'wpsso_get_event_location_id' filter since selecting a Schema Place in the Document SSO metabox forces the Schema type to a place.
 

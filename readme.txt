@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.3.0-rc.1 (2019/09/26)**
+**Version 4.3.0 (2019/09/26)**
 
 * **New Features**
 	* None.
@@ -122,24 +122,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Removed the deprecated 'wpsso_get_event_location_id' filter since selecting a Schema Place in the Document SSO metabox forces the Schema type to a place.
 
-**Version 4.2.4 (2019/09/22)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed the "delete this place" checkbox to be unchecked after deleting the default "New Place".
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
-= 4.3.0-rc.1 =
+= 4.3.0 =
 
 (2019/09/26) Removed the deprecated 'wpsso_get_event_location_id' filter since selecting a Schema Place in the Document SSO metabox forces the Schema type to a place.
-
-= 4.2.4 =
-
-(2019/09/22) Fixed the "delete this place" checkbox to be unchecked after deleting the default "New Place".
 

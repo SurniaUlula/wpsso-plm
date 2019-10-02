@@ -111,6 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.3.1-dev.3 (2019/10/02)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Maintenance release for WPSSO Core v6.6.1.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+
 **Version 4.3.0 (2019/09/26)**
 
 * **New Features**
@@ -123,6 +134,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Removed the deprecated 'wpsso_get_event_location_id' filter since selecting a Schema Place in the Document SSO metabox forces the Schema type to a place.
 
 == Upgrade Notice ==
+
+= 4.3.1-dev.3 =
+
+(2019/10/02) Maintenance release for WPSSO Core v6.6.1.
 
 = 4.3.0 =
 

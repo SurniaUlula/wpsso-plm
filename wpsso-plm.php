@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
  * Requires At Least: 3.9
- * Tested Up To: 5.2.3
+ * Tested Up To: 5.2.4
  * Version: 4.3.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]

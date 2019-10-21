@@ -111,6 +111,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.3.2-dev.2 (2019/10/21)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fix option label column width under the Document SSO &gt; Schema Place tab.
+* **Developer Notes**
+	* Update method arguments for SucomForm::get_select() in WPSSO Core v6.9.0.
+
 **Version 4.3.1 (2019/10/04)**
 
 * **New Features**
@@ -123,6 +134,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 
 == Upgrade Notice ==
+
+= 4.3.2-dev.2 =
+
+(2019/10/21) Fix option label column width under the Document SSO &gt; Schema Place tab.
 
 = 4.3.1 =
 

@@ -44,7 +44,7 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 			$table_rows[] = '<td colspan="3">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssoplm' ) ) . '</td>';
 
 			$table_rows[ 'plm_place_id' ] = '' . 
-			$form->get_th_html( _x( 'Select a Place', 'option label', 'wpsso-plm' ), 'medium', 'post-plm_place_id' ) . 
+			$form->get_th_html( _x( 'Select a Place', 'option label', 'wpsso-plm' ), 'medium', 'meta-plm_place_id' ) . 
 			'<td class="blank" colspan="2">' . $form->get_no_select( 'plm_place_id', $place_names_select, 'long_name', '', true ) . '</td>';
 
 			$table_rows[ 'plm_place_schema_type' ] = '' . 

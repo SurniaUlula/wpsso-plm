@@ -47,7 +47,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					'post_custom_meta_tabs'  => 3,
 					'messages_info'          => 2,
 					'messages_tooltip'       => 2,
-					'messages_tooltip_post'  => 2,
+					'messages_tooltip_meta'  => 2,
 					'form_cache_place_names' => 1,
 				), $prio = 1000 );
 
@@ -749,11 +749,9 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					$text .= '<p>';
 
-					$text .= __( 'You may select a place, or enter custom place information, to further describe the content subject.', 'wpsso-plm' );
+					$text .= __( 'You may select a place or enter custom place information to further describe the content subject.', 'wpsso-plm' ) . ' ';
 
-					$text .= '</p><p>';
-
-					$text .= sprintf( __( 'Please make sure the content subject is about a single, specific place or location - for example, <a href="%s">The Eiffel Tower</a>.', 'wpsso-plm' ), __( 'https://en.wikipedia.org/wiki/Eiffel_Tower', 'wpsso-plm' ) );
+					$text .= sprintf( __( 'Please make sure the content subject is about a single specific place or location - for example, <a href="%s">The Eiffel Tower</a>.', 'wpsso-plm' ), __( 'https://en.wikipedia.org/wiki/Eiffel_Tower', 'wpsso-plm' ) );
 
 					$text .= '</p><p>';
 
@@ -985,19 +983,19 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			return $text;
 		}
 
-		public function filter_messages_tooltip_post( $text, $msg_key ) {
+		public function filter_messages_tooltip_meta( $text, $msg_key ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 
-			if ( strpos( $msg_key, 'tooltip-post-plm_' ) !== 0 ) {
+			if ( strpos( $msg_key, 'tooltip-meta-plm_' ) !== 0 ) {
 				return $text;
 			}
 
 			switch ( $msg_key ) {
 
-				case 'tooltip-post-plm_place_id':
+				case 'tooltip-meta-plm_place_id':
 
 					$text = __( 'Select an existing place or enter a custom place below.', 'wpsso-plm' );
 

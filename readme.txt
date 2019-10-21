@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.3.2-dev.2 (2019/10/21)**
+**Version 4.3.2-b.1 (2019/10/21)**
 
 * **New Features**
 	* None.
@@ -136,7 +136,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.3.2-dev.2 =
+= 4.3.2-b.1 =
 
 (2019/10/21) Fixed option label column width and show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
 

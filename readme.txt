@@ -118,7 +118,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Improvements**
 	* None.
 * **Bugfixes**
-	* Fix option label column width under the Document SSO &gt; Schema Place tab.
+	* Fixed option label column width under the Document SSO &gt; Schema Place tab.
+	* Fixed show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
 * **Developer Notes**
 	* Update method arguments for SucomForm::get_select() in WPSSO Core v6.9.0.
 
@@ -137,7 +138,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.3.2-dev.2 =
 
-(2019/10/21) Fix option label column width under the Document SSO &gt; Schema Place tab.
+(2019/10/21) Fixed option label column width and show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
 
 = 4.3.1 =
 

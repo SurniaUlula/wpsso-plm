@@ -1,4 +1,4 @@
-<h1>Place / Location and Local Business Meta | WPSSO Add-on</h1>
+<h1>Place / Location and Local Business Meta</h1><h3>WPSSO Add-on</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Place / Location and Local Business Meta</td></tr>

@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.3.2-rc.1 (2019/10/21)**
+**Version 4.3.2 (2019/10/22)**
 
 * **New Features**
 	* None.
@@ -123,24 +123,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Update method arguments for SucomForm::get_select() in WPSSO Core v6.9.0.
 
-**Version 4.3.1 (2019/10/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Maintenance release for WPSSO Core v6.7.0.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
-= 4.3.2-rc.1 =
+= 4.3.2 =
 
-(2019/10/21) Fixed option label column width and show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
-
-= 4.3.1 =
-
-(2019/10/04) Maintenance release for WPSSO Core v6.7.0.
+(2019/10/22) Fixed option label column width and show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
 

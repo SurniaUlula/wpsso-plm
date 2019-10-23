@@ -54,11 +54,11 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 
 			$table_rows[ 'plm_place_name_alt' ] = '' . 
 			$form->get_th_html( _x( 'Place Alternate Name', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_name_alt' ) .  
-			'<td class="blank" colspan="2">' . $form->get_no_input_value( '', 'long_name' ) . '</td>';
+			'<td class="blank" colspan="2">' . $form->get_no_input_value( '', $css_class = 'long_name' ) . '</td>';
 
 			$table_rows[ 'plm_place_street_address' ] = '' . 
 			$form->get_th_html( _x( 'Street Address', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_street_address' ) .  
-			'<td class="blank" colspan="2">' . $form->get_no_input_value( '', 'wide' ) . '</td>';
+			'<td class="blank" colspan="2">' . $form->get_no_input_value( '', $css_class = 'wide' ) . '</td>';
 
 			$table_rows[ 'plm_place_po_box_number' ] = '' . 
 			$form->get_th_html( _x( 'P.O. Box Number', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_po_box_number' ) .  

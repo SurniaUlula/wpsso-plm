@@ -236,7 +236,8 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						__( 'inclusively', 'wpsso-plm' ) .
 						'</td>';
 
-						$table_rows[ 'subsection_local_business_' . $id ] = $tr_hide_local_business_html . '<th></th>' . 
+						$table_rows[ 'subsection_local_business_' . $id ] = $tr_hide_local_business_html .
+						'<th></th>' . 
 						'<td class="subsection" colspan="2"><h5>' . _x( 'Local Business', 'metabox title', 'wpsso-plm' ) . '</h5></td>';
 
 						$table_rows[ 'plm_place_service_radius_' . $id ] = $tr_hide_local_business_html .

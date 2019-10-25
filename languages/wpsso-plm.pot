@@ -1,9 +1,8 @@
-# Copyright (C) 2019 WPSSO Place / Location and Local Business Meta
-# This file is distributed under the same license as the WPSSO Place / Location and Local Business Meta package.
+# Copyright (C) 2019 WPSSO Place / Location and Local SEO Meta
+# This file is distributed under the same license as the WPSSO Place / Location and Local SEO Meta package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place / Location and Local Business Meta 4.4.0-"
-"rc.1\n"
+"Project-Id-Version: WPSSO Place / Location and Local SEO Meta 4.4.0-rc.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -460,77 +459,77 @@ msgstr ""
 
 #: lib/gettext-pro.php:32 lib/gettext-pro.php:68
 #: lib/pro/admin/post-edit.php:185 lib/pro/admin/post-edit.php:338
-#: lib/std/admin/post-edit.php:142 lib/submenu/plm-general.php:240
+#: lib/std/admin/post-edit.php:142 lib/submenu/plm-general.php:241
 msgctxt "metabox title"
 msgid "Local Business"
 msgstr ""
 
 #: lib/gettext-pro.php:33 lib/gettext-pro.php:69
 #: lib/pro/admin/post-edit.php:188 lib/pro/admin/post-edit.php:341
-#: lib/std/admin/post-edit.php:145 lib/submenu/plm-general.php:243
+#: lib/std/admin/post-edit.php:145 lib/submenu/plm-general.php:244
 msgctxt "option label"
 msgid "Service Radius"
 msgstr ""
 
 #: lib/gettext-pro.php:34 lib/gettext-pro.php:70
 #: lib/pro/admin/post-edit.php:190 lib/pro/admin/post-edit.php:343
-#: lib/std/admin/post-edit.php:147 lib/submenu/plm-general.php:245
+#: lib/std/admin/post-edit.php:147 lib/submenu/plm-general.php:246
 msgctxt "option comment"
 msgid "meters from location"
 msgstr ""
 
 #: lib/gettext-pro.php:35 lib/gettext-pro.php:71
 #: lib/pro/admin/post-edit.php:193 lib/pro/admin/post-edit.php:346
-#: lib/std/admin/post-edit.php:150 lib/submenu/plm-general.php:248
+#: lib/std/admin/post-edit.php:150 lib/submenu/plm-general.php:249
 msgctxt "option label"
 msgid "Currencies Accepted"
 msgstr ""
 
 #: lib/gettext-pro.php:36 lib/gettext-pro.php:72
 #: lib/pro/admin/post-edit.php:194 lib/pro/admin/post-edit.php:347
-#: lib/std/admin/post-edit.php:151 lib/submenu/plm-general.php:249
+#: lib/std/admin/post-edit.php:151 lib/submenu/plm-general.php:250
 msgctxt "option label"
 msgid "Payment Accepted"
 msgstr ""
 
 #: lib/gettext-pro.php:37 lib/gettext-pro.php:73
 #: lib/pro/admin/post-edit.php:195 lib/pro/admin/post-edit.php:348
-#: lib/std/admin/post-edit.php:152 lib/submenu/plm-general.php:250
+#: lib/std/admin/post-edit.php:152 lib/submenu/plm-general.php:251
 msgctxt "option label"
 msgid "Price Range"
 msgstr ""
 
 #: lib/gettext-pro.php:38 lib/gettext-pro.php:74
 #: lib/pro/admin/post-edit.php:205 lib/pro/admin/post-edit.php:358
-#: lib/std/admin/post-edit.php:162 lib/submenu/plm-general.php:259
+#: lib/std/admin/post-edit.php:162 lib/submenu/plm-general.php:260
 msgctxt "metabox title"
 msgid "Food Establishment"
 msgstr ""
 
 #: lib/gettext-pro.php:39 lib/gettext-pro.php:75
 #: lib/pro/admin/post-edit.php:208 lib/pro/admin/post-edit.php:361
-#: lib/std/admin/post-edit.php:165 lib/submenu/plm-general.php:262
+#: lib/std/admin/post-edit.php:165 lib/submenu/plm-general.php:263
 msgctxt "option label"
 msgid "Accepts Reservations"
 msgstr ""
 
 #: lib/gettext-pro.php:40 lib/gettext-pro.php:76
 #: lib/pro/admin/post-edit.php:212 lib/pro/admin/post-edit.php:365
-#: lib/std/admin/post-edit.php:169 lib/submenu/plm-general.php:266
+#: lib/std/admin/post-edit.php:169 lib/submenu/plm-general.php:267
 msgctxt "option label"
 msgid "Serves Cuisine"
 msgstr ""
 
 #: lib/gettext-pro.php:41 lib/gettext-pro.php:77
 #: lib/pro/admin/post-edit.php:216 lib/pro/admin/post-edit.php:369
-#: lib/std/admin/post-edit.php:173 lib/submenu/plm-general.php:270
+#: lib/std/admin/post-edit.php:173 lib/submenu/plm-general.php:271
 msgctxt "option label"
 msgid "Food Menu URL"
 msgstr ""
 
 #: lib/gettext-pro.php:42 lib/gettext-pro.php:78
 #: lib/pro/admin/post-edit.php:220 lib/pro/admin/post-edit.php:373
-#: lib/std/admin/post-edit.php:177 lib/submenu/plm-general.php:274
+#: lib/std/admin/post-edit.php:177 lib/submenu/plm-general.php:275
 msgctxt "option label"
 msgid "Order Action URL(s)"
 msgstr ""
@@ -580,12 +579,12 @@ msgctxt "option label"
 msgid "or Place Image URL"
 msgstr ""
 
-#: lib/submenu/plm-general.php:284
+#: lib/submenu/plm-general.php:285
 msgctxt "option label"
 msgid "Default Country"
 msgstr ""
 
-#: lib/submenu/plm-general.php:299
+#: lib/submenu/plm-general.php:300
 msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr ""
@@ -603,7 +602,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Place / Location and Local Business Meta"
+msgid "WPSSO Place / Location and Local SEO Meta"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

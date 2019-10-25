@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '4.3.2',	// Plugin version.
+					'version'     => '4.4.0-b.1',	// Plugin version.
 					'opt_version' => '23',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place / Location and Local Business Meta',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.9.0',
+						'min_version' => '6.10.0-b.1',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -62,6 +62,22 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_add_to_post'                => 0,
 					'plm_add_to_page'                => 1,
 					'plm_add_to_attachment'          => 0,
+					
+					/**
+					 * Link itemprop.
+					 */
+					'add_link_itemprop_hasmenu'       => 1,
+					'add_link_itemprop_servescuisine' => 1,
+
+					/**
+					 * Meta itemprop.
+					 */
+					'add_meta_itemprop_address'             => 1,
+					'add_meta_itemprop_telephone'           => 1,
+					'add_meta_itemprop_currenciesaccepted'  => 1,
+					'add_meta_itemprop_paymentaccepted'     => 1,
+					'add_meta_itemprop_pricerange'          => 1,
+					'add_meta_itemprop_acceptsreservations' => 1,
 				),
 			),
 			'form' => array(

@@ -333,9 +333,9 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				}
 
 				foreach ( array(
-					'plm_place_currencies_accepted' => 'currenciesAccepted',
-					'plm_place_payment_accepted'    => 'paymentAccepted',
-					'plm_place_price_range'         => 'priceRange',
+					'plm_place_currencies_accepted' => 'currenciesaccepted',
+					'plm_place_payment_accepted'    => 'paymentaccepted',
+					'plm_place_price_range'         => 'pricerange',
 				) as $opt_key => $mt_name ) {
 
 					$mt_schema[ $mt_name ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
@@ -356,8 +356,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 				foreach ( array(
 					'plm_place_accept_res' => 'acceptsreservations',
-					'plm_place_menu_url'   => 'hasMenu',
-					'plm_place_cuisine'    => 'servesCuisine',
+					'plm_place_menu_url'   => 'hasmenu',
+					'plm_place_cuisine'    => 'servescuisine',
 				) as $opt_key => $mt_name ) {
 
 					if ( $opt_key === 'plm_place_accept_res' ) {

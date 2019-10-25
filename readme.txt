@@ -111,6 +111,25 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.4.0-b.1 (2019/10/25)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM:
+		* 'add_link_itemprop_hasmenu'
+		* 'add_link_itemprop_servescuisine'
+		* 'add_meta_itemprop_address'
+		* 'add_meta_itemprop_telephone'
+		* 'add_meta_itemprop_currenciesaccepted'
+		* 'add_meta_itemprop_paymentaccepted'
+		* 'add_meta_itemprop_pricerange'
+		* 'add_meta_itemprop_acceptsreservations'
+
 **Version 4.3.2 (2019/10/22)**
 
 * **New Features**
@@ -124,6 +143,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Update method arguments for SucomForm::get_select() in WPSSO Core v6.9.0.
 
 == Upgrade Notice ==
+
+= 4.4.0-b.1 =
+
+(2019/10/25) Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM.
 
 = 4.3.2 =
 

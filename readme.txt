@@ -1,5 +1,5 @@
-=== Place / Location and Local Business Meta | WPSSO Add-on ===
-Plugin Name: WPSSO Place / Location and Local Business Meta
+=== Place / Location and Local SEO Meta | WPSSO Add-on ===
+Plugin Name: WPSSO Place / Location and Local SEO Meta
 Plugin Slug: wpsso-plm
 Text Domain: wpsso-plm
 Domain Path: /languages
@@ -22,7 +22,7 @@ Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local
 
 Include Pinterest Rich Pin *Place*, Facebook / Open Graph *Location*, and Google *Local Business / Local SEO* meta tags in your webpages.
 
-**The WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) add-on can be used in two different ways:**
+**The WPSSO Place / Location and Local SEO Meta (aka WPSSO PLM) add-on can be used in two different ways:**
 
 * To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).
 
@@ -77,7 +77,7 @@ Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-or
 
 <h3>WPSSO Core Plugin Required</h3>
 
-WPSSO Place / Location and Local Business Meta (aka WPSSO PLM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+WPSSO Place / Location and Local SEO Meta (aka WPSSO PLM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 

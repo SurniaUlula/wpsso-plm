@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.0-b.2 (2019/10/25)**
+**Version 4.4.0-b.3 (2019/10/25)**
 
 * **New Features**
 	* None.
@@ -144,7 +144,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.4.0-b.2 =
+= 4.4.0-b.3 =
 
 (2019/10/25) Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM.
 

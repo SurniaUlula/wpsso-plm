@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Place / Location and Local Business Meta 4.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2019-10-25 12:43-0700\n"
-"PO-Revision-Date: 2019-10-25 12:43-0700\n"
+"PO-Revision-Date: 2019-10-25 13:25-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -115,7 +115,7 @@ msgstr "La bibliothèque de média et un ID d'image pour l'image de cette place 
 
 #: lib/filters.php:880 lib/filters.php:892
 msgid "The place image is used in the Schema LocalBusiness markup for the Schema \"location\" property."
-msgstr "L'image de la place est utilisé dans le balisage Schéma LocalBusiness pour la propriété de Schéma \"location\"."
+msgstr "L'image de la place est utilisé dans le balisage de Schéma LocalBusiness pour la propriété de Schéma \"location\"."
 
 #: lib/filters.php:882 lib/filters.php:894
 msgid "The place image is not used when a place is selected for the post, page, or custom post type content &mdash; in this case, the custom and/or featured image is used."

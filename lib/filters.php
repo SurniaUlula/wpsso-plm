@@ -593,7 +593,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					 * on a manual save, not an options upgrade action (ie. when a new add-on is activated).
 					 */
 					if ( ! $doing_upgrade ) {
-						$this->check_location_image_size( $opts, 'plm_place', $place_id );
+						$this->check_location_image_size( $opts, $place_id );
 					}
 				}
 			}
@@ -606,16 +606,11 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		/**
 		 * Get the location image and issue an error if the original image is too small.
 		 */
-		private function check_location_image_size( $opts, $opt_pre, $opt_num = null ) {
+		private function check_location_image_size( $opts, $opt_num = null ) {
 
-			if ( $opt_pre === 'plm' ) {
-				$name_transl = SucomUtil::get_key_value( $opt_pre . '_name_' . $opt_num, $opts, 'current' );
-			} else {
-				return;
-			}
-
+			$opt_img_pre        = 'plm_place_img';
 			$size_name          = $this->p->lca . '-schema';
-			$opt_img_pre        = $opt_pre . '_img';
+			$name_transl        = SucomUtil::get_key_value( 'plm_place_name_' . $opt_num, $opts, 'current' );
 			$context_transl     = sprintf( __( 'saving place "%1$s"', 'wpsso-plm' ), $name_transl );
 			$settings_page_link = $this->p->util->get_admin_url( 'plm-general' );
 

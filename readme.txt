@@ -10,7 +10,7 @@ Tags: local seo, local business, knowledge graph, location, place, address, venu
 Contributors: jsmoriss
 Requires At Least: 3.9
 Tested Up To: 5.3
-Stable Tag: 4.3.2
+Stable Tag: 4.4.0
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
@@ -147,8 +147,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.4.0 =
 
 (2019/10/26) Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM.
-
-= 4.3.2 =
-
-(2019/10/22) Fixed option label column width and show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
 

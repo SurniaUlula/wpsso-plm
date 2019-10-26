@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.0-rc.1 (2019/10/26)**
+**Version 4.4.0 (2019/10/26)**
 
 * **New Features**
 	* None.
@@ -122,13 +122,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM:
 		* 'add_link_itemprop_hasmenu'
-		* 'add_link_itemprop_servescuisine'
 		* 'add_meta_itemprop_address'
 		* 'add_meta_itemprop_telephone'
 		* 'add_meta_itemprop_currenciesaccepted'
 		* 'add_meta_itemprop_paymentaccepted'
 		* 'add_meta_itemprop_pricerange'
 		* 'add_meta_itemprop_acceptsreservations'
+		* 'add_meta_itemprop_servescuisine'
 
 **Version 4.3.2 (2019/10/22)**
 
@@ -144,7 +144,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.4.0-rc.1 =
+= 4.4.0 =
 
 (2019/10/26) Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM.
 

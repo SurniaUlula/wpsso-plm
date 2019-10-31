@@ -141,8 +141,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 
 		public static function get_version( $add_slug = false ) {
 
-			$ext  = 'wpssoplm';
-			$info =& self::$cf[ 'plugin' ][$ext];
+			$info =& self::$cf[ 'plugin' ][ 'wpssoplm' ];
 
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
@@ -153,12 +152,17 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 				return;
 			}
 
+			$info =& self::$cf[ 'plugin' ][ 'wpssoplm' ];
+
+			/**
+			 * Define fixed constants.
+			 */
 			define( 'WPSSOPLM_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOPLM_PLUGINBASE', self::$cf[ 'plugin' ][ 'wpssoplm' ][ 'base' ] );	// wpsso-plm/wpsso-plm.php
+			define( 'WPSSOPLM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-plm/wpsso-plm.php.
 			define( 'WPSSOPLM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOPLM_PLUGINSLUG', self::$cf[ 'plugin' ][ 'wpssoplm' ][ 'slug' ] );	// wpsso-plm
+			define( 'WPSSOPLM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-plm.
 			define( 'WPSSOPLM_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOPLM_VERSION', self::$cf[ 'plugin' ][ 'wpssoplm' ][ 'version' ] );						
+			define( 'WPSSOPLM_VERSION', $info[ 'version' ] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {

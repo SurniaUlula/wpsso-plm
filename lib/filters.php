@@ -49,7 +49,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					'messages_tooltip'       => 2,
 					'messages_tooltip_meta'  => 2,
 					'form_cache_place_names' => 1,
-				), $prio = 1000 );
+				), $prio = 1000 );	// Run after WPSSO Core's own Standard / Premium filters.
 
 				$this->p->util->add_plugin_filters( $this, array( 
 					'status_pro_features' => 4,

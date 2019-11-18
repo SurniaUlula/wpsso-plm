@@ -103,7 +103,7 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 
 					$version = WpssoPlmConfig::$cf[ 'plugin' ][ 'wpssoplm' ][ 'version' ];
 
-					WpssoUtil::save_all_times( 'wpssoplm', $version );
+					WpssoUtil::register_ext_version( 'wpssoplm', $version );
 				}
 			}
 		}

@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.1-dev.2 (TBD)**
+**Version 4.4.1-dev.2 (2019/11/21)**
 
 * **New Features**
 	* None.
@@ -154,6 +154,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Update method arguments for SucomForm->get_select() in WPSSO Core v6.9.0.
 
 == Upgrade Notice ==
+
+= 4.4.1-dev.2 =
+
+(2019/11/21) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
 = 4.4.0 =
 

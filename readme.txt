@@ -120,7 +120,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Updated WpssoPlmRegister->activate_plugin() for the new WpssoUtilReg class in WPSSO Core v6.13.0.
+	* Updated `WpssoPlmRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
 **Version 4.4.0 (2019/10/26)**
 
@@ -129,7 +129,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Improvements**
 	* None.
 * **Bugfixes**
-	* Fixed an incorrect WpssoPlmFilters->check_location_image_size() option prefix argument.
+	* Fixed an incorrect `WpssoPlmFilters->check_location_image_size()` option prefix argument.
 * **Developer Notes**
 	* Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM:
 		* 'add_link_itemprop_hasmenu'
@@ -151,7 +151,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Fixed option label column width under the Document SSO &gt; Schema Place tab.
 	* Fixed show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
 * **Developer Notes**
-	* Update method arguments for SucomForm->get_select() in WPSSO Core v6.9.0.
+	* Update method arguments for `SucomForm->get_select()` in WPSSO Core v6.9.0.
 
 == Upgrade Notice ==
 

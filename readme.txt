@@ -111,7 +111,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.1-dev.3 (2019/11/22)**
+**Version 4.4.1-b.1 (2019/11/23)**
 
 * **New Features**
 	* None.
@@ -155,9 +155,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.4.1-dev.3 =
+= 4.4.1-b.1 =
 
-(2019/11/22) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
+(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
 = 4.4.0 =
 

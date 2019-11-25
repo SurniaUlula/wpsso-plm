@@ -41,9 +41,9 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( is_admin() ) {
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'save_post_options'      => 4,
 					'save_options'           => 4,
 					'option_type'            => 2,
+					'save_post_options'      => 4,
 					'post_custom_meta_tabs'  => 3,
 					'messages_info'          => 2,
 					'messages_tooltip'       => 2,

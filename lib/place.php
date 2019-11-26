@@ -274,7 +274,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				$local_cache[ $mod[ 'name' ] ][ $mod[ 'id' ] ] = array();
 			}
 
-			$md_opts =& $local_cache[ $mod[ 'name' ] ][ $mod[ 'id' ] ];	// Shortcut variable.
+			$md_opts =& $local_cache[ $mod[ 'name' ] ][ $mod[ 'id' ] ];	// Shortcut variable name.
 
 			$md_opts = $mod[ 'obj' ]->get_options( $mod[ 'id' ] );	// Returns empty string if no meta found.
 

@@ -146,7 +146,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_filepath ) { 
+		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOPLM_VERSION' ) ) {	// Define constants only once.
 				return;
@@ -157,15 +157,15 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOPLM_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOPLM_FILEPATH', $plugin_file_path );						
 			define( 'WPSSOPLM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-plm/wpsso-plm.php.
-			define( 'WPSSOPLM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
+			define( 'WPSSOPLM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
 			define( 'WPSSOPLM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-plm.
-			define( 'WPSSOPLM_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOPLM_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOPLM_VERSION', $info[ 'version' ] );						
 		}
 
-		public static function require_libs( $plugin_filepath ) {
+		public static function require_libs( $plugin_file_path ) {
 
 			require_once WPSSOPLM_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOPLM_PLUGINDIR . 'lib/place.php';
@@ -178,11 +178,11 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 
 			if ( false === $ret && ! empty( $filespec ) ) {
 
-				$filepath = WPSSOPLM_PLUGINDIR . 'lib/' . $filespec . '.php';
+				$file_path = WPSSOPLM_PLUGINDIR . 'lib/' . $filespec . '.php';
 
-				if ( file_exists( $filepath ) ) {
+				if ( file_exists( $file_path ) ) {
 
-					require_once $filepath;
+					require_once $file_path;
 
 					if ( empty( $classname ) ) {
 						return SucomUtil::sanitize_classname( 'wpssoplm' . $filespec, $allow_underscore = false );

@@ -86,12 +86,12 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 
 			$table_rows[ 'plm_place_latitude' ] = '' . 
 			$form->get_th_html( _x( 'Place Latitude', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_latitude' ) .  
-			'<td class="blank" colspan="2">' . $form->get_no_input( '', 'value_req' ) . ' ' . 
+			'<td class="blank" colspan="2">' . $form->get_no_input( '', 'is_required' ) . ' ' . 
 			_x( 'decimal degrees', 'option comment', 'wpsso-plm' ) . '</td>';
 
 			$table_rows[ 'plm_place_longitude' ] = '' . 
 			$form->get_th_html( _x( 'Place Longitude', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_longitude' ) .  
-			'<td class="blank" colspan="2">' . $form->get_no_input( '', 'value_req' ) . ' ' . 
+			'<td class="blank" colspan="2">' . $form->get_no_input( '', 'is_required' ) . ' ' . 
 			_x( 'decimal degrees', 'option comment', 'wpsso-plm' ) . '</td>';
 
 			$table_rows[ 'plm_place_altitude' ] = '' . 

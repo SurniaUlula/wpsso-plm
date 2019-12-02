@@ -130,7 +130,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						$this->form->get_th_html( _x( 'Place Name', 'option label', 'wpsso-plm' ), '', 'plm_place_name',
 							array( 'is_locale' => true ) ) .
 						'<td colspan="2">' . $this->form->get_input( SucomUtil::get_key_locale( 'plm_place_name_' . $id,
-							$this->form->options ), 'long_name value_req' ) . '</td>';
+							$this->form->options ), 'long_name is_required' ) . '</td>';
 
 						$table_rows[ 'plm_place_name_alt_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Place Alternate Name', 'option label', 'wpsso-plm' ), '', 'plm_place_name_alt',
@@ -174,12 +174,12 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 						$table_rows[ 'plm_place_latitude_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Place Latitude', 'option label', 'wpsso-plm' ), '', 'plm_place_latitude' ) .  
-						'<td colspan="2">' . $this->form->get_input( 'plm_place_latitude_' . $id, 'value_req' ) . ' ' . 
+						'<td colspan="2">' . $this->form->get_input( 'plm_place_latitude_' . $id, 'is_required' ) . ' ' . 
 						_x( 'decimal degrees', 'option comment', 'wpsso-plm' ) . '</td>';
 		
 						$table_rows[ 'plm_place_longitude_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Place Longitude', 'option label', 'wpsso-plm' ), '', 'plm_place_longitude' ) .  
-						'<td colspan="2">' . $this->form->get_input( 'plm_place_longitude_' . $id, 'value_req' ) . ' ' . 
+						'<td colspan="2">' . $this->form->get_input( 'plm_place_longitude_' . $id, 'is_required' ) . ' ' . 
 						_x( 'decimal degrees', 'option comment', 'wpsso-plm' ) . '</td>';
 		
 						$table_rows[ 'plm_place_altitude_' . $id ] = $tr_hide_place_html . 

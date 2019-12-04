@@ -113,6 +113,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.4.2-dev.1 (2019/12/04)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Renamed the SSO menu item "Place / Location" to "Places / Locations".
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+
 **Version 4.4.1 (2019/11/23)**
 
 * **New Features**
@@ -156,6 +167,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Update method arguments for `SucomForm->get_select()` in WPSSO Core v6.9.0.
 
 == Upgrade Notice ==
+
+= 4.4.2-dev.1 =
+
+(2019/12/04) Renamed the SSO menu item "Place / Location" to "Places / Locations".
 
 = 4.4.1 =
 

@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Place and Location Meta (WPSSO PLM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place / Location and Local Business Meta 4.4.1\n"
+"Project-Id-Version: WPSSO Place / Location and Local Business Meta 4.4.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2019-11-23 11:18-0800\n"
-"PO-Revision-Date: 2019-11-23 11:18-0800\n"
+"POT-Creation-Date: 2019-12-04 09:29-0800\n"
+"PO-Revision-Date: 2019-12-04 09:37-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -51,11 +51,11 @@ msgstr "Sélectionnez une place à modifier. Les informations de place sont util
 
 #: lib/filters.php:786
 msgid "You may optionally choose a different Schema type for this place / location (default is LocalBusiness)."
-msgstr "Vous pouvez également choisir un type de schéma différent pour cette place / position (LocalBusiness par défaut)."
+msgstr "Vous pouvez également choisir un type de schéma différent pour cette place / endroit (LocalBusiness par défaut)."
 
 #: lib/filters.php:792
 msgid "A name for this place / location (required). The place name may appear in forms and in the Schema Place \"name\" property."
-msgstr "Un nom pour cette place / position (requis). Le nom de la place peut apparaître dans des formulaires et dans la propriété de Schéma Place \"nom\"."
+msgstr "Un nom pour cette place / endroit (requis). Le nom de la place peut apparaître dans des formulaires et dans la propriété de Schéma Place \"nom\"."
 
 #: lib/filters.php:798
 msgid "An alternate name for this place. The place alternate name may appear in the Schema Place \"alternateName\" property."
@@ -91,7 +91,7 @@ msgstr "Un nom de pays optionnel pour les balises méta Pinterest Rich Pin / Sch
 
 #: lib/filters.php:846
 msgid "An optional telephone number for this place / location."
-msgstr "Un numéro de téléphone optionnel pour cette place / position."
+msgstr "Un numéro de téléphone optionnel pour cette place / endroit."
 
 #: lib/filters.php:851
 msgid "The numeric decimal degrees latitude for this place (required)."
@@ -131,15 +131,15 @@ msgstr "L'option URL d'image vous permet d'utiliser une image à l'extérieur d'
 
 #: lib/filters.php:895
 msgid "Select the days and hours this place / location is open."
-msgstr "Sélectionnez les jours et heures, que cette place / position est ouverte."
+msgstr "Sélectionnez les jours et heures, que cette place / endroit est ouverte."
 
 #: lib/filters.php:901
 msgid "This place / location closes temporarily mid-day (for example, between 12:00 and 13:00 for lunch)."
-msgstr "Cette place / position ferme temporairement à la mi-journée (par exemple, entre midi et 13h00 pour le diner)."
+msgstr "Cette place / endroit ferme temporairement à la mi-journée (par exemple, entre midi et 13h00 pour le diner)."
 
 #: lib/filters.php:907
 msgid "If this place / location is open seasonally, select the open and close dates of the season."
-msgstr "Si cette place / position est ouverte en saison, sélectionnez les dates d'ouverture et de fermeture de la saison."
+msgstr "Si cette place / endroit est ouverte en saison, sélectionnez les dates d'ouverture et de fermeture de la saison."
 
 #: lib/filters.php:913
 msgid "The geographic area where a service is provided, in meters around the location."
@@ -179,7 +179,7 @@ msgstr "L'ajout WPSSO JSON est requis pour ajouter ces URLs d'action de commande
 
 #: lib/filters.php:963
 msgid "A default country to use when creating a new place / location."
-msgstr "Un pays par défaut à utiliser lors de la création d'une nouvelle place / position."
+msgstr "Un pays par défaut à utiliser lors de la création d'une nouvelle place / endroit."
 
 #: lib/filters.php:972
 msgid "A \"%1$s\" tab can be added to the %2$s metabox on Posts, Pages, and custom post types, allowing you to select or enter place information for the webpage content (ie. street address, GPS coordinates, opening hours, etc.)."
@@ -191,13 +191,13 @@ msgstr "Sélectionnez une place ou complétez une place personnalisée ci-dessou
 
 #: lib/gettext-config.php:6
 msgctxt "lib file description"
-msgid "Place / Location"
-msgstr "Place / position"
+msgid "Places / Locations"
+msgstr "Places / endroits"
 
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid "Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags."
-msgstr "Balises méta Facebook / Open Graph de position, Pinterest place, Schéma d'entreprise et locale SEO."
+msgstr "Balises méta Facebook / Open Graph d'endroit, Pinterest place, Schéma d'entreprise et locale SEO."
 
 #: lib/gettext-config.php:8
 msgctxt "option value"
@@ -414,7 +414,7 @@ msgstr "Rayon de service"
 #: lib/std/admin/post-edit.php:147 lib/submenu/plm-general.php:246
 msgctxt "option comment"
 msgid "meters from location"
-msgstr "mètres de la place / position"
+msgstr "mètres de la place / endroit"
 
 #: lib/gettext-pro.php:35 lib/gettext-pro.php:71
 #: lib/pro/admin/post-edit.php:187 lib/pro/admin/post-edit.php:337
@@ -475,7 +475,7 @@ msgstr "URL(s) d'action de commande"
 #: lib/submenu/plm-general.php:38
 msgctxt "metabox title"
 msgid "Places / Locations and Settings"
-msgstr "Place / position et réglages"
+msgstr "Places / endroits et réglages"
 
 #: lib/submenu/plm-general.php:55
 msgctxt "metabox tab"
@@ -545,7 +545,7 @@ msgstr "https://wpsso.com/extend/plugins/wpsso-plm/"
 
 #. Description of the plugin/theme
 msgid "Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags."
-msgstr "Balises méta Facebook / Open Graph de position, Pinterest place, Schéma d'entreprise et locale SEO."
+msgstr "Balises méta Facebook / Open Graph d'endroit, Pinterest place, Schéma d'entreprise et locale SEO."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"

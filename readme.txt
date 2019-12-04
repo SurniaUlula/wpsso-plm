@@ -69,6 +69,8 @@ Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-or
 
 <h3>WPSSO PLM Premium Features</h3>
 
+The Standard version is designed to satisfy the requirements of most standard WordPress sites / blogs. If your site includes posts / pages about a specific place / location, then you may want the Premium version for those additional features.
+
 * Adds a Schema Place tab in the Document SSO metabox to select an address or enter custom address information for the content.
 
 <h3>Markup Examples</h3>

@@ -113,7 +113,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.2-dev.2 (2019/12/05)**
+**Version 4.4.2-dev.3 (2019/12/06)**
 
 * **New Features**
 	* None.
@@ -168,9 +168,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.4.2-dev.2 =
+= 4.4.2-dev.3 =
 
-(2019/12/05) Renamed the SSO menu item "Place / Location" to "Places / Locations".
+(2019/12/06) Renamed the SSO menu item "Place / Location" to "Places / Locations".
 
 = 4.4.1 =
 

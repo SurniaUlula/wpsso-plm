@@ -11,6 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
+ * Requires PHP: 5.5
  * Requires At Least: 3.9
  * Tested Up To: 5.3
  * Version: 4.4.2-b.1

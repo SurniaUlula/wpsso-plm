@@ -589,13 +589,13 @@ msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr ""
 
-#: wpsso-plm.php:104
+#: wpsso-plm.php:105
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-plm.php:197
+#: wpsso-plm.php:198
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."

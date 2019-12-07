@@ -4,8 +4,9 @@
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Place / Location and Local SEO Meta</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>4.4.1</td></tr>
-<tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.9</td></tr>
-<tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.3</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.5 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>3.9 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>local seo, local business, knowledge graph, location, place, address, venue, restaurant, business hours, telephone, coordinates, meta tags</td></tr>

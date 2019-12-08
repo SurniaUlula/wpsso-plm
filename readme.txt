@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.2-rc.1 (2019/12/07)**
+**Version 4.4.2 (2019/12/07)**
 
 * **New Features**
 	* None.
@@ -127,7 +127,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v3.9.
-	* WPSSO Core v6.15.0-rc.1.
+	* WPSSO Core v6.15.0.
 
 **Version 4.4.1 (2019/11/23)**
 
@@ -173,11 +173,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.4.2-rc.1 =
+= 4.4.2 =
 
 (2019/12/07) Renamed the SSO menu item "Place / Location" to "Places / Locations".
-
-= 4.4.1 =
-
-(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.1.
 

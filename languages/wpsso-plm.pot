@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Place / Location and Local SEO Meta package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place / Location and Local SEO Meta 4.4.2-rc.1\n"
+"Project-Id-Version: WPSSO Place / Location and Local SEO Meta 4.4.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"

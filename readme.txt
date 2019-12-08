@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
 Tested Up To: 5.3
-Stable Tag: 4.4.1
+Stable Tag: 4.4.2
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.4.2 (2019/12/07)**
+**Version 4.4.2 (2019/12/08)**
 
 * **New Features**
 	* None.
@@ -175,5 +175,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.4.2 =
 
-(2019/12/07) Renamed the SSO menu item "Place / Location" to "Places / Locations".
+(2019/12/08) Renamed the SSO menu item "Place / Location" to "Places / Locations".
 

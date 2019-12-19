@@ -10,7 +10,7 @@ Tags: local seo, local business, knowledge graph, location, place, address, venu
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
-Tested Up To: 5.3.1
+Tested Up To: 5.3.2
 Stable Tag: 4.4.2
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.

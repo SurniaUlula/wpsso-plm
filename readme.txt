@@ -114,6 +114,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.5.0-dev.2 (TBD)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added lib/filters-messages.php.
+	* Added lib/filters-upgrade.php.
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v4.0.
+	* WPSSO Core v6.16.2-dev.2.
+
 **Version 4.4.2 (2019/12/08)**
 
 * **New Features**

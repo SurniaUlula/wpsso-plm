@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.5.0-dev.2 (TBD)**
+**Version 4.5.0-rc.1 (2020/01/05)**
 
 * **New Features**
 	* None.
@@ -128,7 +128,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
-	* WPSSO Core v6.16.2-dev.2.
+	* WPSSO Core v6.16.2-rc.1.
 
 **Version 4.4.2 (2019/12/08)**
 
@@ -188,6 +188,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Update method arguments for `SucomForm->get_select()` in WPSSO Core v6.9.0.
 
 == Upgrade Notice ==
+
+= 4.5.0-rc.1 =
+
+(2020/01/05) Added lib/filters-messages.php and lib/filters-upgrade.php.
 
 = 4.4.2 =
 

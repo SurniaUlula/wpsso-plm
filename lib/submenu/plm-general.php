@@ -35,7 +35,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->maybe_show_language_notice();
 
 			$metabox_id      = 'place';
-			$metabox_title   = _x( 'Places / Locations and Settings', 'metabox title', 'wpsso-plm' );
+			$metabox_title   = _x( 'Places and Settings', 'metabox title', 'wpsso-plm' );
 			$metabox_screen  = $this->pagehook;
 			$metabox_context = 'normal';
 			$metabox_prio    = 'default';

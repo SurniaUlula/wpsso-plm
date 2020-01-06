@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPSSO Place / Location and Local SEO Meta
+ * Plugin Name: WPSSO Place and Local SEO Meta
  * Plugin Slug: wpsso-plm
  * Text Domain: wpsso-plm
  * Domain Path: /languages

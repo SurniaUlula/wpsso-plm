@@ -1,8 +1,8 @@
-# Copyright (C) 2020 WPSSO Place / Location and Local SEO Meta
-# This file is distributed under the same license as the WPSSO Place / Location and Local SEO Meta package.
+# Copyright (C) 2020 WPSSO Place and Local SEO Meta
+# This file is distributed under the same license as the WPSSO Place and Local SEO Meta package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place / Location and Local SEO Meta 4.5.1\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.5.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -251,7 +251,7 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "lib file description"
-msgid "Places / Locations"
+msgid "Places"
 msgstr ""
 
 #: lib/gettext-config.php:7
@@ -536,7 +536,7 @@ msgstr ""
 
 #: lib/submenu/plm-general.php:38
 msgctxt "metabox title"
-msgid "Places / Locations and Settings"
+msgid "Places and Settings"
 msgstr ""
 
 #: lib/submenu/plm-general.php:55
@@ -602,7 +602,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Place / Location and Local SEO Meta"
+msgid "WPSSO Place and Local SEO Meta"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

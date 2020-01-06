@@ -87,31 +87,39 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 				case 'tooltip-plm_place_id':
 
-					$text = __( 'Select a place to edit. The place information is used for Open Graph meta tags and Schema markup.', 'wpsso-plm' );
+					$text = __( 'Select a place to edit.', 'wpsso-plm' );
+
+					$text .= __( 'The place information is used for Open Graph meta tags and Schema markup.', 'wpsso-plm' );
 
 					break;
 
 				case 'tooltip-plm_place_schema_type':	// Place Schema Type.
 
-					$text = __( 'You may optionally choose a different Schema type for this place / location (default is LocalBusiness).', 'wpsso-plm' );
+					$text = __( 'You may optionally choose a different Schema type for this place (default is LocalBusiness).', 'wpsso-plm' );
 
 					break;
 
 				case 'tooltip-plm_place_name':
 
-					$text = __( 'A name for this place / location (required). The place name may appear in forms and in the Schema Place "name" property.', 'wpsso-plm' );
+					$text = __( 'A name for this place (required).', 'wpsso-plm' );
+
+					$text .= __( 'The place name may appear in forms and in the Schema Place "name" property.', 'wpsso-plm' );
 
 					break;
 
 				case 'tooltip-plm_place_name_alt':
 
-					$text = __( 'An alternate name for this place. The place alternate name may appear in the Schema Place "alternateName" property.', 'wpsso-plm' );
+					$text = __( 'An alternate name for this place.', 'wpsso-plm' );
+
+					$text .= __( 'The place alternate name may appear in the Schema Place "alternateName" property.', 'wpsso-plm' );
 
 					break;
 
 				case 'tooltip-plm_place_desc':
 
-					$text = __( 'A description for this place. The place description may appear in the Schema Place "description" property.', 'wpsso-plm' );
+					$text = __( 'A description for this place.', 'wpsso-plm' );
+
+					$text .= __( 'The place description may appear in the Schema Place "description" property.', 'wpsso-plm' );
 
 					break;
 
@@ -153,7 +161,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 				case 'tooltip-plm_place_phone':
 
-					$text = __( 'An optional telephone number for this place / location.', 'wpsso-plm' );
+					$text = __( 'An optional telephone number for this place.', 'wpsso-plm' );
 
 					break;
 				case 'tooltip-plm_place_latitude':
@@ -202,19 +210,19 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 				case 'tooltip-plm_place_days':		// Open Days / Hours.
 
-					$text = __( 'Select the days and hours this place / location is open.', 'wpsso-plm' );
+					$text = __( 'Select the days and hours this place is open.', 'wpsso-plm' );
 
 					break;
 
 				case 'tooltip-plm_place_midday_hours':	// Closes Mid-Day.
 
-					$text = __( 'This place / location closes temporarily mid-day (for example, between 12:00 and 13:00 for lunch).', 'wpsso-plm' );
+					$text = __( 'This place closes temporarily mid-day (for example, between 12:00 and 13:00 for lunch).', 'wpsso-plm' );
 
 					break;
 
 				case 'tooltip-plm_place_season_dates':	// Seasonal Dates.
 
-					$text = __( 'If this place / location is open seasonally, select the open and close dates of the season.', 'wpsso-plm' );
+					$text = __( 'If this place is open seasonally, select the open and close dates of the season.', 'wpsso-plm' );
 
 					break;
 
@@ -238,7 +246,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 				case 'tooltip-plm_place_price_range':
 
-					$text = sprintf( __( 'The relative price of goods or services provided by the local business (example: %s).', 'wpsso-plm' ), '$$' );
+					$text = __( 'The relative price of goods or services provided by the local business (example: $, $$, $$$, or $$$$).', 'wpsso-plm' );
 
 					break;
 
@@ -270,7 +278,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 				case 'tooltip-plm_def_country':
 
-					$text = __( 'A default country to use when creating a new place / location.', 'wpsso-plm' );
+					$text = __( 'A default country to use when creating a new place.', 'wpsso-plm' );
 
 					break;
 

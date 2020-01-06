@@ -35,208 +35,222 @@ msgid ""
 msgstr ""
 
 #: lib/filters-messages.php:90
-msgid ""
-"Select a place to edit. The place information is used for Open Graph meta "
-"tags and Schema markup."
+msgid "Select a place to edit."
 msgstr ""
 
-#: lib/filters-messages.php:96
+#: lib/filters-messages.php:92
 msgid ""
-"You may optionally choose a different Schema type for this place / location "
-"(default is LocalBusiness)."
+"The place information is used for Open Graph meta tags and Schema markup."
 msgstr ""
 
-#: lib/filters-messages.php:102
+#: lib/filters-messages.php:98
 msgid ""
-"A name for this place / location (required). The place name may appear in "
-"forms and in the Schema Place \"name\" property."
+"You may optionally choose a different Schema type for this place (default is "
+"LocalBusiness)."
 msgstr ""
 
-#: lib/filters-messages.php:108
+#: lib/filters-messages.php:104
+msgid "A name for this place (required)."
+msgstr ""
+
+#: lib/filters-messages.php:106
 msgid ""
-"An alternate name for this place. The place alternate name may appear in the "
-"Schema Place \"alternateName\" property."
+"The place name may appear in forms and in the Schema Place \"name\" property."
+msgstr ""
+
+#: lib/filters-messages.php:112
+msgid "An alternate name for this place."
 msgstr ""
 
 #: lib/filters-messages.php:114
 msgid ""
-"A description for this place. The place description may appear in the Schema "
-"Place \"description\" property."
+"The place alternate name may appear in the Schema Place \"alternateName\" "
+"property."
 msgstr ""
 
 #: lib/filters-messages.php:120
+msgid "A description for this place."
+msgstr ""
+
+#: lib/filters-messages.php:122
+msgid ""
+"The place description may appear in the Schema Place \"description\" "
+"property."
+msgstr ""
+
+#: lib/filters-messages.php:128
 msgid ""
 "An optional street address for Pinterest Rich Pin / Schema Place meta tags "
 "and related markup."
 msgstr ""
 
-#: lib/filters-messages.php:126
+#: lib/filters-messages.php:134
 msgid ""
 "An optional post office box number for the Pinterest Rich Pin / Schema Place "
 "meta tags and related markup."
 msgstr ""
 
-#: lib/filters-messages.php:132
+#: lib/filters-messages.php:140
 msgid ""
 "An optional city name for the Pinterest Rich Pin / Schema Place meta tags "
 "and related markup."
 msgstr ""
 
-#: lib/filters-messages.php:138
+#: lib/filters-messages.php:146
 msgid ""
 "An optional state or Province name for the Pinterest Rich Pin / Schema Place "
 "meta tags and related markup."
 msgstr ""
 
-#: lib/filters-messages.php:144
+#: lib/filters-messages.php:152
 msgid ""
 "An optional zip or postal code for the Pinterest Rich Pin / Schema Place "
 "meta tags and related markup."
 msgstr ""
 
-#: lib/filters-messages.php:150
+#: lib/filters-messages.php:158
 msgid ""
 "An optional country for the Pinterest Rich Pin / Schema Place meta tags and "
 "related markup."
 msgstr ""
 
-#: lib/filters-messages.php:156
-msgid "An optional telephone number for this place / location."
+#: lib/filters-messages.php:164
+msgid "An optional telephone number for this place."
 msgstr ""
 
-#: lib/filters-messages.php:161
+#: lib/filters-messages.php:169
 msgid "The numeric decimal degrees latitude for this place (required)."
 msgstr ""
 
-#: lib/filters-messages.php:163 lib/filters-messages.php:171
+#: lib/filters-messages.php:171 lib/filters-messages.php:179
 msgid ""
 "You may use a service like <a href=\"http://www.gps-coordinates.net/"
 "\">Google Maps GPS Coordinates</a> (as an example), to find the approximate "
 "GPS coordinates of a street address."
 msgstr ""
 
-#: lib/filters-messages.php:169
+#: lib/filters-messages.php:177
 msgid "The numeric decimal degrees longitude for this place (required)."
 msgstr ""
 
-#: lib/filters-messages.php:177
+#: lib/filters-messages.php:185
 msgid ""
 "An optional numeric altitude (in meters above sea level) for this place."
 msgstr ""
 
-#: lib/filters-messages.php:183
+#: lib/filters-messages.php:191
 msgid ""
 "An image ID and media library selection for this place (ie. an image of the "
 "business storefront or location)."
 msgstr ""
 
-#: lib/filters-messages.php:185 lib/filters-messages.php:197
+#: lib/filters-messages.php:193 lib/filters-messages.php:205
 msgid ""
 "The place image is used in the Schema LocalBusiness markup for the Schema "
 "\"location\" property."
 msgstr ""
 
-#: lib/filters-messages.php:187 lib/filters-messages.php:199
+#: lib/filters-messages.php:195 lib/filters-messages.php:207
 msgid ""
 "The place image is not used when a place is selected for the post, page, or "
 "custom post type content &mdash; in this case, the custom and/or featured "
 "image is used."
 msgstr ""
 
-#: lib/filters-messages.php:193
+#: lib/filters-messages.php:201
 msgid ""
 "You can enter a place image URL (including the http:// prefix) instead of "
 "choosing an image ID &mdash; if a place image ID is specified, it has "
 "precedence and the image URL option is disabled."
 msgstr ""
 
-#: lib/filters-messages.php:195
+#: lib/filters-messages.php:203
 msgid ""
 "The image URL option allows you to use an image outside of a managed "
 "collection (WordPress Media Library or NextGEN Gallery), and/or a smaller "
 "logo style image."
 msgstr ""
 
-#: lib/filters-messages.php:205
-msgid "Select the days and hours this place / location is open."
+#: lib/filters-messages.php:213
+msgid "Select the days and hours this place is open."
 msgstr ""
 
-#: lib/filters-messages.php:211
+#: lib/filters-messages.php:219
 msgid ""
-"This place / location closes temporarily mid-day (for example, between 12:00 "
-"and 13:00 for lunch)."
+"This place closes temporarily mid-day (for example, between 12:00 and 13:00 "
+"for lunch)."
 msgstr ""
 
-#: lib/filters-messages.php:217
+#: lib/filters-messages.php:225
 msgid ""
-"If this place / location is open seasonally, select the open and close dates "
-"of the season."
+"If this place is open seasonally, select the open and close dates of the "
+"season."
 msgstr ""
 
-#: lib/filters-messages.php:223
+#: lib/filters-messages.php:231
 msgid ""
 "The geographic area where a service is provided, in meters around the "
 "location."
 msgstr ""
 
-#: lib/filters-messages.php:229
+#: lib/filters-messages.php:237
 msgid ""
 "A comma-delimited list of <a href=\"%1$s\">ISO 4217 currency codes</a> "
 "accepted by the local business (example: %2$s)."
 msgstr ""
 
-#: lib/filters-messages.php:235
+#: lib/filters-messages.php:243
 msgid ""
 "A comma-delimited list of payment options accepted by the local business "
 "(example: Cash, Credit Card)."
 msgstr ""
 
-#: lib/filters-messages.php:241
+#: lib/filters-messages.php:249
 msgid ""
 "The relative price of goods or services provided by the local business "
-"(example: %s)."
+"(example: $, $$, $$$, or $$$$)."
 msgstr ""
 
-#: lib/filters-messages.php:247
+#: lib/filters-messages.php:255
 msgid "This food establishment accepts reservations."
 msgstr ""
 
-#: lib/filters-messages.php:253
+#: lib/filters-messages.php:261
 msgid "The menu URL for this food establishment."
 msgstr ""
 
-#: lib/filters-messages.php:259
+#: lib/filters-messages.php:267
 msgid "The cuisine served by this food establishment."
 msgstr ""
 
-#: lib/filters-messages.php:265
+#: lib/filters-messages.php:273
 msgid ""
 "A comma-delimited list of website and mobile app URLs to order products."
 msgstr ""
 
-#: lib/filters-messages.php:267
+#: lib/filters-messages.php:275
 msgid ""
 "The WPSSO JSON add-on is required to add these Order Action URL(s) to the "
 "Schema \"potentialAction\" property."
 msgstr ""
 
-#: lib/filters-messages.php:273
-msgid "A default country to use when creating a new place / location."
+#: lib/filters-messages.php:281
+msgid "A default country to use when creating a new place."
 msgstr ""
 
-#: lib/filters-messages.php:280 lib/filters.php:651
+#: lib/filters-messages.php:288 lib/filters.php:651
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr ""
 
-#: lib/filters-messages.php:282
+#: lib/filters-messages.php:290
 msgid ""
 "A \"%1$s\" tab can be added to the %2$s metabox on Posts, Pages, and custom "
 "post types, allowing you to select or enter place information for the "
 "webpage content (ie. street address, GPS coordinates, opening hours, etc.)."
 msgstr ""
 
-#: lib/filters-messages.php:305
+#: lib/filters-messages.php:313
 msgid "Select an existing place or enter a custom place below."
 msgstr ""
 

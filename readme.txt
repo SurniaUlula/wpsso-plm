@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 4.5.0
+Stable Tag: 4.5.1
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.5.0 (2020/01/05)**
+**Version 4.5.1 (2020/01/05)**
 
 * **New Features**
 	* None.
@@ -175,21 +175,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 		* 'add_meta_itemprop_acceptsreservations'
 		* 'add_meta_itemprop_servescuisine'
 
-**Version 4.3.2 (2019/10/22)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed option label column width under the Document SSO &gt; Schema Place tab.
-	* Fixed show/hide Food Establishment options under the Document SSO &gt; Schema Place tab.
-* **Developer Notes**
-	* Update method arguments for `SucomForm->get_select()` in WPSSO Core v6.9.0.
-
 == Upgrade Notice ==
 
-= 4.5.0 =
+= 4.5.1 =
 
 (2020/01/05) Added lib/filters-messages.php and lib/filters-upgrade.php.
 

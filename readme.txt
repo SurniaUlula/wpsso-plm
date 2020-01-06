@@ -27,15 +27,15 @@ Include Pinterest Rich Pin *Place*, Facebook / Open Graph *Location*, and Google
 
 * To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).
 
-* To provide location information for the webpage content (ie. the post/page content is about a specific physical place / location) (Premium add-on).
+* To provide location information for the webpage content (ie. the post/page content is about a specific physical place) (Premium add-on).
 
-Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on is required to select a place / location for an organization / local business.
+Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on is required to select a location for an organization / local business.
 
 <h3>WPSSO PLM Standard Features</h3>
 
 * Extends the features of the WPSSO Core plugin.
 
-* Manage multiple place / location information:
+* Manage one or more places:
 
 	* Place Schema Type
 	* Place Name
@@ -70,7 +70,7 @@ Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-or
 
 <h3>WPSSO PLM Premium Features</h3>
 
-The Standard version is designed to satisfy the requirements of most standard WordPress sites / blogs. If your site includes posts / pages about a specific place / location, then you may want the Premium version for those additional features.
+The Standard version is designed to satisfy the requirements of most standard WordPress sites / blogs. If your site includes posts / pages about specific places, then you may want the Premium version to select specific places for your post / page content.
 
 * Adds a Schema Place tab in the Document SSO metabox to select an address or enter custom address information for the content.
 
@@ -165,7 +165,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* Fixed an incorrect `WpssoPlmFilters->check_location_image_size()` option prefix argument.
 * **Developer Notes**
-	* Moved place / location specific "Head Tags" option keys from WPSSO Core to WPSSO PLM:
+	* Moved place specific "Head Tags" option keys from WPSSO Core to WPSSO PLM:
 		* 'add_link_itemprop_hasmenu'
 		* 'add_meta_itemprop_address'
 		* 'add_meta_itemprop_telephone'

@@ -32,7 +32,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				require_once WPSSOPLM_PLUGINDIR . 'lib/filters-upgrade.php';
 			}
 
-			$this->upg = new WpssoPlmFiltersschema( $plugin );
+			$this->upg = new WpssoPlmFiltersUpgrade( $plugin );
 
 			$this->p->util->add_plugin_filters( $this, array( 
 				'get_defaults'                               => 1,

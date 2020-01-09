@@ -14,7 +14,7 @@
  * Requires PHP: 5.5
  * Requires At Least: 4.0
  * Tested Up To: 5.3.2
- * Version: 5.0.0-dev.1
+ * Version: 5.0.0-dev.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -43,7 +43,10 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 		 * Library class object variables.
 		 */
 		public $filters;	// WpssoPlmFilters
+		public $post;		// WpssoFaqPost
 		public $reg;		// WpssoPlmRegister
+		public $style;		// WpssoFaqStyle
+		public $term;		// WpssoFaqTerm
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
@@ -171,6 +174,9 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			}
 
 			$this->filters = new WpssoPlmFilters( $this->p );
+			$this->post    = new WpssoPlmPost( $this->p );
+			$this->style   = new WpssoPlmStyle( $this->p );
+			$this->term    = new WpssoPlmTerm( $this->p );
 		}
 
 		public function wpsso_init_plugin() {

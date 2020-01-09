@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '5.0.0-dev.1',	// Plugin version.
+					'version'     => '5.0.0-dev.2',	// Plugin version.
 					'opt_version' => '24',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Meta',
@@ -163,13 +163,58 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			define( 'WPSSOPLM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-plm.
 			define( 'WPSSOPLM_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOPLM_VERSION', $info[ 'version' ] );						
+
+			define( 'WPSSOPLM_CATEGORY_TAXONOMY', 'plm_category' );
+			define( 'WPSSOPLM_PLACE_POST_TYPE', 'place' );
+
+			/**
+			 * Define variable constants.
+			 */
+			self::set_variable_constants();
+		}
+
+		public static function set_variable_constants( $var_const = null ) {
+
+			if ( null === $var_const ) {
+				$var_const = self::get_variable_constants();
+			}
+
+			/**
+			 * Define the variable constants, if not already defined.
+			 */
+			foreach ( $var_const as $name => $value ) {
+
+				if ( ! defined( $name ) ) {
+					define( $name, $value );
+				}
+			}
+		}
+
+		public static function get_variable_constants() { 
+
+			$var_const = array();
+
+			/**
+			 * Maybe override the default constant value with a pre-defined constant value.
+			 */
+			foreach ( $var_const as $name => $value ) {
+
+				if ( defined( $name ) ) {
+					$var_const[$name] = constant( $name );
+				}
+			}
+
+			return $var_const;
 		}
 
 		public static function require_libs( $plugin_file_path ) {
 
 			require_once WPSSOPLM_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOPLM_PLUGINDIR . 'lib/post.php';
 			require_once WPSSOPLM_PLUGINDIR . 'lib/place.php';
 			require_once WPSSOPLM_PLUGINDIR . 'lib/register.php';
+			require_once WPSSOPLM_PLUGINDIR . 'lib/style.php';
+			require_once WPSSOPLM_PLUGINDIR . 'lib/term.php';
 
 			add_filter( 'wpssoplm_load_lib', array( 'WpssoPlmConfig', 'load_lib' ), 10, 3 );
 		}

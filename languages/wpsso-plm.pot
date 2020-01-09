@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Place and Local SEO Meta package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 5.0.0-dev.1\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 5.0.0-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -548,6 +548,225 @@ msgctxt "option label"
 msgid "Order Action URL(s)"
 msgstr ""
 
+#: lib/register.php:148
+msgid "Categories"
+msgstr ""
+
+#: lib/register.php:149
+msgid "Category"
+msgstr ""
+
+#: lib/register.php:150
+msgctxt "Admin menu name"
+msgid "Categories"
+msgstr ""
+
+#: lib/register.php:151
+msgid "All Categories"
+msgstr ""
+
+#: lib/register.php:152
+msgid "Edit Category"
+msgstr ""
+
+#: lib/register.php:153
+msgid "View Category"
+msgstr ""
+
+#: lib/register.php:154
+msgid "Update Category"
+msgstr ""
+
+#: lib/register.php:155
+msgid "Add New Category"
+msgstr ""
+
+#: lib/register.php:156
+msgid "New Category Name"
+msgstr ""
+
+#: lib/register.php:157
+msgid "Parent Category"
+msgstr ""
+
+#: lib/register.php:158
+msgid "Parent Category:"
+msgstr ""
+
+#: lib/register.php:159
+msgid "Search Categories"
+msgstr ""
+
+#: lib/register.php:160
+msgid "Popular Categories"
+msgstr ""
+
+#: lib/register.php:161
+msgid "Separate categories with commas"
+msgstr ""
+
+#: lib/register.php:162
+msgid "Add or remove categories"
+msgstr ""
+
+#: lib/register.php:163
+msgid "Choose from the most used"
+msgstr ""
+
+#: lib/register.php:164
+msgid "Not categories found."
+msgstr ""
+
+#: lib/register.php:165
+msgid "← Back to categories"
+msgstr ""
+
+#: lib/register.php:169
+msgctxt "Taxonomy label"
+msgid "Categories"
+msgstr ""
+
+#: lib/register.php:180
+msgctxt "Taxonomy description"
+msgid "Categories for Places"
+msgstr ""
+
+#: lib/register.php:191
+msgid "Places"
+msgstr ""
+
+#: lib/register.php:192
+msgid "Place"
+msgstr ""
+
+#: lib/register.php:193
+msgid "Add New"
+msgstr ""
+
+#: lib/register.php:194
+msgid "Add New Place"
+msgstr ""
+
+#: lib/register.php:195
+msgid "Edit Place"
+msgstr ""
+
+#: lib/register.php:196
+msgid "New Place"
+msgstr ""
+
+#: lib/register.php:197
+msgid "View Place"
+msgstr ""
+
+#: lib/register.php:198
+msgid "View Places"
+msgstr ""
+
+#: lib/register.php:199
+msgid "Search Places"
+msgstr ""
+
+#: lib/register.php:200
+msgid "No places found"
+msgstr ""
+
+#: lib/register.php:201
+msgid "No places found in Trash"
+msgstr ""
+
+#: lib/register.php:202
+msgid "Parent Place:"
+msgstr ""
+
+#: lib/register.php:203
+msgid "All Places"
+msgstr ""
+
+#: lib/register.php:204
+msgid "Place Archives"
+msgstr ""
+
+#: lib/register.php:205
+msgid "Place Attributes"
+msgstr ""
+
+#: lib/register.php:206
+msgid "Insert into answer"
+msgstr ""
+
+#: lib/register.php:207
+msgid "Uploaded to this place"
+msgstr ""
+
+#: lib/register.php:208
+msgid "Place Image"
+msgstr ""
+
+#: lib/register.php:209
+msgid "Set place image"
+msgstr ""
+
+#: lib/register.php:210
+msgid "Remove place image"
+msgstr ""
+
+#: lib/register.php:211
+msgid "Use as place image"
+msgstr ""
+
+#: lib/register.php:212
+msgctxt "Admin menu name"
+msgid "Places"
+msgstr ""
+
+#: lib/register.php:213
+msgid "Filter places"
+msgstr ""
+
+#: lib/register.php:214
+msgid "Places list navigation"
+msgstr ""
+
+#: lib/register.php:215
+msgid "Places list"
+msgstr ""
+
+#: lib/register.php:216
+msgctxt "Admin bar name"
+msgid "Place"
+msgstr ""
+
+#: lib/register.php:217
+msgid "Place published."
+msgstr ""
+
+#: lib/register.php:218
+msgid "Place published privately."
+msgstr ""
+
+#: lib/register.php:219
+msgid "Place reverted to draft."
+msgstr ""
+
+#: lib/register.php:220
+msgid "Place scheduled."
+msgstr ""
+
+#: lib/register.php:221
+msgid "Place updated."
+msgstr ""
+
+#: lib/register.php:225
+msgctxt "Post type label"
+msgid "Place"
+msgstr ""
+
+#: lib/register.php:227
+msgctxt "Post type description"
+msgid "Location, place, or venue"
+msgstr ""
+
 #: lib/submenu/plm-general.php:38
 msgctxt "metabox title"
 msgid "Places and Settings"
@@ -603,13 +822,13 @@ msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr ""
 
-#: wpsso-plm.php:105
+#: wpsso-plm.php:108
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-plm.php:198
+#: wpsso-plm.php:204
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."

@@ -29,9 +29,9 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 			if ( is_admin() ) {
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'messages_info'          => 2,
-					'messages_tooltip'       => 2,
-					'messages_tooltip_meta'  => 2,
+					'messages_info'         => 2,
+					'messages_tooltip'      => 2,
+					'messages_tooltip_meta' => 2,
 				) );
 			}
 		}

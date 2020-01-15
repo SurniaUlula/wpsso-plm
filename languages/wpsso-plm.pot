@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Place and Local SEO Meta package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 5.0.0-dev.3\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.5.2-b.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -238,7 +238,7 @@ msgstr ""
 msgid "A default country to use when creating a new place."
 msgstr ""
 
-#: lib/filters-messages.php:288 lib/filters.php:647
+#: lib/filters-messages.php:288 lib/filters.php:651
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr ""
@@ -254,12 +254,12 @@ msgstr ""
 msgid "Select an existing place or enter a custom place below."
 msgstr ""
 
-#: lib/filters.php:152
+#: lib/filters.php:156
 msgctxt "option value"
 msgid "Place #%d"
 msgstr ""
 
-#: lib/filters.php:729
+#: lib/filters.php:748
 msgid "saving place \"%1$s\""
 msgstr ""
 
@@ -614,7 +614,7 @@ msgid "Choose from the most used"
 msgstr ""
 
 #: lib/register.php:164
-msgid "Not categories found."
+msgid "No categories found."
 msgstr ""
 
 #: lib/register.php:165
@@ -692,7 +692,7 @@ msgid "Place Attributes"
 msgstr ""
 
 #: lib/register.php:206
-msgid "Insert into answer"
+msgid "Insert into place"
 msgstr ""
 
 #: lib/register.php:207
@@ -822,13 +822,13 @@ msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr ""
 
-#: wpsso-plm.php:108
+#: wpsso-plm.php:105
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-plm.php:204
+#: wpsso-plm.php:198
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."

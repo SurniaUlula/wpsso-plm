@@ -27,15 +27,15 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 			}
 
 			/**
-			 * Priorities:
+			 * Add-on hook priorities:
 			 *
 			 * 	FAQs = 10
 			 * 	Organizations = 20
 			 * 	Places = 30
 			 */
-			add_action( 'wpsso_init_options', array( $this, 'register_taxonomy_plm_category' ), 30 );
+			//add_action( 'wpsso_init_options', array( $this, 'register_taxonomy_plm_category' ), 30 );
 
-			add_action( 'wpsso_init_options', array( $this, 'register_post_type_place' ), 30 );
+			//add_action( 'wpsso_init_options', array( $this, 'register_post_type_place' ), 30 );
 		}
 
 		/**
@@ -122,21 +122,21 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 					WpssoUtilReg::update_ext_version( 'wpssoplm', $version );
 				}
 
-				$this->register_taxonomy_plm_category();
+				//$this->register_taxonomy_plm_category();
 
-				$this->register_post_type_place();
+				//$this->register_post_type_place();
 
-				flush_rewrite_rules();
+				//flush_rewrite_rules();
 			}
 		}
 
 		private function deactivate_plugin() {
 
-			unregister_taxonomy( WPSSOPLM_CATEGORY_TAXONOMY );
+			//unregister_taxonomy( WPSSOPLM_CATEGORY_TAXONOMY );
 
-			unregister_post_type( WPSSOPLM_PLACE_POST_TYPE );
+			//unregister_post_type( WPSSOPLM_PLACE_POST_TYPE );
 
-			flush_rewrite_rules();
+			//flush_rewrite_rules();
 		}
 
 		private static function uninstall_plugin() {
@@ -161,7 +161,7 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 				'separate_items_with_commas' => __( 'Separate categories with commas', 'wpsso-plm' ),
 				'add_or_remove_items'        => __( 'Add or remove categories', 'wpsso-plm' ),
 				'choose_from_most_used'      => __( 'Choose from the most used', 'wpsso-plm' ),
-				'not_found'                  => __( 'Not categories found.', 'wpsso-plm' ),
+				'not_found'                  => __( 'No categories found.', 'wpsso-plm' ),
 				'back_to_items'              => __( '← Back to categories', 'wpsso-plm' ),
 			);
 
@@ -203,7 +203,7 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 				'all_items'                => __( 'All Places', 'wpsso-plm' ),
 				'archives'                 => __( 'Place Archives', 'wpsso-plm' ),
 				'attributes'               => __( 'Place Attributes', 'wpsso-plm' ),
-				'insert_into_item'         => __( 'Insert into answer', 'wpsso-plm' ),
+				'insert_into_item'         => __( 'Insert into place', 'wpsso-plm' ),
 				'uploaded_to_this_item'    => __( 'Uploaded to this place', 'wpsso-plm' ),
 				'featured_image'           => __( 'Place Image', 'wpsso-plm' ),
 				'set_featured_image'       => __( 'Set place image', 'wpsso-plm' ),

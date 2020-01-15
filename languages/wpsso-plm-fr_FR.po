@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Place and Location Meta (WPSSO PLM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 4.5.1\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.5.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-01-06 11:55-0800\n"
-"PO-Revision-Date: 2020-01-06 12:07-0800\n"
+"POT-Creation-Date: 2020-01-15 07:50-0800\n"
+"PO-Revision-Date: 2020-01-15 07:57-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -487,6 +487,225 @@ msgstr "URL du menu alimentaire"
 msgctxt "option label"
 msgid "Order Action URL(s)"
 msgstr "URL(s) d'action de commande"
+
+#: lib/register.php:148
+msgid "Categories"
+msgstr "Catégories"
+
+#: lib/register.php:149
+msgid "Category"
+msgstr "Catégorie"
+
+#: lib/register.php:150
+msgctxt "Admin menu name"
+msgid "Categories"
+msgstr "Catégories"
+
+#: lib/register.php:151
+msgid "All Categories"
+msgstr "Toutes catégories"
+
+#: lib/register.php:152
+msgid "Edit Category"
+msgstr "Modifier la catégorie"
+
+#: lib/register.php:153
+msgid "View Category"
+msgstr "Voir la catégorie"
+
+#: lib/register.php:154
+msgid "Update Category"
+msgstr "Mettre à jour la catégorie"
+
+#: lib/register.php:155
+msgid "Add New Category"
+msgstr "Ajouter une nouvelle catégorie"
+
+#: lib/register.php:156
+msgid "New Category Name"
+msgstr "Nom de la nouvelle catégorie"
+
+#: lib/register.php:157
+msgid "Parent Category"
+msgstr "Catégorie parente"
+
+#: lib/register.php:158
+msgid "Parent Category:"
+msgstr "Catégorie parente:"
+
+#: lib/register.php:159
+msgid "Search Categories"
+msgstr "Rechercher dans les catégories"
+
+#: lib/register.php:160
+msgid "Popular Categories"
+msgstr "Catégories populaires"
+
+#: lib/register.php:161
+msgid "Separate categories with commas"
+msgstr "Séparez les catégories avec des virgules"
+
+#: lib/register.php:162
+msgid "Add or remove categories"
+msgstr "Ajouter ou retirer des catégories"
+
+#: lib/register.php:163
+msgid "Choose from the most used"
+msgstr "Choisir parmi les plus utilisées"
+
+#: lib/register.php:164
+msgid "No categories found."
+msgstr "Aucune catégorie trouvée."
+
+#: lib/register.php:165
+msgid "← Back to categories"
+msgstr "← Retour aux catégories"
+
+#: lib/register.php:169
+msgctxt "Taxonomy label"
+msgid "Categories"
+msgstr "Catégories"
+
+#: lib/register.php:180
+msgctxt "Taxonomy description"
+msgid "Categories for Places"
+msgstr "Catégories d'endroits"
+
+#: lib/register.php:191
+msgid "Places"
+msgstr "Endroits"
+
+#: lib/register.php:192
+msgid "Place"
+msgstr "Endroit"
+
+#: lib/register.php:193
+msgid "Add New"
+msgstr "Ajouter"
+
+#: lib/register.php:194
+msgid "Add New Place"
+msgstr "Ajouter un nouvel endroit"
+
+#: lib/register.php:195
+msgid "Edit Place"
+msgstr "Modifier le lieu"
+
+#: lib/register.php:196
+msgid "New Place"
+msgstr "Nouvel endroit"
+
+#: lib/register.php:197
+msgid "View Place"
+msgstr "Voir l'endroit"
+
+#: lib/register.php:198
+msgid "View Places"
+msgstr "Voir les endroits"
+
+#: lib/register.php:199
+msgid "Search Places"
+msgstr "Rechercher dans les endroits"
+
+#: lib/register.php:200
+msgid "No places found"
+msgstr "Aucun endroit trouvé"
+
+#: lib/register.php:201
+msgid "No places found in Trash"
+msgstr "Aucun endroit trouvé dans la corbeille"
+
+#: lib/register.php:202
+msgid "Parent Place:"
+msgstr "Endroit parent:"
+
+#: lib/register.php:203
+msgid "All Places"
+msgstr "Tous les endroits"
+
+#: lib/register.php:204
+msgid "Place Archives"
+msgstr "Archives des endroits"
+
+#: lib/register.php:205
+msgid "Place Attributes"
+msgstr "Attributs de l'endroit"
+
+#: lib/register.php:206
+msgid "Insert into place"
+msgstr "Insérer dans l'endroit"
+
+#: lib/register.php:207
+msgid "Uploaded to this place"
+msgstr "Téléchargé à cet endroit"
+
+#: lib/register.php:208
+msgid "Place Image"
+msgstr "Image de l'endroit"
+
+#: lib/register.php:209
+msgid "Set place image"
+msgstr "Définir l'image de l'endroit"
+
+#: lib/register.php:210
+msgid "Remove place image"
+msgstr "Supprimer l'image de l'endroit"
+
+#: lib/register.php:211
+msgid "Use as place image"
+msgstr "Utiliser comme image d'endroit"
+
+#: lib/register.php:212
+msgctxt "Admin menu name"
+msgid "Places"
+msgstr "Endroits"
+
+#: lib/register.php:213
+msgid "Filter places"
+msgstr "Filtrer les endroits"
+
+#: lib/register.php:214
+msgid "Places list navigation"
+msgstr "Navigation de la liste des endroits"
+
+#: lib/register.php:215
+msgid "Places list"
+msgstr "Liste des endroits"
+
+#: lib/register.php:216
+msgctxt "Admin bar name"
+msgid "Place"
+msgstr "Endroit"
+
+#: lib/register.php:217
+msgid "Place published."
+msgstr "Endroit publié."
+
+#: lib/register.php:218
+msgid "Place published privately."
+msgstr "Endroit publié en privé."
+
+#: lib/register.php:219
+msgid "Place reverted to draft."
+msgstr "Endroit remis au brouillon."
+
+#: lib/register.php:220
+msgid "Place scheduled."
+msgstr "Endoit planifié."
+
+#: lib/register.php:221
+msgid "Place updated."
+msgstr "Endroit mis à jour."
+
+#: lib/register.php:225
+msgctxt "Post type label"
+msgid "Place"
+msgstr "Endroit"
+
+#: lib/register.php:227
+msgctxt "Post type description"
+msgid "Location, place, or venue"
+msgstr "Emplacement, endroit ou lieu"
 
 #: lib/submenu/plm-general.php:38
 msgctxt "metabox title"

@@ -114,12 +114,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.0.0-dev.3 (TBD)**
+**Version 4.5.2-b.1 (2020/01/15)**
 
 * **New Features**
-	* Added a "Places" post type menu.
-* **Improvements**
 	* None.
+* **Improvements**
+	* Renamed the SSO menu item "Places / Locations" to "Places".
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -127,7 +127,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
-	* WPSSO Core v6.16.2.
+	* WPSSO Core v6.17.0.
 
 **Version 4.5.1 (2020/01/05)**
 
@@ -145,52 +145,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.0.
 	* WPSSO Core v6.16.2.
 
-**Version 4.4.2 (2019/12/08)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Renamed the SSO menu item "Place / Location" to "Places / Locations".
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.16.1.
-
-**Version 4.4.1 (2019/11/23)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `WpssoPlmRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
-
-**Version 4.4.0 (2019/10/26)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed an incorrect `WpssoPlmFilters->check_location_image_size()` option prefix argument.
-* **Developer Notes**
-	* Moved place specific "Head Tags" option keys from WPSSO Core to WPSSO PLM:
-		* 'add_link_itemprop_hasmenu'
-		* 'add_meta_itemprop_address'
-		* 'add_meta_itemprop_telephone'
-		* 'add_meta_itemprop_currenciesaccepted'
-		* 'add_meta_itemprop_paymentaccepted'
-		* 'add_meta_itemprop_pricerange'
-		* 'add_meta_itemprop_acceptsreservations'
-		* 'add_meta_itemprop_servescuisine'
-
 == Upgrade Notice ==
+
+= 4.5.2-b.1 =
+
+(2020/01/05) Renamed the SSO menu item "Places / Locations" to "Places". Requires at least WPSSO Core v6.17.0.
 
 = 4.5.1 =
 

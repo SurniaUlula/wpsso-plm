@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.5.2-b.1 (2020/01/15)**
+**Version 4.5.2-rc.1 (2020/01/16)**
 
 * **New Features**
 	* None.
@@ -147,9 +147,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.5.2-b.1 =
+= 4.5.2-rc.1 =
 
-(2020/01/05) Renamed the SSO menu item "Places / Locations" to "Places". Requires at least WPSSO Core v6.17.0.
+(2020/01/16) Renamed the SSO menu item "Places / Locations" to "Places". Requires at least WPSSO Core v6.17.0.
 
 = 4.5.1 =
 

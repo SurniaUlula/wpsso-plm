@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Place and Location Meta (WPSSO PLM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 4.5.2\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.6.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-01-15 07:50-0800\n"
-"PO-Revision-Date: 2020-01-15 07:57-0800\n"
+"POT-Creation-Date: 2020-01-16 08:32-0800\n"
+"PO-Revision-Date: 2020-01-16 08:32-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -771,8 +771,8 @@ msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Place and Local SEO Meta"
-msgstr "WPSSO Place and Local SEO Meta"
+msgid "WPSSO Place and Local SEO Markup"
+msgstr "WPSSO Place and Local SEO Markup"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-plm/"

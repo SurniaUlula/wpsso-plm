@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.5.2-rc.1 (2020/01/16)**
+**Version 2.6.0 (2020/01/16)**
 
 * **New Features**
 	* None.
@@ -129,29 +129,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.0.
 	* WPSSO Core v6.17.0.
 
-**Version 4.5.1 (2020/01/05)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added lib/filters-messages.php.
-	* Added lib/filters-upgrade.php.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.16.2.
-
 == Upgrade Notice ==
 
-= 4.5.2-rc.1 =
+= 2.6.0 =
 
 (2020/01/16) Renamed the SSO menu item "Places / Locations" to "Places". Requires at least WPSSO Core v6.17.0.
-
-= 4.5.1 =
-
-(2020/01/05) Added lib/filters-messages.php and lib/filters-upgrade.php.
 

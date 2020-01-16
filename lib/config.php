@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'version'     => '4.6.0',	// Plugin version.
 					'opt_version' => '24',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
-					'name'        => 'WPSSO Place and Local SEO Meta',
+					'name'        => 'WPSSO Place and Local SEO Markup',
 					'desc'        => 'Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.',
 					'slug'        => 'wpsso-plm',
 					'base'        => 'wpsso-plm/wpsso-plm.php',

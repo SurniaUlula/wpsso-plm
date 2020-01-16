@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 4.5.1
+Stable Tag: 4.6.0
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.0 (2020/01/16)**
+**Version 4.6.0 (2020/01/16)**
 
 * **New Features**
 	* None.
@@ -131,7 +131,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.6.0 =
+= 4.6.0 =
 
 (2020/01/16) Renamed the SSO menu item "Places / Locations" to "Places". Requires at least WPSSO Core v6.17.0.
 

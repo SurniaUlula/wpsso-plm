@@ -19,6 +19,17 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 
+			/**
+			 * Just in case - prevent filters from being hooked and executed more than once.
+			 */
+			static $do_once = null;
+
+			if ( true === $do_once ) {
+				return;	// Stop here.
+			}
+
+			$do_once = true;
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
@@ -35,12 +46,12 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			$this->upg = new WpssoPlmFiltersUpgrade( $plugin );
 
 			$this->p->util->add_plugin_filters( $this, array( 
+				'option_type'                                => 2,
+				'save_options'                               => 4,
+				'save_post_options'                          => 4,
 				'get_defaults'                               => 1,
 				'get_md_defaults'                            => 1,
 				'get_post_options'                           => 3,
-				'save_options'                               => 4,
-				'save_post_options'                          => 4,
-				'option_type'                                => 2,
 				'og_type'                                    => 3,
 				'og_seed'                                    => 2,
 				'schema_type_id'                             => 3,
@@ -62,8 +73,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->msgs = new WpssoPlmFiltersMessages( $plugin );
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'post_custom_meta_tabs'  => 3,
 					'form_cache_place_names' => 1,
+					'post_custom_meta_tabs'  => 3,
 				), $prio = 1000 );	// Run after WPSSO Core's own Standard / Premium filters.
 
 				$this->p->util->add_plugin_filters( $this, array( 
@@ -72,44 +83,81 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 		}
 
-		public function filter_get_defaults( $def_opts ) {
+		public function filter_option_type( $type, $base_key ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 
-			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, array( 'plm_add_to' => 1 ) );
-
-			return $def_opts;
-		}
-
-		public function filter_get_md_defaults( $md_defs ) {
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
+			if ( ! empty( $type ) ) {
+				return $type;
+			} elseif ( strpos( $base_key, 'plm_' ) !== 0 ) {
+				return $type;
 			}
 
-			$md_defs = array_merge(
-				$md_defs,
-				WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
-				array(
-					'plm_place_id'      => 'none',
-					'plm_place_country' => $this->p->options[ 'plm_def_country' ],
-				)
-			);
+			switch ( $base_key ) {
 
-			return $md_defs;
-		}
+				case 'plm_def_country':
+				case 'plm_place_id':
+				case 'plm_place_schema_type':		// Place Schema Type
+				case ( preg_match( '/^plm_place_(country|type)$/', $base_key ) ? true : false ):
 
-		public function filter_get_post_options( $md_opts, $post_id, $mod ) {
-			
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
+					return 'not_blank';
+
+					break;
+
+				case ( preg_match( '/^plm_place_(name|name_alt|desc|phone|street_address|city|state|zipcode)$/', $base_key ) ? true : false ):
+				case ( preg_match( '/^plm_place_(phone|price_range|cuisine)$/', $base_key ) ? true : false ):
+
+					return 'ok_blank';
+
+					break;
+
+				case ( preg_match( '/^plm_place_(currencies_accepted|payment_accepted)$/', $base_key ) ? true : false ):
+
+					return 'csv_blank';
+
+					break;
+
+				case ( preg_match( '/^plm_place_(latitude|longitude|altitude|service_radius|po_box_number)$/', $base_key ) ? true : false ):
+
+					return 'blank_num';
+
+					break;
+
+				case ( preg_match( '/^plm_place_day_[a-z]+_(open|close)$/', $base_key ) ? true : false ):
+
+					return 'time';
+
+					break;
+
+				case ( preg_match( '/^plm_place_season_(from|to)_date$/', $base_key ) ? true : false ):
+
+					return 'date';
+
+					break;
+
+				case 'plm_place_menu_url':
+
+					return 'url';
+
+					break;
+
+				case 'plm_place_order_urls':
+
+					return 'csv_urls';
+
+					break;
+
+				case 'plm_place_accept_res':
+				case ( preg_match( '/^plm_place_day_[a-z]+$/', $base_key ) ? true : false ):
+
+					return 'checkbox';
+
+					break;
 			}
 
-			$this->update_post_md_opts( $md_opts, $post_id, $mod );	// Modifies the $md_opts array.
-
-			return $md_opts;
+			return $type;
 		}
 
 		public function filter_save_options( $opts, $options_name, $network, $doing_upgrade ) {
@@ -195,81 +243,44 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			return $md_opts;
 		}
 
-		public function filter_option_type( $type, $base_key ) {
+		public function filter_get_defaults( $def_opts ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! empty( $type ) ) {
-				return $type;
-			} elseif ( strpos( $base_key, 'plm_' ) !== 0 ) {
-				return $type;
+			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, array( 'plm_add_to' => 1 ) );
+
+			return $def_opts;
+		}
+
+		public function filter_get_md_defaults( $md_defs ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
 			}
 
-			switch ( $base_key ) {
+			$md_defs = array_merge(
+				$md_defs,
+				WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
+				array(
+					'plm_place_id'      => 'none',
+					'plm_place_country' => $this->p->options[ 'plm_def_country' ],
+				)
+			);
 
-				case 'plm_def_country':
-				case 'plm_place_id':
-				case 'plm_place_schema_type':		// Place Schema Type
-				case ( preg_match( '/^plm_place_(country|type)$/', $base_key ) ? true : false ):
+			return $md_defs;
+		}
 
-					return 'not_blank';
-
-					break;
-
-				case ( preg_match( '/^plm_place_(name|name_alt|desc|phone|street_address|city|state|zipcode)$/', $base_key ) ? true : false ):
-				case ( preg_match( '/^plm_place_(phone|price_range|cuisine)$/', $base_key ) ? true : false ):
-
-					return 'ok_blank';
-
-					break;
-
-				case ( preg_match( '/^plm_place_(currencies_accepted|payment_accepted)$/', $base_key ) ? true : false ):
-
-					return 'csv_blank';
-
-					break;
-
-				case ( preg_match( '/^plm_place_(latitude|longitude|altitude|service_radius|po_box_number)$/', $base_key ) ? true : false ):
-
-					return 'blank_num';
-
-					break;
-
-				case ( preg_match( '/^plm_place_day_[a-z]+_(open|close)$/', $base_key ) ? true : false ):
-
-					return 'time';
-
-					break;
-
-				case ( preg_match( '/^plm_place_season_(from|to)_date$/', $base_key ) ? true : false ):
-
-					return 'date';
-
-					break;
-
-				case 'plm_place_menu_url':
-
-					return 'url';
-
-					break;
-
-				case 'plm_place_order_urls':
-
-					return 'csv_urls';
-
-					break;
-
-				case 'plm_place_accept_res':
-				case ( preg_match( '/^plm_place_day_[a-z]+$/', $base_key ) ? true : false ):
-
-					return 'checkbox';
-
-					break;
+		public function filter_get_post_options( $md_opts, $post_id, $mod ) {
+			
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
 			}
 
-			return $type;
+			$this->update_post_md_opts( $md_opts, $post_id, $mod );	// Modifies the $md_opts array.
+
+			return $md_opts;
 		}
 
 		public function filter_og_type( $og_type, $mod, $is_custom ) {
@@ -640,21 +651,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			return $place_opts;
 		}
 
-		public function filter_post_custom_meta_tabs( $tabs, $mod, $metabox_id ) {
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-
-			if ( $metabox_id === $this->p->cf[ 'meta' ][ 'id' ] ) {
-				if ( ! empty( $this->p->options[ 'plm_add_to_' . $mod[ 'post_type' ]] ) ) {
-					SucomUtil::add_after_key( $tabs, 'media', 'place', _x( 'Schema Place', 'metabox tab', 'wpsso-plm' ) );
-				}
-			}
-
-			return $tabs;
-		}
-
 		/**
 		 * Add our place names to the place cache array.
 		 */
@@ -671,6 +667,21 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			return $ret;
+		}
+
+		public function filter_post_custom_meta_tabs( $tabs, $mod, $metabox_id ) {
+
+			if ( $this->p->debug->enabled ) {
+				$this->p->debug->mark();
+			}
+
+			if ( $metabox_id === $this->p->cf[ 'meta' ][ 'id' ] ) {
+				if ( ! empty( $this->p->options[ 'plm_add_to_' . $mod[ 'post_type' ]] ) ) {
+					SucomUtil::add_after_key( $tabs, 'media', 'place', _x( 'Schema Place', 'metabox tab', 'wpsso-plm' ) );
+				}
+			}
+
+			return $tabs;
 		}
 
 		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {

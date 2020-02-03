@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						$this->form->get_th_html( _x( 'Place Schema Type', 'option label', 'wpsso-plm' ), '', 'plm_place_schema_type' ) .  
 						'<td colspan="2">' . $this->form->get_select( 'plm_place_schema_type_' . $id, $place_types_select,
 							$css_class = 'schema_type', $css_id = '', $is_assoc = true, $is_disabled = false,
-								$selected = true, $event_names = array( 'on_focus_load_json', 'on_show_unhide_rows' ),
+								$selected = false, $event_names = array( 'on_focus_load_json', 'on_show_unhide_rows' ),
 									$event_args = 'schema_place_types' ) . '</td>';
 	
 						$table_rows[ 'plm_place_name_' . $id ] = $tr_hide_place_html . 

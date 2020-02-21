@@ -109,7 +109,7 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 					$th_cell_html = $form->get_th_html( _x( 'Open Days / Hours',
 						'option label', 'wpsso-plm' ), 'medium', 'plm_place_days' );
 				} else {
-					$th_cell_html = '<td></td>';
+					$th_cell_html = '<th class="medium"></th>';
 				}
 
 				$table_rows[ 'plm_place_day_' . $day ] = $th_cell_html . 
@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 			}
 
 			$table_rows[ 'plm_place_midday_hours' ] = '' . 
-			$form->get_th_html( _x( 'Closes Mid-Day', 'option label', 'wpsso-plm' ), '', 'plm_place_midday_hours' ) .  
+			$form->get_th_html( _x( 'Closes Mid-Day', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_midday_hours' ) .  
 			'<td class="blank" colspan="2">' .
 			__( 'Closed from', 'wpsso-plm' ) . ' ' . $form->get_no_select_time( 'plm_place_midday_close' ).
 			__( 'to', 'wpsso-plm' ) . ' ' . $form->get_no_select_time( 'plm_place_midday_open' ) .

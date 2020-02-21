@@ -259,7 +259,7 @@ msgctxt "option value"
 msgid "Place #%d"
 msgstr ""
 
-#: lib/filters.php:759
+#: lib/filters.php:757
 msgid "saving place \"%1$s\""
 msgstr ""
 

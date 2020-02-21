@@ -719,15 +719,13 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			} elseif ( $place_id === 'custom' ) {	// Value is "custom".
 
-				$place_type = empty( $md_opts[ 'plm_place_schema_type' ] ) ?
-					$def_schema_type : $md_opts[ 'plm_place_schema_type' ];
+				$place_type = empty( $md_opts[ 'plm_place_schema_type' ] ) ? $def_schema_type : $md_opts[ 'plm_place_schema_type' ];
 
 			} elseif ( is_numeric( $place_id ) ) {	// Value is "0" or more.
 
 				$place_opts = WpssoPlmPlace::get_id( $place_id, $mod );
 
-				$place_type = empty( $place_opts[ 'plm_place_schema_type' ] ) ?
-					$def_schema_type : $place_opts[ 'plm_place_schema_type' ];
+				$place_type = empty( $place_opts[ 'plm_place_schema_type' ] ) ? $def_schema_type : $place_opts[ 'plm_place_schema_type' ];
 			}
 
 			$md_opts[ 'og_type' ] = 'place';	// Overwrite the WPSSO option value.

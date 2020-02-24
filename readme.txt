@@ -114,6 +114,23 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.7.0-dev.3 (2020/02/24)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added a new lib/script.php library file and WpssoPlmScript class.
+	* Added a new js/jquery-plm-metabox.js script and `plmPlaceSchemaType()` function.
+	* Removed the 'schema_type_id' filter (not required).
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v4.0.
+	* WPSSO Core v6.21.3-dev.3.
+
 **Version 4.6.1 (2020/02/21)**
 
 * **New Features**
@@ -127,7 +144,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
-	* WPSSO Core v6.21.2
+	* WPSSO Core v6.21.2.
 
 **Version 4.6.0 (2020/01/16)**
 
@@ -145,6 +162,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v6.17.0.
 
 == Upgrade Notice ==
+
+= 4.7.0-dev.3 =
+
+(2020/02/24) Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
 
 = 4.6.1 =
 

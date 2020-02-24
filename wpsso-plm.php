@@ -14,7 +14,7 @@
  * Requires PHP: 5.5
  * Requires At Least: 4.0
  * Tested Up To: 5.3.2
- * Version: 4.6.1
+ * Version: 4.7.0-dev.3
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -44,6 +44,7 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 		 */
 		public $filters;	// WpssoPlmFilters
 		public $reg;		// WpssoPlmRegister
+		public $script;		// WpssoPlmScript
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
@@ -171,6 +172,7 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			}
 
 			$this->filters = new WpssoPlmFilters( $this->p );
+			$this->script  = new WpssoPlmScript( $this->p );
 		}
 
 		public function wpsso_init_plugin() {

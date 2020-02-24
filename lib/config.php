@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '4.6.1',	// Plugin version.
+					'version'     => '4.7.0-dev.3',	// Plugin version.
 					'opt_version' => '24',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Markup',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.21.2',
+						'min_version' => '6.21.3-dev.3',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -212,6 +212,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			require_once WPSSOPLM_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOPLM_PLUGINDIR . 'lib/place.php';
 			require_once WPSSOPLM_PLUGINDIR . 'lib/register.php';
+			require_once WPSSOPLM_PLUGINDIR . 'lib/script.php';
 
 			add_filter( 'wpssoplm_load_lib', array( 'WpssoPlmConfig', 'load_lib' ), 10, 3 );
 		}

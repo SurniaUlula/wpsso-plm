@@ -54,7 +54,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				'get_post_options'                           => 3,
 				'og_type'                                    => 3,
 				'og_seed'                                    => 2,
-				'schema_type_id'                             => 3,
 				'schema_meta_itemprop'                       => 4,
 				'json_array_schema_type_ids'                 => 2,
 				'json_prop_https_schema_org_potentialaction' => 5,
@@ -442,44 +441,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			return $mt_og;
 		}
 
-		public function filter_schema_type_id( $type_id, $mod, $is_custom ) {
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-
-			if ( $is_custom ) {
-
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'exiting early: custom schema type id is true' );
-				}
-
-				return $type_id;
-			}
-
-			$place_opts = WpssoPlmPlace::has_place( $mod );	// Returns false or place array.
-
-			if ( empty( $place_opts ) ) {
-
-				if ( $this->p->debug->enabled ) {
-					$this->p->debug->log( 'exiting early: no place options found' );
-				}
-
-				return $type_id;
-			}
-
-			$def_schema_type = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ][ 'plm_place_schema_type' ];
-
-			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ?
-				$def_schema_type : $place_opts[ 'plm_place_schema_type' ];
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->log( 'returning schema type id "' . $type_id . '"' );
-			}
-
-			return $type_id;
-		}
-
 		public function filter_schema_meta_itemprop( $mt_schema, $mod, $mt_og, $page_type_id ) {
 
 			if ( $this->p->debug->enabled ) {
@@ -586,8 +547,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			 */
 			$def_schema_type = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ][ 'plm_place_schema_type' ];
 
-			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ?
-				$def_schema_type : $place_opts[ 'plm_place_schema_type' ];
+			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ? $def_schema_type : $place_opts[ 'plm_place_schema_type' ];
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->log( 'adding schema type id "' . $type_id . '"' );

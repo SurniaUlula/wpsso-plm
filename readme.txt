@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.7.0-dev.5 (2020/02/24)**
+**Version 4.7.0-dev.5 (2020/02/25)**
 
 * **New Features**
 	* None.
@@ -165,7 +165,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.7.0-dev.5 =
 
-(2020/02/24) Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
+(2020/02/25) Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
 
 = 4.6.1 =
 

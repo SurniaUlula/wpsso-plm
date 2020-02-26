@@ -114,7 +114,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.7.0-b.3 (2020/02/26)**
+**Version 4.7.0-rc.1 (2020/02/26)**
 
 * **New Features**
 	* None.
@@ -129,7 +129,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
-	* WPSSO Core v6.22.0-b.3.
+	* WPSSO Core v6.22.0-rc.1.
 
 **Version 4.6.1 (2020/02/21)**
 
@@ -163,7 +163,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.7.0-dev.5 =
+= 4.7.0-rc.1 =
 
 (2020/02/26) Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
 

@@ -167,7 +167,3 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 (2020/02/27) Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
 
-= 4.6.1 =
-
-(2020/02/21) Fixed the CSS option label width under the Document SSO &gt; Schema Place tab.
-

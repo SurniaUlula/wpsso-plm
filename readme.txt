@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 4.7.1
+Stable Tag: 4.7.0
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 

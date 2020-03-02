@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 4.7.0
+Stable Tag: 4.7.1
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
@@ -114,6 +114,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.7.1 (2020/03/02)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed resetting the Schema Type to default if linked / unlinked to a place ID.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.5.
+	* WordPress v4.0.
+	* WPSSO Core v6.22.1.
+
 **Version 4.7.0 (2020/02/27)**
 
 * **New Features**
@@ -131,39 +146,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.0.
 	* WPSSO Core v6.22.0.
 
-**Version 4.6.1 (2020/02/21)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed the CSS option label width under the Document SSO &gt; Schema Place tab.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.21.2.
-
-**Version 4.6.0 (2020/01/16)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Renamed the SSO menu item "Places / Locations" to "Places".
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.17.0.
-
 == Upgrade Notice ==
 
-= 4.7.0 =
+= 4.7.1 =
 
-(2020/02/27) Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
+(2020/03/02) Fixed resetting the Schema Type to default if linked / unlinked to a place ID.
 

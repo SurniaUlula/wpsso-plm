@@ -8,7 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-plm/assets/
 Tags: local seo, local business, knowledge graph, location, place, address, venue, restaurant, business hours, telephone, coordinates, meta tags
 Contributors: jsmoriss
-Requires PHP: 5.5
+Requires PHP: 5.6
 Requires At Least: 4.0
 Tested Up To: 5.4
 Stable Tag: 4.7.1
@@ -125,26 +125,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 * **Requires At Least**
-	* PHP v5.5.
+	* PHP v5.6.
 	* WordPress v4.0.
-	* WPSSO Core v6.22.1.
-
-**Version 4.7.0 (2020/02/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added jQuery to enable/disable the Schema Type if/when a place is selected in the Document SSO metabox.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added a new lib/script.php library file and WpssoPlmScript class.
-	* Added a new js/jquery-plm-metabox.js script and `plmPlaceSchemaType()` function.
-	* Removed the 'wpsso_schema_type_id' filter hook.
-* **Requires At Least**
-	* PHP v5.5.
-	* WordPress v4.0.
-	* WPSSO Core v6.22.0.
+	* WPSSO Core v6.23.1.
 
 == Upgrade Notice ==
 

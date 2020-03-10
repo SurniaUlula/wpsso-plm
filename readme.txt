@@ -114,6 +114,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.8.0-b.1 (2020/03/10)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added support for a new WPSSO_SCHEMA_MARKUP_DISABLE constant.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.0.
+	* WPSSO Core v6.24.0-b.1.
+
 **Version 4.7.1 (2020/03/02)**
 
 * **New Features**
@@ -130,6 +145,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v6.23.2.
 
 == Upgrade Notice ==
+
+= 4.8.0-b.1 =
+
+(2020/03/10) Added support for a new WPSSO_SCHEMA_MARKUP_DISABLE constant.
 
 = 4.7.1 =
 

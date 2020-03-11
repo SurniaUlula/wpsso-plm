@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.0
 Tested Up To: 5.4
-Stable Tag: 4.7.1
+Stable Tag: 4.8.0
 
 Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
 
@@ -146,7 +146,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.8.0-rc.1 =
+= 4.8.0 =
 
 (2020/03/11) Added support for a new WPSSO_SCHEMA_MARKUP_DISABLE constant.
 

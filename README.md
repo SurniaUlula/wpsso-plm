@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Place and Local SEO Markup</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>4.7.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>4.8.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.0 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.4</td></tr>

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Place and Local SEO Meta 4.8.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-03-10 15:07-0700\n"
-"PO-Revision-Date: 2020-03-10 15:07-0700\n"
+"POT-Creation-Date: 2020-03-12 14:11-0700\n"
+"PO-Revision-Date: 2020-03-12 14:15-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -212,8 +212,8 @@ msgstr "Endroits"
 
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
-msgid "Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags."
-msgstr "Balises méta Facebook / Open Graph d'emplacement, Pinterest d'endroit, Schéma d'entreprise locale et SEO local."
+msgid "Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place."
+msgstr "Gérez des endroits et référencement local pour Facebook / Open Graph, Pinterest, Google entreprises locales et Schéma Place."
 
 #: lib/gettext-config.php:8
 msgctxt "option value"
@@ -779,8 +779,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-plm/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-plm/"
 
 #. Description of the plugin/theme
-msgid "Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags."
-msgstr "Balises méta Facebook / Open Graph d'emplacement, Pinterest d'endroit, Schéma d'entreprise locale et SEO local."
+msgid "Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place."
+msgstr "Gérez des endroits et référencement local pour Facebook / Open Graph, Pinterest, Google entreprises locales et Schéma Place."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"

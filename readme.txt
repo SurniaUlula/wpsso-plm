@@ -13,7 +13,7 @@ Requires At Least: 4.0
 Tested Up To: 5.4
 Stable Tag: 4.8.0
 
-Facebook / Open Graph Location, Pinterest Place, Schema Local Business and Local SEO meta tags.
+Manage Places and Locations for Facebook / Open Graph, Pinterest, Local Business and Local SEO markup.
 
 == Description ==
 

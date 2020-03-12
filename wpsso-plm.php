@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place markup.
+ * Description: Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.
  * Requires PHP: 5.6
  * Requires At Least: 4.0
  * Tested Up To: 5.4

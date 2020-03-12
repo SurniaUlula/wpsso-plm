@@ -13,7 +13,7 @@ Requires At Least: 4.0
 Tested Up To: 5.4
 Stable Tag: 4.8.0
 
-Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place markup.
+Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place Markup.
 
 == Description ==
 
@@ -25,9 +25,11 @@ Add Facebook / Open Graph "location", Pinterest Rich Pin "place", and Google Loc
 
 **Provide place and location information for WPSSO Core and its add-ons:**
 
-* The WPSSO Core plugin can use place information for Facebook / Open Graph "location", Pinterest Rich Pin "place" and Local SEO meta tags.
-* The WPSSO Organization add-on can assign places to organizations (ie. content publisher, event organizer, etc.).
-* The [WPSSO Schema JSON-LD Markup Premium](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) add-on can use place information for the Schema Place type and its sub-types.
+The WPSSO Core plugin can use place information for Facebook / Open Graph "location", Pinterest Rich Pin "place" and Local SEO meta tags.
+
+The WPSSO Organization add-on can assign places to organizations (ie. content publisher, event organizer, etc.).
+
+The [WPSSO Schema JSON-LD Markup Premium](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) add-on can use place information for the Schema Place type and its sub-types.
 
 <h3>WPSSO PLM Standard Features</h3>
 

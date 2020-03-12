@@ -19,9 +19,9 @@ Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local B
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-plm/assets/icon-256x256.png"></p>
 
-**Let Facebook, Pinterest, and Google know about your places and locations:**
+**Let Facebook, Pinterest and Google know about your places and locations:**
 
-Add Facebook / Open Graph location, Pinterest Rich Pin place, and Google Local Business / Local SEO markup.
+Add Facebook / Open Graph location, Pinterest Rich Pin place and Google Local Business / Local SEO markup.
 
 **Provide place and location information for WPSSO Core and its add-ons:**
 

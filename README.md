@@ -16,9 +16,9 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-plm/assets/icon-256x256.png"></p>
 
-<p><strong>Let Facebook, Pinterest, and Google know about your places and locations:</strong></p>
+<p><strong>Let Facebook, Pinterest and Google know about your places and locations:</strong></p>
 
-<p>Add Facebook / Open Graph location, Pinterest Rich Pin place, and Google Local Business / Local SEO markup.</p>
+<p>Add Facebook / Open Graph location, Pinterest Rich Pin place and Google Local Business / Local SEO markup.</p>
 
 <p><strong>Provide place and location information for WPSSO Core and its add-ons:</strong></p>
 

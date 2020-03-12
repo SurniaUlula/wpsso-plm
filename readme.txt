@@ -23,7 +23,7 @@ Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local B
 
 Add Facebook / Open Graph location, Pinterest Rich Pin place and Google Local Business / Local SEO markup.
 
-**Provide place and location information for WPSSO Core and its add-ons:**
+**Provides place and location information for WPSSO Core and its add-ons:**
 
 *The WPSSO Core plugin* can use place information for Facebook / Open Graph location, Pinterest Rich Pin place and Local SEO meta tags.
 

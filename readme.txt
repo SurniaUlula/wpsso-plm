@@ -13,23 +13,21 @@ Requires At Least: 4.0
 Tested Up To: 5.4
 Stable Tag: 4.8.0
 
-Manage Places and Locations for Facebook / Open Graph, Pinterest, Local Business and Local SEO markup.
+Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place markup.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-plm/assets/icon-256x256.png"></p>
 
-**Let Pinterest, Facebook and Google know about your location(s):**
+**Let Facebook, Pinterest, and Google know about your places and locations:**
 
-Include Pinterest Rich Pin *Place*, Facebook / Open Graph *Location*, and Google *Local Business / Local SEO* meta tags in your webpages.
+Add Facebook / Open Graph "location", Pinterest Rich Pin "place", and Google Local Business / Local SEO markup in your webpages.
 
-**The WPSSO Place and Local SEO Markup (aka WPSSO PLM) add-on can be used in two different ways:**
+**Provide place and location information for WPSSO Core and its add-ons:**
 
-* To provide location information for an Organization, which in turn may be related to the content (ie. the content publisher, event organizer, etc.).
-
-* To provide location information for the webpage content (ie. the post/page content is about a specific physical place) (Premium add-on).
-
-Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-organization/) (aka WPSSO ORG) add-on is required to select a location for an organization / local business.
+* The WPSSO Core plugin can use place information for Facebook / Open Graph "location", Pinterest Rich Pin "place" and Local SEO meta tags.
+* The WPSSO Organization add-on can assign places to organizations (ie. content publisher, event organizer, etc.).
+* The [WPSSO Schema JSON-LD Markup Premium](https://wpsso.com/extend/plugins/wpsso-schema-json-ld/) add-on can use place information for the Schema Place type and its sub-types.
 
 <h3>WPSSO PLM Standard Features</h3>
 
@@ -70,13 +68,9 @@ Note that the [WPSSO Organization Markup](https://wordpress.org/plugins/wpsso-or
 
 <h3>WPSSO PLM Premium Features</h3>
 
-The Standard version is designed to satisfy the requirements of most standard WordPress sites / blogs. If your site includes posts / pages about specific places, then you may want the Premium version to select specific places for your post / page content.
+The Standard version is designed to satisfy the requirements of most standard WordPress sites / blogs. If your site includes posts / pages about specific places, then you may want the Premium version to select specific places for your post / page content. You may also want the WPSSO JSON Premium add-on to express place information as Schema Place markup in JSON-LD format.
 
-* Adds a Schema Place tab in the Document SSO metabox to select an address or enter custom address information for the content.
-
-<h3>Markup Examples</h3>
-
-* [Markup Example for a Restaurant](http://wpsso.com/docs/plugins/wpsso-schema-json-ld/notes/markup-examples/markup-example-for-a-restaurant/) using the WPSSO PLM add-on to manage the place information (address, geo coordinates, business hours – daily and seasonal, restaurant menu URL, and accepts reservation values).
+* Adds a Schema Place tab in the Document SSO metabox to select an existing place or enter custom place information for the content.
 
 <h3>WPSSO Core Plugin Required</h3>
 

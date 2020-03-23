@@ -73,7 +73,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 				$this->p->util->add_plugin_filters( $this, array( 
 					'form_cache_place_names' => 1,
-					'post_custom_meta_tabs'  => 3,
+					'post_document_meta_tabs'  => 3,
 				), $prio = 1000 );	// Run after WPSSO Core's own Standard / Premium filters.
 
 				$this->p->util->add_plugin_filters( $this, array( 
@@ -629,7 +629,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			return $ret;
 		}
 
-		public function filter_post_custom_meta_tabs( $tabs, $mod, $metabox_id ) {
+		public function filter_post_document_meta_tabs( $tabs, $mod, $metabox_id ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();

@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.0
  * Tested Up To: 5.4
- * Version: 4.8.0
+ * Version: 4.9.0-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -175,6 +175,9 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 			$this->script  = new WpssoPlmScript( $this->p );
 		}
 
+		/**
+		 * All WPSSO objects are instantiated and configured.
+		 */
 		public function wpsso_init_plugin() {
 
 			if ( $this->p->debug->enabled ) {
@@ -183,7 +186,7 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 
 			if ( ! $this->have_min_version ) {
 
-				$this->min_version_notice();
+				$this->min_version_notice();	// Show minimum version notice.
 
 				return;	// Stop here.
 			}

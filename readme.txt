@@ -110,6 +110,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.9.0-dev.1 (2020/03/23)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed 'custom_meta' hooks to 'document_meta' for WPSSO Core v6.26.0.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.0.
+	* WPSSO Core v6.26.0-dev.1.
+
 **Version 4.8.0 (2020/03/11)**
 
 * **New Features**
@@ -141,6 +156,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v6.23.2.
 
 == Upgrade Notice ==
+
+= 4.9.0-dev.1 =
+
+(2020/03/23) Renamed 'custom_meta' hooks to 'document_meta' for WPSSO Core v6.26.0.
 
 = 4.8.0 =
 

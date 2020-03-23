@@ -72,8 +72,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->msgs = new WpssoPlmFiltersMessages( $plugin );
 
 				$this->p->util->add_plugin_filters( $this, array( 
-					'form_cache_place_names' => 1,
-					'post_document_meta_tabs'  => 3,
+					'form_cache_place_names'  => 1,
+					'post_document_meta_tabs' => 3,
 				), $prio = 1000 );	// Run after WPSSO Core's own Standard / Premium filters.
 
 				$this->p->util->add_plugin_filters( $this, array( 

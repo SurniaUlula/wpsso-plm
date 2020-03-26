@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Place and Local SEO Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Markup 4.9.0-b.1\n"
+"Project-Id-Version: WPSSO Place and Local SEO Markup 4.9.0-rc.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -238,7 +238,7 @@ msgstr ""
 msgid "A default country to use when creating a new place."
 msgstr ""
 
-#: lib/filters-messages.php:299 lib/filters.php:640
+#: lib/filters-messages.php:299 lib/filters.php:636
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr ""
@@ -254,12 +254,12 @@ msgstr ""
 msgid "Select an existing place or enter a custom place below."
 msgstr ""
 
-#: lib/filters.php:203
+#: lib/filters.php:199
 msgctxt "option value"
 msgid "Place #%d"
 msgstr ""
 
-#: lib/filters.php:717
+#: lib/filters.php:698
 msgid "saving place \"%1$s\""
 msgstr ""
 

@@ -75,10 +75,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					'form_cache_place_names'  => 1,
 					'post_document_meta_tabs' => 3,
 				), $prio = 1000 );	// Run after WPSSO Core's own Standard / Premium filters.
-
-				$this->p->util->add_plugin_filters( $this, array( 
-					'status_pro_features' => 4,
-				), $prio = 10, $ext = 'wpssoplm' );	// Hook into our own filters.
 			}
 		}
 
@@ -642,21 +638,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			return $tabs;
-		}
-
-		public function filter_status_pro_features( $features, $ext, $info, $pkg ) {
-
-			if ( $this->p->debug->enabled ) {
-				$this->p->debug->mark();
-			}
-
-			$features[ '(feature) Custom Schema Place Meta' ] = array( 
-				'td_class' => $pkg[ 'pp' ] ? '' : 'blank',
-				'purchase' => $pkg[ 'purchase' ],
-				'status'   => $pkg[ 'pp' ] ? 'on' : 'off',
-			);
-
-			return $features;
 		}
 
 		private function update_post_md_opts( &$md_opts, $post_id, $mod ) {

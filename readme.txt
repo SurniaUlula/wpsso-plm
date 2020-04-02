@@ -110,6 +110,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.10.0-dev.1 (2020/04/02)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Refactored WPSSO Core active and minimum version dependency checks.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.0.
+	* WPSSO Core v6.27.1.
+
 **Version 4.9.0 (2020/03/27)**
 
 * **New Features**
@@ -140,22 +155,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.0.
 	* WPSSO Core v6.24.0.
 
-**Version 4.7.1 (2020/03/02)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed resetting the Schema Type to default if linked / unlinked to a place ID.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.23.2.
-
 == Upgrade Notice ==
+
+= 4.10.0-dev.1 =
+
+(2020/04/02) Refactored WPSSO Core active and minimum version dependency checks.
 
 = 4.9.0 =
 
@@ -164,8 +168,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.8.0 =
 
 (2020/03/11) Added support for a new WPSSO_SCHEMA_MARKUP_DISABLE constant.
-
-= 4.7.1 =
-
-(2020/03/02) Fixed resetting the Schema Type to default if linked / unlinked to a place ID.
 

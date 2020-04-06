@@ -27,6 +27,9 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 			}
 
 			/**
+			 * The 'wpsso_init_options' action is run after the $check, $avail, $debug, $notice, $cache, $util, and
+			 * $opt properties are defined.
+			 *
 			 * Add-on hook priorities:
 			 *
 			 * 	FAQs = 10

@@ -548,221 +548,221 @@ msgctxt "option label"
 msgid "Order Action URL(s)"
 msgstr ""
 
-#: lib/register.php:148
+#: lib/register.php:151
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:149
+#: lib/register.php:152
 msgid "Category"
 msgstr ""
 
-#: lib/register.php:150
+#: lib/register.php:153
 msgctxt "Admin menu name"
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:151
+#: lib/register.php:154
 msgid "All Categories"
 msgstr ""
 
-#: lib/register.php:152
+#: lib/register.php:155
 msgid "Edit Category"
 msgstr ""
 
-#: lib/register.php:153
+#: lib/register.php:156
 msgid "View Category"
 msgstr ""
 
-#: lib/register.php:154
+#: lib/register.php:157
 msgid "Update Category"
 msgstr ""
 
-#: lib/register.php:155
+#: lib/register.php:158
 msgid "Add New Category"
 msgstr ""
 
-#: lib/register.php:156
+#: lib/register.php:159
 msgid "New Category Name"
 msgstr ""
 
-#: lib/register.php:157
+#: lib/register.php:160
 msgid "Parent Category"
 msgstr ""
 
-#: lib/register.php:158
+#: lib/register.php:161
 msgid "Parent Category:"
 msgstr ""
 
-#: lib/register.php:159
+#: lib/register.php:162
 msgid "Search Categories"
 msgstr ""
 
-#: lib/register.php:160
+#: lib/register.php:163
 msgid "Popular Categories"
 msgstr ""
 
-#: lib/register.php:161
+#: lib/register.php:164
 msgid "Separate categories with commas"
 msgstr ""
 
-#: lib/register.php:162
+#: lib/register.php:165
 msgid "Add or remove categories"
 msgstr ""
 
-#: lib/register.php:163
+#: lib/register.php:166
 msgid "Choose from the most used"
 msgstr ""
 
-#: lib/register.php:164
+#: lib/register.php:167
 msgid "No categories found."
 msgstr ""
 
-#: lib/register.php:165
+#: lib/register.php:168
 msgid "← Back to categories"
 msgstr ""
 
-#: lib/register.php:169
+#: lib/register.php:172
 msgctxt "Taxonomy label"
 msgid "Categories"
 msgstr ""
 
-#: lib/register.php:180
+#: lib/register.php:183
 msgctxt "Taxonomy description"
 msgid "Categories for Places"
 msgstr ""
 
-#: lib/register.php:191
+#: lib/register.php:194
 msgid "Places"
 msgstr ""
 
-#: lib/register.php:192
+#: lib/register.php:195
 msgid "Place"
 msgstr ""
 
-#: lib/register.php:193
+#: lib/register.php:196
 msgid "Add New"
 msgstr ""
 
-#: lib/register.php:194
+#: lib/register.php:197
 msgid "Add New Place"
 msgstr ""
 
-#: lib/register.php:195
+#: lib/register.php:198
 msgid "Edit Place"
 msgstr ""
 
-#: lib/register.php:196
+#: lib/register.php:199
 msgid "New Place"
 msgstr ""
 
-#: lib/register.php:197
+#: lib/register.php:200
 msgid "View Place"
 msgstr ""
 
-#: lib/register.php:198
+#: lib/register.php:201
 msgid "View Places"
 msgstr ""
 
-#: lib/register.php:199
+#: lib/register.php:202
 msgid "Search Places"
 msgstr ""
 
-#: lib/register.php:200
+#: lib/register.php:203
 msgid "No places found"
 msgstr ""
 
-#: lib/register.php:201
+#: lib/register.php:204
 msgid "No places found in Trash"
 msgstr ""
 
-#: lib/register.php:202
+#: lib/register.php:205
 msgid "Parent Place:"
 msgstr ""
 
-#: lib/register.php:203
+#: lib/register.php:206
 msgid "All Places"
 msgstr ""
 
-#: lib/register.php:204
+#: lib/register.php:207
 msgid "Place Archives"
 msgstr ""
 
-#: lib/register.php:205
+#: lib/register.php:208
 msgid "Place Attributes"
 msgstr ""
 
-#: lib/register.php:206
+#: lib/register.php:209
 msgid "Insert into place"
 msgstr ""
 
-#: lib/register.php:207
+#: lib/register.php:210
 msgid "Uploaded to this place"
 msgstr ""
 
-#: lib/register.php:208
+#: lib/register.php:211
 msgid "Place Image"
 msgstr ""
 
-#: lib/register.php:209
+#: lib/register.php:212
 msgid "Set place image"
 msgstr ""
 
-#: lib/register.php:210
+#: lib/register.php:213
 msgid "Remove place image"
 msgstr ""
 
-#: lib/register.php:211
+#: lib/register.php:214
 msgid "Use as place image"
 msgstr ""
 
-#: lib/register.php:212
+#: lib/register.php:215
 msgctxt "Admin menu name"
 msgid "Places"
 msgstr ""
 
-#: lib/register.php:213
+#: lib/register.php:216
 msgid "Filter places"
 msgstr ""
 
-#: lib/register.php:214
+#: lib/register.php:217
 msgid "Places list navigation"
 msgstr ""
 
-#: lib/register.php:215
+#: lib/register.php:218
 msgid "Places list"
 msgstr ""
 
-#: lib/register.php:216
+#: lib/register.php:219
 msgctxt "Admin bar name"
 msgid "Place"
 msgstr ""
 
-#: lib/register.php:217
+#: lib/register.php:220
 msgid "Place published."
 msgstr ""
 
-#: lib/register.php:218
+#: lib/register.php:221
 msgid "Place published privately."
 msgstr ""
 
-#: lib/register.php:219
+#: lib/register.php:222
 msgid "Place reverted to draft."
 msgstr ""
 
-#: lib/register.php:220
+#: lib/register.php:223
 msgid "Place scheduled."
 msgstr ""
 
-#: lib/register.php:221
+#: lib/register.php:224
 msgid "Place updated."
 msgstr ""
 
-#: lib/register.php:225
+#: lib/register.php:228
 msgctxt "Post type label"
 msgid "Place"
 msgstr ""
 
-#: lib/register.php:227
+#: lib/register.php:230
 msgctxt "Post type description"
 msgid "Location, place, or venue"
 msgstr ""
@@ -828,7 +828,7 @@ msgid ""
 "plugin or <a href=\"%3$s\">deactivate this add-on</a>."
 msgstr ""
 
-#: wpsso-plm.php:222
+#: wpsso-plm.php:225
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."

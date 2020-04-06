@@ -26,16 +26,6 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 				add_action( 'wpmu_activate_blog', array( $this, 'wpmu_activate_blog' ), 10, 5 );
 			}
 
-			/**
-			 * The 'wpsso_init_options' action is run after the $check, $avail, $debug, $notice, $cache, $util, and
-			 * $opt properties are defined.
-			 *
-			 * Add-on hook priorities:
-			 *
-			 * 	FAQs = 10
-			 * 	Organizations = 20
-			 * 	Places = 30
-			 */
 			//add_action( 'wpsso_init_options', array( $this, 'register_taxonomy_plm_category' ), 30 );
 
 			//add_action( 'wpsso_init_options', array( $this, 'register_post_type_place' ), 30 );

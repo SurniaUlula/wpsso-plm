@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$this->maybe_show_language_notice();
 
-			$metabox_id      = 'place';
+			$metabox_id      = 'plm';
 			$metabox_title   = _x( 'Places and Settings', 'metabox title', 'wpsso-plm' );
 			$metabox_screen  = $this->pagehook;
 			$metabox_context = 'normal';
@@ -43,11 +43,11 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 			);
 
 			add_meta_box( $this->pagehook . '_' . $metabox_id, $metabox_title,
-				array( $this, 'show_metabox_place' ), $metabox_screen,
+				array( $this, 'show_metabox_' . $metabox_id ), $metabox_screen,
 					$metabox_context, $metabox_prio, $callback_args );
 		}
 
-		public function show_metabox_place() {
+		public function show_metabox_plm() {
 
 			$metabox_id = 'plm';
 

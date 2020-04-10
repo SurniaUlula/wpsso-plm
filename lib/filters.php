@@ -165,7 +165,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				return $opts;	// Nothing to do.
 			}
 
-			$place_names    = SucomUtil::get_multi_key_locale( 'plm_place_name', $opts, $add_none = false );
+			$place_names = SucomUtil::get_multi_key_locale( 'plm_place_name', $opts, $add_none = false );
+
 			$place_last_num = SucomUtil::get_last_num( $place_names );
 
 			foreach ( $place_names as $place_id => $name ) {

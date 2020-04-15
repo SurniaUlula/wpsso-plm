@@ -245,7 +245,12 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, array( 'plm_add_to' => 1 ) );
+			/**
+			 * Add options using a key prefix array and post type names.
+			 */
+			$def_opts = $this->p->util->add_ptns_to_opts( $def_opts, array(
+				'plm_add_to' => 1,
+			) );
 
 			return $def_opts;
 		}

@@ -296,12 +296,12 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 					$add_to_checkboxes = '';
 
-					foreach ( $this->p->util->get_post_types( 'objects' ) as $pt ) {	// Get public post types.
+					foreach ( $this->p->util->get_post_types( 'objects' ) as $obj ) {
 
 						$add_to_checkboxes .= '<p>' .
-							$this->form->get_checkbox( 'plm_add_to_' . $pt->name ) . ' ' .
-							( empty( $pt->label ) ? '' : $pt->label ) . 	// Just in case.
-							( empty( $pt->description ) ? '' : ' (' . $pt->description . ')' ) .
+							$this->form->get_checkbox( 'plm_add_to_' . $obj->name ) . ' ' .
+							( empty( $obj->label ) ? '' : $obj->label ) . 	// Just in case.
+							( empty( $obj->description ) ? '' : ' (' . $obj->description . ')' ) .
 							'</p>';
 					}
 

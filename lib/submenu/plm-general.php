@@ -296,7 +296,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 					$add_to_checkboxes = '';
 
-					foreach ( $this->p->util->get_post_types( 'objects' ) as $pt ) {
+					foreach ( $this->p->util->get_post_types( 'objects' ) as $pt ) {	// Get public post types.
 
 						$add_to_checkboxes .= '<p>' .
 							$this->form->get_checkbox( 'plm_add_to_' . $pt->name ) . ' ' .

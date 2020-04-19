@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 						'wpsso' => array(
 							'class'       => 'Wpsso',
 							'name'        => 'WPSSO Core',
-							'min_version' => '6.28.0',
+							'min_version' => '7.0.1',
 						),
 					),
 

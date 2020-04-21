@@ -273,7 +273,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			return $md_defs;
 		}
 
-		public function filter_get_post_options( $md_opts, $post_id, $mod ) {
+		public function filter_get_post_options( array $md_opts, $post_id, array $mod ) {
 			
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();

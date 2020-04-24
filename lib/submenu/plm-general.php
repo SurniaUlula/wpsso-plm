@@ -150,8 +150,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						$table_rows[ 'plm_place_desc_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html_locale( _x( 'Place Description', 'option label', 'wpsso-plm' ), 
 							$css_class = '', $css_id = 'plm_place_desc' ) .
-						'<td colspan="2">' . $this->form->get_textarea( SucomUtil::get_key_locale( 'plm_place_desc_' . $id,
-							$this->form->options ) ) . '</td>';
+						'<td colspan="2">' . $this->form->get_textarea_locale( 'plm_place_desc_' . $id ) . '</td>';
 
 						$table_rows[ 'plm_place_street_address_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Street Address', 'option label', 'wpsso-plm' ), 

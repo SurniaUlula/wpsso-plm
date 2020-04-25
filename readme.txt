@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
 Tested Up To: 5.4
-Stable Tag: 4.10.0
+Stable Tag: 4.11.0
 
 Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.
 
@@ -142,36 +142,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.2.
 	* WPSSO Core v7.0.1.
 
-**Version 4.9.0 (2020/03/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed 'custom_meta' hooks to 'document_meta' for WPSSO Core v6.26.0.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.27.1.
-
-**Version 4.8.0 (2020/03/11)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added support for a new WPSSO_SCHEMA_MARKUP_DISABLE constant.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.24.0.
-
 == Upgrade Notice ==
 
 = 4.11.0 =
@@ -181,12 +151,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.10.0 =
 
 (2020/04/06) Updated "Requires At Least" to WordPress v4.2. Refactored WPSSO Core active and minimum version dependency checks.
-
-= 4.9.0 =
-
-(2020/03/27) Renamed 'custom_meta' hooks to 'document_meta' for WPSSO Core v6.26.0.
-
-= 4.8.0 =
-
-(2020/03/11) Added support for a new WPSSO_SCHEMA_MARKUP_DISABLE constant.
 

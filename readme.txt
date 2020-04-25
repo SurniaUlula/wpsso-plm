@@ -82,8 +82,8 @@ WPSSO Place and Local SEO Markup (aka WPSSO PLM) is an add-on for the [WPSSO Cor
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO PLM Add-on](https://wpsso.com/docs/plugins/wpsso-plm/installation/install-the-plugin/)
-* [Uninstall the WPSSO PLM Add-on](https://wpsso.com/docs/plugins/wpsso-plm/installation/uninstall-the-plugin/)
+* [Install the WPSSO Place and Local SEO Markup add-on](https://wpsso.com/docs/plugins/wpsso-plm/installation/install-the-plugin/).
+* [Uninstall the WPSSO Place and Local SEO Markup add-on](https://wpsso.com/docs/plugins/wpsso-plm/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 

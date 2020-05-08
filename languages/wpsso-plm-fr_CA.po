@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the WPSSO Place and Location Meta (WPSSO PLM) package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 4.11.0\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.12.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-04-25 16:42-0700\n"
-"PO-Revision-Date: 2020-04-25 16:42-0700\n"
+"POT-Creation-Date: 2020-05-08 08:06-0700\n"
+"PO-Revision-Date: 2020-05-08 08:07-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -183,7 +183,7 @@ msgstr "L'ajout WPSSO JSON est requis pour ajouter ces URLs d'action de commande
 msgid "A default country to use when creating a new place."
 msgstr "Un pays par défaut à utiliser lors de la création d'un endroit nouveau."
 
-#: lib/filters-messages.php:299 lib/filters.php:642
+#: lib/filters-messages.php:299 lib/filters.php:644
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr "Schéma Place"
@@ -201,7 +201,7 @@ msgctxt "option value"
 msgid "Place #%d"
 msgstr "Endroit #%d"
 
-#: lib/filters.php:704
+#: lib/filters.php:706
 msgid "saving place \"%1$s\""
 msgstr "enregistrement de l'endroit \"%1$s\""
 
@@ -762,13 +762,13 @@ msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr "Afficher l'onglet sur articles de type"
 
-#: wpsso-plm.php:119
-msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href=\"%3$s\">deactivate this add-on</a>."
-msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension ou <a href=\"%3$s\">désactiver cet ajout</a>."
+#: wpsso-plm.php:243
+msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
+msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-plm.php:225
+#: wpsso-plm.php:246
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
-msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
+msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Place and Local SEO Markup"

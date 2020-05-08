@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.12.0-b.1 (2020/05/08)**
+**Version 4.12.0-rc.1 (2020/05/08)**
 
 * **New Features**
 	* None.
@@ -123,7 +123,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.4.0-b.1.
+	* WPSSO Core v7.4.0-rc.1.
 
 **Version 4.11.0 (2020/04/25)**
 
@@ -159,7 +159,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.12.0-b.1 =
+= 4.12.0-rc.1 =
 
 (2020/05/08) Refactored the required plugin check to (optionally) check the class name and a version constant.
 

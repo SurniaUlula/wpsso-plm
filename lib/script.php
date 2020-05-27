@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoPlmScript' ) ) {
 			) );
 
 			$this->p->util->add_plugin_filters( $this, array(
-				'metabox_script_data_option_labels' => 1,
+				'admin_page_script_data_option_labels' => 1,
 			) );
 		}
 
@@ -44,7 +44,7 @@ if ( ! class_exists( 'WpssoPlmScript' ) ) {
 			wp_enqueue_script( 'plm-metabox' );
 		}
 
-		public function filter_metabox_script_data_option_labels( $option_labels ) {
+		public function filter_admin_page_script_data_option_labels( $option_labels ) {
 
 			$option_labels[ 'plm_place_id' ] = _x( 'Select a Place', 'option label', 'wpsso-plm' );
 

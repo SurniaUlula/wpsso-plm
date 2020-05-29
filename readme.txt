@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.13.0-rc.1 (2020/05/29)**
+**Version 4.13.0-rc.2 (2020/05/30)**
 
 * **New Features**
 	* None.
@@ -123,7 +123,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.7.0-rc.1.
+	* WPSSO Core v7.7.0-rc.2.
 
 **Version 4.12.0 (2020/05/09)**
 
@@ -174,9 +174,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.13.0-rc.1 =
+= 4.13.0-rc.2 =
 
-(2020/05/29) Renamed the 'metabox_script_data_option_labels' filter hook for WPSSO Core v7.7.0.
+(2020/05/30) Renamed the 'metabox_script_data_option_labels' filter hook for WPSSO Core v7.7.0.
 
 = 4.12.0 =
 

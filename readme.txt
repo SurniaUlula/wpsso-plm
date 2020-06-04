@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.14.0-rc.1 (2020/06/04)**
+**Version 4.14.0 (2020/06/04)**
 
 * **New Features**
 	* None.
@@ -124,7 +124,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.8.0-rc.1.
+	* WPSSO Core v7.8.0.
 
 **Version 4.13.0 (2020/05/30)**
 
@@ -190,7 +190,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.14.0-rc.1 =
+= 4.14.0 =
 
 (2020/06/04) Updated method calls for WPSSO Core v7.8.0.
 

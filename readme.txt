@@ -194,19 +194,3 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 (2020/06/04) Updated method calls for WPSSO Core v7.8.0.
 
-= 4.13.0 =
-
-(2020/05/30) Renamed the 'metabox_script_data_option_labels' filter hook for WPSSO Core v7.7.0.
-
-= 4.12.0 =
-
-(2020/05/09) Refactored the required plugin check to (optionally) check the class name and a version constant.
-
-= 4.11.0 =
-
-(2020/04/25) Updated multilingual option method calls for optimized methods in WPSSO Core v7.1.0.
-
-= 4.10.0 =
-
-(2020/04/06) Updated "Requires At Least" to WordPress v4.2. Refactored WPSSO Core active and minimum version dependency checks.
-

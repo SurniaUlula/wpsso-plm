@@ -99,57 +99,39 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					return 'not_blank';
 
-					break;
-
 				case ( preg_match( '/^plm_place_(name|name_alt|desc|phone|street_address|city|state|zipcode)$/', $base_key ) ? true : false ):
 				case ( preg_match( '/^plm_place_(phone|price_range|cuisine)$/', $base_key ) ? true : false ):
 
 					return 'ok_blank';
 
-					break;
-
 				case ( preg_match( '/^plm_place_(currencies_accepted|payment_accepted)$/', $base_key ) ? true : false ):
 
 					return 'csv_blank';
-
-					break;
 
 				case ( preg_match( '/^plm_place_(latitude|longitude|altitude|service_radius|po_box_number)$/', $base_key ) ? true : false ):
 
 					return 'blank_num';
 
-					break;
-
 				case ( preg_match( '/^plm_place_day_[a-z]+_(open|close)$/', $base_key ) ? true : false ):
 
 					return 'time';
-
-					break;
 
 				case ( preg_match( '/^plm_place_season_(from|to)_date$/', $base_key ) ? true : false ):
 
 					return 'date';
 
-					break;
-
 				case 'plm_place_menu_url':
 
 					return 'url';
-
-					break;
 
 				case 'plm_place_order_urls':
 
 					return 'csv_urls';
 
-					break;
-
 				case 'plm_place_accept_res':
 				case ( preg_match( '/^plm_place_day_[a-z]+$/', $base_key ) ? true : false ):
 
 					return 'checkbox';
-
-					break;
 			}
 
 			return $type;

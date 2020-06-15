@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.15.0-dev.1 (2020/06/14)**
+**Version 4.15.0-dev.2 (2020/06/15)**
 
 * **New Features**
 	* None.
@@ -123,7 +123,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v7.10.0-dev.1.
+	* WPSSO Core v7.10.0-dev.2.
 
 **Version 4.14.0 (2020/06/04)**
 
@@ -205,9 +205,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.15.0-dev.1 =
+= 4.15.0-dev.2 =
 
-(2020/06/14) Replaced the 'wpsso_save_options' filter with 'wpsso_save_setting_options'.
+(2020/06/15) Replaced the 'wpsso_save_options' filter with 'wpsso_save_setting_options'.
 
 = 4.14.0 =
 

@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.15.0 (2020/06/19)**
+**Version 4.15.0 (2020/06/20)**
 
 * **New Features**
 	* None.
@@ -207,7 +207,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.15.0 =
 
-(2020/06/19) Replaced the 'wpsso_save_options' filter with 'wpsso_save_setting_options'.
+(2020/06/20) Replaced the 'wpsso_save_options' filter with 'wpsso_save_setting_options'.
 
 = 4.14.0 =
 

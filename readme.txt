@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
 Tested Up To: 5.4.2
-Stable Tag: 4.15.0
+Stable Tag: 4.15.1
 
 Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.
 
@@ -110,7 +110,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.15.0 (2020/06/20)**
+**Version 4.15.1 (2020/06/20)**
 
 * **New Features**
 	* None.
@@ -125,91 +125,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.2.
 	* WPSSO Core v7.10.1.
 
-**Version 4.14.0 (2020/06/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated method calls for WPSSO Core v7.8.0:
-		* Changed `WpssoUtil->get_post_types()` to `SucomUtilWP::get_post_types()`.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.8.0.
-
-**Version 4.13.0 (2020/05/30)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the 'metabox_script_data_option_labels' filter hook to 'admin_page_script_data_option_labels' for WPSSO Core v7.7.0.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.7.0.
-
-**Version 4.12.0 (2020/05/09)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the required plugin check to (optionally) check the class name and a version constant.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.5.0.
-
-**Version 4.11.0 (2020/04/25)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Changed `get_input()` for multilingual options to `get_input_locale()` (available since WPSSO Core v7.1.0).
-	* Changed `get_textarea()` for multilingual options to `get_textarea_locale()` (available since WPSSO Core v7.1.0).
-	* Changed `get_th_html()` for multilingual options to `get_th_html_locale()` (available since WPSSO Core v7.1.0).
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.3.0.
-
-**Version 4.10.0 (2020/04/06)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated "Requires At Least" to WordPress v4.2.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored WPSSO Core active and minimum version dependency checks.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.0.1.
-
 == Upgrade Notice ==
 
-= 4.15.0 =
+= 4.15.1 =
 
 (2020/06/20) Replaced the 'wpsso_save_options' filter with 'wpsso_save_setting_options'.
-
-= 4.14.0 =
-
-(2020/06/04) Updated method calls for WPSSO Core v7.8.0.
 

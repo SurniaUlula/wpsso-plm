@@ -47,7 +47,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			$this->p->util->add_plugin_filters( $this, array( 
 				'option_type'                                => 2,
-				'save_options'                               => 4,
+				'save_setting_options'                       => 3,
 				'save_post_options'                          => 4,
 				'get_defaults'                               => 1,
 				'get_md_defaults'                            => 1,

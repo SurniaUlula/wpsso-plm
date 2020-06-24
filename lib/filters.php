@@ -140,7 +140,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		/**
 		 * $network is true if saving multisite network settings.
 		 */
-		public function filter_save_setting_options( array $opts, $network, $doing_upgrade ) {
+		public function filter_save_setting_options( array $opts, $network, $upgrading ) {
 
 			if ( $this->p->debug->enabled ) {
 				$this->p->debug->mark();
@@ -199,10 +199,11 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					);
 
 					/**
-					 * Get the location image and issue an error if the original image is too small. Only check
-					 * on a manual save, not an options upgrade action (ie. when a new add-on is activated).
+					 * Get the location image and issue an error if the original image is too small.
+					 *
+					 * Only check on a manual save, not an options upgrade action (ie. when a new add-on is activated).
 					 */
-					if ( ! $doing_upgrade ) {
+					if ( ! $upgrading ) {
 						$this->check_location_image_size( $opts, $place_id );
 					}
 				}

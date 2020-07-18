@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-plm/assets/
-Tags: local seo, local business, restaurant, schema, meta tags, location, place, address, venue, business hours, telephone, coordinates, knowledge graph
+Tags: local seo, local business, restaurant, meta tags, schema.org, location, place, address, venue, business hours, knowledge graph
 Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2

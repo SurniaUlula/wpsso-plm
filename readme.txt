@@ -72,7 +72,7 @@ Add Facebook / Open Graph location, Pinterest Rich Pin place and Google Local Bu
 
 The Standard version is designed to satisfy the requirements of most standard WordPress sites / blogs. If your site includes posts / pages about specific places, then you may want the Premium version to select specific places for your post / page content. You may also want to activate the WPSSO Schema JSON-LD Markup add-on to express place information as Schema Place markup in JSON-LD format.
 
-* Adds a Schema Place tab in the Document SSO metabox to select an existing place or enter custom place information for the content.
+* Includes a Schema Place tab in the Document SSO metabox to select an existing place or customize place information for the content.
 
 <h3>WPSSO Core Plugin Required</h3>
 

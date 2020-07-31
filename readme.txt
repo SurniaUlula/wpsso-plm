@@ -110,6 +110,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.16.0-dev.2 (2020/07/31)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the config array keys for icons URLs from 'low' and 'high' to '1x' and '2x'.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v7.15.0-dev.2.
+
 **Version 4.15.1 (2020/06/20)**
 
 * **New Features**
@@ -126,6 +141,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v7.10.1.
 
 == Upgrade Notice ==
+
+= 4.16.0-dev.2 =
+
+(2020/07/31) Renamed the config array keys for icons URLs from 'low' and 'high' to '1x' and '2x'.
 
 = 4.15.1 =
 

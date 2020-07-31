@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Place and Local SEO Meta 4.13.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-05-28 08:56-0700\n"
-"PO-Revision-Date: 2020-05-28 08:56-0700\n"
+"POT-Creation-Date: 2020-07-31 07:11-0700\n"
+"PO-Revision-Date: 2020-07-31 07:11-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -181,7 +181,7 @@ msgstr "L'ajout WPSSO JSON est requis pour ajouter ces URLs d'action de commande
 msgid "A default country to use when creating a new place."
 msgstr "Un pays par défaut à utiliser lors de la création d'un endroit nouveau."
 
-#: lib/filters-messages.php:299 lib/filters.php:644
+#: lib/filters-messages.php:299 lib/filters.php:630
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr "Schéma Place"
@@ -194,12 +194,12 @@ msgstr "Un onglet \"%1$s\" peut être ajouté à la metabox %2$s pour les articl
 msgid "Select an existing place or enter a custom place below."
 msgstr "Sélectionnez un endroit ou complétez un endroit personnalisée ci-dessous."
 
-#: lib/filters.php:200
+#: lib/filters.php:185
 msgctxt "option value"
 msgid "Place #%d"
 msgstr "Endroit #%d"
 
-#: lib/filters.php:706
+#: lib/filters.php:692
 msgid "saving place \"%1$s\""
 msgstr "enregistrement de l'endroit \"%1$s\""
 

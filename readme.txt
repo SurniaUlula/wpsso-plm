@@ -10,7 +10,7 @@ Tags: local seo, local business, restaurant, meta tags, schema.org, location, pl
 Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
-Tested Up To: 5.4.2
+Tested Up To: 5.5
 Stable Tag: 4.15.1
 
 Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.

@@ -56,12 +56,12 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'lib' => array(
 						'pro' => array(
 							'admin' => array(
-								'post-edit' => 'Extend Post Edit Settings',
+								'post-edit' => 'Post Edit Filters',
 							),
 						),
 						'std' => array(
 							'admin' => array(
-								'post-edit' => 'Extend Post Edit Settings',
+								'post-edit' => 'Post Edit Filters',
 							),
 						),
 						'submenu' => array(

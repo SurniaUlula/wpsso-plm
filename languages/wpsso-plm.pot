@@ -263,45 +263,40 @@ msgstr ""
 msgid "saving place \"%1$s\""
 msgstr ""
 
-#: lib/gettext-config.php:6 lib/gettext-config.php:7
-msgctxt "lib file description"
-msgid "Extend Post Edit Settings"
-msgstr ""
-
-#: lib/gettext-config.php:8
+#: lib/gettext-config.php:6
 msgctxt "lib file description"
 msgid "Places"
 msgstr ""
 
-#: lib/gettext-config.php:9
+#: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
 "Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google "
 "Local Business and Schema Place."
 msgstr ""
 
-#: lib/gettext-config.php:10
+#: lib/gettext-config.php:8
 msgctxt "option value"
 msgid "local.business"
 msgstr ""
 
-#: lib/gettext-config.php:11
+#: lib/gettext-config.php:9
 msgctxt "option value"
 msgid "wp"
 msgstr ""
 
-#: lib/gettext-config.php:12 lib/gettext-config.php:14
-#: lib/gettext-config.php:16 lib/gettext-config.php:18
-#: lib/gettext-config.php:20 lib/gettext-config.php:22
-#: lib/gettext-config.php:24 lib/gettext-config.php:26
+#: lib/gettext-config.php:10 lib/gettext-config.php:12
+#: lib/gettext-config.php:14 lib/gettext-config.php:16
+#: lib/gettext-config.php:18 lib/gettext-config.php:20
+#: lib/gettext-config.php:22 lib/gettext-config.php:24
 msgctxt "option value"
 msgid "09:00"
 msgstr ""
 
-#: lib/gettext-config.php:13 lib/gettext-config.php:15
-#: lib/gettext-config.php:17 lib/gettext-config.php:19
-#: lib/gettext-config.php:21 lib/gettext-config.php:23
-#: lib/gettext-config.php:25 lib/gettext-config.php:27
+#: lib/gettext-config.php:11 lib/gettext-config.php:13
+#: lib/gettext-config.php:15 lib/gettext-config.php:17
+#: lib/gettext-config.php:19 lib/gettext-config.php:21
+#: lib/gettext-config.php:23 lib/gettext-config.php:25
 msgctxt "option value"
 msgid "17:00"
 msgstr ""

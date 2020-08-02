@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 4.13.0\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.16.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-07-31 07:11-0700\n"
-"PO-Revision-Date: 2020-07-31 07:11-0700\n"
+"POT-Creation-Date: 2020-08-02 10:40-0700\n"
+"PO-Revision-Date: 2020-08-02 10:40-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -760,11 +760,11 @@ msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr "Afficher l'onglet sur articles de type"
 
-#: wpsso-plm.php:243
+#: wpsso-plm.php:251
 msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-plm.php:246
+#: wpsso-plm.php:254
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 

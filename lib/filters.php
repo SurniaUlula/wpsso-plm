@@ -707,7 +707,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			 *	'og:image:size_name' => null,
 			 * );
 			 */
-			$og_single_image = $this->p->media->get_opts_single_image( $opts, $size_name, $opt_img_pre, $opt_num );
+			$mt_single_image = $this->p->media->get_opts_single_image( $opts, $size_name, $opt_img_pre, $opt_num );
 
 			$this->p->notice->unset_ref( $settings_page_link );
 		}

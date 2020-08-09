@@ -29,11 +29,13 @@ The [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) can use place info
 
 The [WPSSO Organization add-on](https://wordpress.org/plugins/wpsso-organization/) can assign places to organizations (ie. content publisher, event organizer, etc.).
 
-The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) can use place information for the Schema Place type and its sub-types.
+The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) can use place information for the Schema Event location, Schema Job Posting location, and the Schema Place type (and its sub-types).
 
 <h3>WPSSO PLM Standard Features</h3>
 
 * Extends the features of the WPSSO Core plugin.
+
+* Provides place / location information to WPSSO Core, the WPSSO ORG add-on, and the WPSSO JSON add-on.
 
 * Manage one or more places:
 

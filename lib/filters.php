@@ -741,9 +741,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			$this->p->notice->set_ref( $settings_page_link, false, $context_transl );
 
-			/**
-			 * Changed from get_opts_single_image() to get_mt_opts_images() on 2020/08/10.
-			 */
 			$mt_images = $wpsso->media->get_mt_opts_images( $opts, $size_names = 'schema', $img_pre = 'plm_place_img', $opt_num );
 
 			$this->p->notice->unset_ref( $settings_page_link );

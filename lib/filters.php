@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -25,6 +26,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			static $do_once = null;
 
 			if ( true === $do_once ) {
+
 				return;	// Stop here.
 			}
 
@@ -33,6 +35,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -40,6 +43,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			 * Instantiate the WpssoPlmFiltersUpgrade class object.
 			 */
 			if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
+
 				require_once WPSSOPLM_PLUGINDIR . 'lib/filters-upgrade.php';
 			}
 
@@ -66,6 +70,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				 * Instantiate the WpssoPlmFiltersMessages class object.
 				 */
 				if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
+
 					require_once WPSSOPLM_PLUGINDIR . 'lib/filters-messages.php';
 				}
 
@@ -81,12 +86,16 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_option_type( $type, $base_key ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
 			if ( ! empty( $type ) ) {
+
 				return $type;
+
 			} elseif ( strpos( $base_key, 'plm_' ) !== 0 ) {
+
 				return $type;
 			}
 
@@ -143,10 +152,12 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_save_setting_options( array $opts, $network, $upgrading ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
 			if ( $network ) {
+
 				return $opts;	// Nothing to do.
 			}
 
@@ -167,6 +178,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					 * Maybe reset the currently selected place ID.
 					 */
 					if ( isset( $opts[ 'plm_place_id' ] ) && $opts[ 'plm_place_id' ] === $place_id ) {
+
 						unset( $opts[ 'plm_place_id' ] );
 					}
 
@@ -204,6 +216,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					 * Only check on a manual save, not an options upgrade action (ie. when a new add-on is activated).
 					 */
 					if ( ! $upgrading ) {
+
 						$this->check_location_image_size( $opts, $place_id );
 					}
 				}
@@ -217,6 +230,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_save_post_options( $md_opts, $post_id, $rel_id, $mod ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -228,6 +242,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_get_defaults( $defs ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -244,6 +259,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_get_md_defaults( $md_defs ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -262,6 +278,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_get_post_options( array $md_opts, $post_id, array $mod ) {
 			
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -273,12 +290,14 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_og_type( $og_type, $mod, $is_custom ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
 			if ( $is_custom ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'exiting early: custom og type is true' );
 				}
 
@@ -288,6 +307,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( $og_type === 'place' ) {	// Just in case.
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'exiting early: og type is already "place"' );
 				}
 
@@ -299,6 +319,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( empty( $place_opts ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'exiting early: no place options found' );
 				}
 
@@ -306,6 +327,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( 'returning og_type "place"' );
 			}
 
@@ -315,6 +337,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_og_seed( array $mt_og, array $mod ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -323,6 +346,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( empty( $place_opts ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'exiting early: no place options found' );
 				}
 
@@ -330,6 +354,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( 'returning meta tags for "place"' );
 			}
 
@@ -369,6 +394,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					$mt_og[ $mt_pre . ':longitude' ] = $place_opts[ 'plm_place_longitude' ];
 
 					if ( ! empty( $place_opts[ 'plm_altitude' ] ) ) {
+
 						$mt_og[ $mt_pre . ':altitude' ] = $place_opts[ 'plm_place_altitude' ];
 					}
 				}
@@ -432,6 +458,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_schema_meta_itemprop( $mt_schema, $mod, $mt_og, $page_type_id ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -440,6 +467,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( empty( $place_opts ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'exiting early: no place options found' );
 				}
 
@@ -464,6 +492,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( $this->p->schema->is_schema_type_child( $page_type_id, 'local.business' ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'schema type is child of local.business' );
 				}
 
@@ -477,6 +506,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				}
 
 			} elseif ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( 'schema type is not a child of local.business' );
 			}
 
@@ -486,6 +516,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( $this->p->schema->is_schema_type_child( $page_type_id, 'food.establishment' ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'schema type is child of food.establishment' );
 				}
 
@@ -496,8 +527,11 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				) as $opt_key => $mt_name ) {
 
 					if ( $opt_key === 'plm_place_accept_res' ) {
+
 						$mt_schema[ $mt_name ] = empty( $place_opts[ $opt_key ] ) ? 'false' : 'true';
+
 					} else {
+
 						$mt_schema[ $mt_name ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : '';
 					}
 				}
@@ -509,6 +543,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_json_array_schema_type_ids( $type_ids, $mod ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -517,6 +552,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			if ( empty( $place_opts ) ) {
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'exiting early: no place options found' );
 				}
 
@@ -538,6 +574,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			$type_id = empty( $place_opts[ 'plm_place_schema_type' ] ) ? $def_schema_type : $place_opts[ 'plm_place_schema_type' ];
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->log( 'adding schema type id "' . $type_id . '"' );
 			}
 
@@ -549,14 +586,17 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_json_prop_https_schema_org_potentialaction( $action_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
 			if ( ! $is_main ) {
+
 				return $action_data;
 			}
 
 			if ( empty( $mt_og[ 'place:business:order_url' ] ) ) {
+
 				return $action_data;
 			}
 
@@ -572,12 +612,14 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_get_place_options( $place_opts, $mod, $place_id ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
 			if ( false !== $place_opts ) {	// First come, first served.
 
 				if ( $this->p->debug->enabled ) {
+
 					$this->p->debug->log( 'exiting early: place_opts array already defined' );
 				}
 
@@ -592,6 +634,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$plm_place_opts = WpssoPlmPlace::get_id( $place_id, $mod );
 
 				if ( is_array( $plm_place_opts ) ) {	// Just in case.
+
 					return SucomUtil::preg_grep_keys( '/^plm_place_/', $plm_place_opts, false, 'place_' );	// Rename plm_place to place.
 				}
 			}
@@ -605,12 +648,14 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_form_cache_place_names( $mixed ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
 			$ret = WpssoPlmPlace::get_names();
 
 			if ( is_array( $mixed ) ) {
+
 				$ret = $mixed + $ret;
 			}
 
@@ -620,6 +665,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		public function filter_post_document_meta_tabs( $tabs, $mod, $metabox_id ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -637,6 +683,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		private function update_post_md_opts( &$md_opts, $post_id, $mod ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 

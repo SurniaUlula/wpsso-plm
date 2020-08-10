@@ -733,28 +733,18 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		 */
 		private function check_location_image_size( $opts, $opt_num = null ) {
 
-			$opt_img_pre        = 'plm_place_img';
-			$size_name          = $this->p->lca . '-schema';
-			$name_transl        = SucomUtil::get_key_value( 'plm_place_name_' . $opt_num, $opts, 'current' );
-			$context_transl     = sprintf( __( 'saving place "%1$s"', 'wpsso-plm' ), $name_transl );
+			$name_transl = SucomUtil::get_key_value( 'plm_place_name_' . $opt_num, $opts, 'current' );
+
+			$context_transl = sprintf( __( 'saving place "%1$s"', 'wpsso-plm' ), $name_transl );
+
 			$settings_page_link = $this->p->util->get_admin_url( 'plm-general' );
 
 			$this->p->notice->set_ref( $settings_page_link, false, $context_transl );
 
 			/**
-			 * Returns an image array:
-			 *
-			 * array(
-			 *	'og:image:url'       => null,
-			 *	'og:image:width'     => null,
-			 *	'og:image:height'    => null,
-			 *	'og:image:cropped'   => null,
-			 *	'og:image:id'        => null,
-			 *	'og:image:alt'       => null,
-			 *	'og:image:size_name' => null,
-			 * );
+			 * Changed from get_opts_single_image() to get_mt_opts_images() on 2020/08/10.
 			 */
-			$mt_single_image = $this->p->media->get_opts_single_image( $opts, $size_name, $opt_img_pre, $opt_num );
+			$mt_images = $wpsso->media->get_mt_opts_images( $opts, $size_names = 'schema', $img_pre = 'plm_place_img', $opt_num );
 
 			$this->p->notice->unset_ref( $settings_page_link );
 		}

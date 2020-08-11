@@ -217,7 +217,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					 */
 					if ( ! $upgrading ) {
 
-						$this->check_location_image_size( $opts, $place_id );
+						$this->check_location_image_sizes( $opts, $place_id );
 					}
 				}
 			}
@@ -731,7 +731,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		/**
 		 * Get the location image and issue an error if the original image is too small.
 		 */
-		private function check_location_image_size( $opts, $opt_num = null ) {
+		private function check_location_image_sizes( $opts, $opt_num = null ) {
 
 			$name_transl = SucomUtil::get_key_value( 'plm_place_name_' . $opt_num, $opts, 'current' );
 

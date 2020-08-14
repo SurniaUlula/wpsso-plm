@@ -149,6 +149,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				$md_opts = self::get_md_options( $mixed );	// Always returns and array.
 
 				foreach ( SucomUtil::preg_grep_keys( '/^(plm_place_.*)(#.*)?$/', $md_opts, false, '$1' ) as $opt_key => $value ) {
+
 					$place_opts[ $opt_key ] = SucomUtil::get_key_value( $opt_key, $md_opts, $mixed );
 				}
 

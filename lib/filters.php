@@ -263,16 +263,10 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$md_defs = array_merge(
-				$md_defs,
-				WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
-				array(
-					'plm_place_id'      => 'none',
-					'plm_place_country' => $this->p->options[ 'plm_def_country' ],
-				)
-			);
-
-			return $md_defs;
+			return array_merge( $md_defs, WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], array(
+				'plm_place_id'      => 'none',
+				'plm_place_country' => $this->p->options[ 'plm_def_country' ],
+			) );
 		}
 
 		public function filter_get_post_options( array $md_opts, $post_id, array $mod ) {

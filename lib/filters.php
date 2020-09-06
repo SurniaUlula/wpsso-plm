@@ -730,11 +730,11 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			$settings_page_link = $this->p->util->get_admin_url( 'plm-general' );
 
-			$this->p->notice->set_ref( $settings_page_link, false, $context_transl );
+			$this->p->util->maybe_set_ref( $settings_page_link, $mod = false, $context_transl );
 
 			$mt_images = $this->p->media->get_mt_opts_images( $opts, $size_names = 'schema', $img_pre = 'plm_place_img', $opt_num );
 
-			$this->p->notice->unset_ref( $settings_page_link );
+			$this->p->util->maybe_unset_ref( $settings_page_link );
 		}
 	}
 }

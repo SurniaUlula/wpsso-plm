@@ -67,15 +67,13 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 					$text .= '<p>';
 
-					$text .= __( 'You may select a place or enter custom place information to further describe the content subject.', 'wpsso-plm' ) . ' ';
+					$text .= __( 'You may select a place, or enter custom place information, to further describe the content subject.', 'wpsso-plm' ) . ' ';
 
-					$text .= sprintf( __( 'Please make sure the content subject is about a single specific place or location - for example, <a href="%s">The Eiffel Tower</a>.', 'wpsso-plm' ), __( 'https://en.wikipedia.org/wiki/Eiffel_Tower', 'wpsso-plm' ) );
+					$text .= sprintf( __( 'If you select a place, make sure the content subject is about a single specific place or location &mdash; For example, <a href="%s">The Eiffel Tower</a>.', 'wpsso-plm' ), __( 'https://en.wikipedia.org/wiki/Eiffel_Tower', 'wpsso-plm' ) ) . ' ';
 
-					$text .= '</p><p>';
+					$text .= __( 'Selecting a place will set the webpage Open Graph type to "place" and the Schema type to the one selected below.', 'wpsso-plm' );
 
-					$text .= __( 'Selecting a place will define the webpage Open Graph type to "place" and the Schema type to the one selected below.', 'wpsso-plm' );
-
-					$text .= '</p>';
+					$text .= '</p>' . "\n";
 
 					$text .= '</blockquote>';
 

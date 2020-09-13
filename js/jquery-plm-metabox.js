@@ -4,6 +4,7 @@ jQuery( document ).bind( 'sucom_init_metabox', function( event, container_id, do
 	var table_id = 'table.sucom-settings';
 
 	if ( 'undefined' !== typeof container_id && container_id ) {
+
 		table_id = container_id + ' ' + table_id;
 	}
 
@@ -25,6 +26,7 @@ function plmPlaceSchemaType() {
 	var def_schema_type_id = select_schema_type.attr( 'data-default-value' );
 
 	if ( schema_type_linked.length ) {
+
 		jQuery( schema_type_linked ).remove();
 	}
 
@@ -34,6 +36,7 @@ function plmPlaceSchemaType() {
 	var def_schema_org_org_id = select_schema_org_org.attr( 'data-default-value' );
 
 	if ( schema_org_org_linked.length ) {
+
 		jQuery( schema_org_org_linked ).remove();
 	}
 
@@ -50,7 +53,9 @@ function plmPlaceSchemaType() {
 			select_schema_type.prop( 'disabled', false );
 
 			if ( 'undefined' !== typeof def_schema_type_id ) {
+
 				if ( def_schema_type_id !== schema_type_id ) {
+
 					select_schema_type.trigger( 'load_json' ).val( def_schema_type_id ).trigger( 'change' );
 				}
 			}
@@ -61,7 +66,9 @@ function plmPlaceSchemaType() {
 			select_schema_org_org.prop( 'disabled', false );
 
 			if ( 'undefined' !== typeof def_schema_org_org_id ) {
+
 				if ( def_schema_org_org_id !== schema_org_org_id ) {
+
 					select_schema_org_org.trigger( 'load_json' ).val( def_schema_org_org_id ).trigger( 'change' );
 				}
 			}
@@ -72,6 +79,7 @@ function plmPlaceSchemaType() {
 		var place_opt_ext = '_' + place_id;
 
 		if ( place_id === 'custom' ) {
+
 			place_opt_ext = '';
 		}
 
@@ -89,6 +97,7 @@ function plmPlaceSchemaType() {
 		select_schema_type.prop( 'disabled', true );
 
 		if ( place_schema_type_id !== schema_type_id ) {
+
 			select_schema_type.trigger( 'load_json' ).val( place_schema_type_id ).trigger( 'change' );
 		}
 
@@ -99,6 +108,7 @@ function plmPlaceSchemaType() {
 		select_schema_org_org.prop( 'disabled', true );
 
 		if ( 'none' !== schema_org_org_id ) {
+
 			select_schema_org_org.trigger( 'load_json' ).val( 'none' ).trigger( 'change' );
 		}
 	}

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Place and Local SEO Meta 4.17.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-09-14 11:16-0700\n"
-"PO-Revision-Date: 2020-09-14 11:16-0700\n"
+"PO-Revision-Date: 2020-09-15 08:57-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -770,7 +770,7 @@ msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente 
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Place and Local SEO Markup"
-msgstr "WPSSO Place and Local SEO Markup"
+msgstr "WPSSO balisage d'endroit et SEO local"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-plm/"

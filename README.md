@@ -3,10 +3,10 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Place and Local SEO Markup</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>4.17.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>4.17.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.2 or newer</td></tr>
-<tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.5</td></tr>
+<tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.5.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>local seo, local business, restaurant, meta tags, schema.org, location, place, address, venue, business hours, knowledge graph</td></tr>

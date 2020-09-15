@@ -13,7 +13,7 @@
  * Description: Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.
  * Requires PHP: 5.6
  * Requires At Least: 4.2
- * Tested Up To: 5.5
+ * Tested Up To: 5.5.1
  * Version: 4.17.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]

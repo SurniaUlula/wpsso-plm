@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.17.2-rc.1 (2020/09/15)**
+**Version 4.17.2 (2020/09/15)**
 
 * **New Features**
 	* None.
@@ -125,30 +125,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v8.5.0-rc.1.
-
-**Version 4.17.1 (2020/08/11)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added support for the new WpssoUtilMetabox class in WPSSO Core v8.0.0.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v8.4.1.
+	* WPSSO Core v8.5.0.
 
 == Upgrade Notice ==
 
-= 2.17.2-rc.1 =
+= 2.17.2 =
 
 (2020/09/15) Updated the French plugin translations.
-
-= 4.17.1 =
-
-(2020/08/11) Added support for the new WpssoUtilMetabox class in WPSSO Core v8.0.0.
 

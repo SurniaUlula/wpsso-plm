@@ -56,7 +56,7 @@ msgid "17:00"
 msgstr ""
 
 #: gettext/gettext-lib-pro.php:6 lib/pro/admin/post-edit.php:48
-#: lib/script.php:49 lib/std/admin/post-edit.php:47
+#: lib/script.php:51 lib/std/admin/post-edit.php:47
 msgctxt "option label"
 msgid "Select a Place"
 msgstr ""

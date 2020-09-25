@@ -129,7 +129,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.17.2 =
+= 4.17.2 =
 
 (2020/09/15) Updated the French plugin translations.
 

@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.18.0-dev.1 (2020/10/01)**
+**Version 4.18.0-dev.2 (2020/10/01)**
 
 * **New Features**
 	* None.
@@ -145,7 +145,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.18.0-dev.1 =
+= 4.18.0-dev.2 =
 
 (2020/10/01) Renamed the 'plm_addr_state' and 'plm_addr_zipcode' option key.
 

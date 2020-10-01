@@ -43,6 +43,7 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 		public function filter_rename_options_keys( $options_keys ) {
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -61,8 +62,8 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					'plm_addr_streetaddr'               => 'plm_place_street_address',
 					'plm_addr_po_box_number'            => 'plm_place_po_box_number',
 					'plm_addr_city'                     => 'plm_place_city',
-					'plm_addr_state'                    => 'plm_place_state',
-					'plm_addr_zipcode'                  => 'plm_place_zipcode',
+					'plm_addr_state'                    => 'plm_place_region',
+					'plm_addr_zipcode'                  => 'plm_place_postal_code',
 					'plm_addr_country'                  => 'plm_place_country',
 					'plm_addr_phone'                    => 'plm_place_phone',
 					'plm_addr_latitude'                 => 'plm_place_latitude',
@@ -108,6 +109,10 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					'plm_addr_menu_url'                 => 'plm_place_menu_url',
 					'plm_addr_cuisine'                  => 'plm_place_cuisine',
 					'plm_addr_order_urls'               => 'plm_place_order_urls',
+				),
+				25 => array(
+					'plm_place_state'   => 'plm_place_region',
+					'plm_place_zipcode' => 'plm_place_postal_code',
 				),
 			);
 
@@ -125,8 +130,8 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					'plm_streetaddr'    => 'plm_place_street_address',
 					'plm_po_box_number' => 'plm_place_po_box_number',
 					'plm_city'          => 'plm_place_city',
-					'plm_state'         => 'plm_place_state',
-					'plm_zipcode'       => 'plm_place_zipcode',
+					'plm_state'         => 'plm_place_region',
+					'plm_zipcode'       => 'plm_place_postal_code',
 					'plm_country'       => 'plm_place_country',
 					'plm_latitude'      => 'plm_place_latitude',
 					'plm_longitude'     => 'plm_place_longitude',
@@ -143,8 +148,8 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					'plm_addr_streetaddr'               => 'plm_place_street_address',
 					'plm_addr_po_box_number'            => 'plm_place_po_box_number',
 					'plm_addr_city'                     => 'plm_place_city',
-					'plm_addr_state'                    => 'plm_place_state',
-					'plm_addr_zipcode'                  => 'plm_place_zipcode',
+					'plm_addr_state'                    => 'plm_place_region',
+					'plm_addr_zipcode'                  => 'plm_place_postal_code',
 					'plm_addr_country'                  => 'plm_place_country',
 					'plm_addr_phone'                    => 'plm_place_phone',
 					'plm_addr_latitude'                 => 'plm_place_latitude',
@@ -190,6 +195,10 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					'plm_addr_menu_url'                 => 'plm_place_menu_url',
 					'plm_addr_cuisine'                  => 'plm_place_cuisine',
 					'plm_addr_order_urls'               => 'plm_place_order_urls',
+				),
+				25 => array(
+					'plm_place_state'   => 'plm_place_region',
+					'plm_place_zipcode' => 'plm_place_postal_code',
 				),
 			);
 

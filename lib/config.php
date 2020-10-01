@@ -17,8 +17,8 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '4.17.2',	// Plugin version.
-					'opt_version' => '24',		// Increment when changing default option values.
+					'version'     => '4.18.0-dev.1',	// Plugin version.
+					'opt_version' => '26',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Markup',
 					'desc'        => 'Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.5.0',
+							'min_version'   => '8.7.0-dev.1',
 						),
 					),
 
@@ -114,8 +114,8 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_place_street_address'           => '',			// Street Address
 					'plm_place_po_box_number'            => '',			// P.O. Box Number
 					'plm_place_city'                     => '',			// City
-					'plm_place_state'                    => '',			// State / Province
-					'plm_place_zipcode'                  => '',			// Zip / Postal Code
+					'plm_place_region'                   => '',			// State / Province
+					'plm_place_postal_code'              => '',			// Zip / Postal Code
 					'plm_place_country'                  => '',			// Country
 					'plm_place_phone'                    => '',			// Telephone
 					'plm_place_latitude'                 => '',			// Place Latitude

@@ -154,15 +154,15 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-plm_place_state':
+				case 'tooltip-plm_place_region':
 
-					$text = __( 'An optional state or Province name for the Pinterest Rich Pin / Schema Place meta tags and related markup.', 'wpsso-plm' );
+					$text = __( 'An optional state or province name for the Pinterest Rich Pin / Schema Place meta tags and related markup.', 'wpsso-plm' );
 
 					break;
 
-				case 'tooltip-plm_place_zipcode':
+				case 'tooltip-plm_place_postal_code':
 
-					$text = __( 'An optional zip or postal code for the Pinterest Rich Pin / Schema Place meta tags and related markup.', 'wpsso-plm' );
+					$text = __( 'An optional postal or zip code for the Pinterest Rich Pin / Schema Place meta tags and related markup.', 'wpsso-plm' );
 
 					break;
 

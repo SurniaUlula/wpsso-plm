@@ -65,15 +65,15 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 			'<td class="blank" colspan="2">' . $form->get_no_input_value() . '</td>';
 
 			$table_rows[ 'plm_place_city' ] = '' . 
-			$form->get_th_html( _x( 'City', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_city' ) .  
+			$form->get_th_html( _x( 'City / Locality', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_city' ) .  
 			'<td class="blank" colspan="2">' . $form->get_no_input_value() . '</td>';
 
-			$table_rows[ 'plm_place_state' ] = '' . 
-			$form->get_th_html( _x( 'State / Province', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_state' ) .  
+			$table_rows[ 'plm_place_region' ] = '' . 
+			$form->get_th_html( _x( 'State / Province', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_region' ) .  
 			'<td class="blank" colspan="2">' . $form->get_no_input_value() . '</td>';
 
-			$table_rows[ 'plm_place_zipcode' ] = '' . 
-			$form->get_th_html( _x( 'Zip / Postal Code', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_zipcode' ) .  
+			$table_rows[ 'plm_place_postal_code' ] = '' . 
+			$form->get_th_html( _x( 'Postal / Zip Code', 'option label', 'wpsso-plm' ), 'medium', 'plm_place_postal_code' ) .  
 			'<td class="blank" colspan="2">' . $form->get_no_input_value() . '</td>';
 
 			$table_rows[ 'plm_place_country' ] = '' . 

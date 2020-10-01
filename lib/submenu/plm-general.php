@@ -163,19 +163,19 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						'<td colspan="2">' . $this->form->get_input( 'plm_place_po_box_number_' . $id ) . '</td>';
 		
 						$table_rows[ 'plm_place_city_' . $id ] = $tr_hide_place_html . 
-						$this->form->get_th_html( _x( 'City', 'option label', 'wpsso-plm' ), 
+						$this->form->get_th_html( _x( 'City / Locality', 'option label', 'wpsso-plm' ), 
 							$css_class = '', $css_id = 'plm_place_city' ) .  
 						'<td colspan="2">' . $this->form->get_input( 'plm_place_city_' . $id ) . '</td>';
 		
-						$table_rows[ 'plm_place_state_' . $id ] = $tr_hide_place_html . 
+						$table_rows[ 'plm_place_region_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'State / Province', 'option label', 'wpsso-plm' ), 
-							$css_class = '', $css_id = 'plm_place_state' ) .  
-						'<td colspan="2">' . $this->form->get_input( 'plm_place_state_' . $id ) . '</td>';
+							$css_class = '', $css_id = 'plm_place_region' ) .  
+						'<td colspan="2">' . $this->form->get_input( 'plm_place_region_' . $id ) . '</td>';
 		
-						$table_rows[ 'plm_place_zipcode_' . $id ] = $tr_hide_place_html . 
+						$table_rows[ 'plm_place_postal_code_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Zip / Postal Code', 'option label', 'wpsso-plm' ), 
-							$css_class = '', $css_id = 'plm_place_zipcode' ) .  
-						'<td colspan="2">' . $this->form->get_input( 'plm_place_zipcode_' . $id ) . '</td>';
+							$css_class = '', $css_id = 'plm_place_postal_code' ) .  
+						'<td colspan="2">' . $this->form->get_input( 'plm_place_postal_code_' . $id ) . '</td>';
 		
 						$table_rows[ 'plm_place_country_' . $id ] = $tr_hide_place_html . 
 						$this->form->get_th_html( _x( 'Country', 'option label', 'wpsso-plm' ), 

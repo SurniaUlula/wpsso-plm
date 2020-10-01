@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Place and Local SEO Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Markup 4.17.2\n"
+"Project-Id-Version: WPSSO Place and Local SEO Markup 4.18.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgstr ""
 #: lib/pro/admin/post-edit.php:103 lib/pro/admin/post-edit.php:250
 #: lib/std/admin/post-edit.php:68 lib/submenu/plm-general.php:166
 msgctxt "option label"
-msgid "City"
+msgid "City / Locality"
 msgstr ""
 
 #: gettext/gettext-lib-pro.php:12 gettext/gettext-lib-pro.php:48
@@ -105,7 +105,7 @@ msgstr ""
 
 #: gettext/gettext-lib-pro.php:13 gettext/gettext-lib-pro.php:49
 #: lib/pro/admin/post-edit.php:111 lib/pro/admin/post-edit.php:258
-#: lib/std/admin/post-edit.php:76 lib/submenu/plm-general.php:176
+#: lib/submenu/plm-general.php:176
 msgctxt "option label"
 msgid "Zip / Postal Code"
 msgstr ""
@@ -389,13 +389,13 @@ msgstr ""
 
 #: lib/filters-messages.php:159
 msgid ""
-"An optional state or Province name for the Pinterest Rich Pin / Schema Place "
+"An optional state or province name for the Pinterest Rich Pin / Schema Place "
 "meta tags and related markup."
 msgstr ""
 
 #: lib/filters-messages.php:165
 msgid ""
-"An optional zip or postal code for the Pinterest Rich Pin / Schema Place "
+"An optional postal or zip code for the Pinterest Rich Pin / Schema Place "
 "meta tags and related markup."
 msgstr ""
 
@@ -529,7 +529,7 @@ msgstr ""
 msgid "A default country to use when creating a new place."
 msgstr ""
 
-#: lib/filters-messages.php:301 lib/filters.php:667
+#: lib/filters-messages.php:301 lib/filters.php:668
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr ""
@@ -550,7 +550,7 @@ msgctxt "option value"
 msgid "Place #%d"
 msgstr ""
 
-#: lib/filters.php:729
+#: lib/filters.php:730
 msgid "saving place \"%1$s\""
 msgstr ""
 
@@ -771,6 +771,11 @@ msgstr ""
 #: lib/register.php:220
 msgctxt "Post type description"
 msgid "Location, place, or venue"
+msgstr ""
+
+#: lib/std/admin/post-edit.php:76
+msgctxt "option label"
+msgid "Postal / Zip Code"
 msgstr ""
 
 #: lib/submenu/plm-general.php:38

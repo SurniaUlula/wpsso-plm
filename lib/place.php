@@ -22,8 +22,8 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			'plm_place_street_address' => 'place:street_address',
 			'plm_place_po_box_number'  => 'place:po_box_number',
 			'plm_place_city'           => 'place:locality',
-			'plm_place_state'          => 'place:region',
-			'plm_place_zipcode'        => 'place:postal_code',
+			'plm_place_region'         => 'place:region',
+			'plm_place_postal_code'    => 'place:postal_code',
 			'plm_place_country'        => 'place:country_name',
 			'plm_place_phone'          => 'place:telephone',
 		);
@@ -207,8 +207,8 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				'plm_place_street_address',
 				'plm_place_po_box_number',
 				'plm_place_city',
-				'plm_place_state',
-				'plm_place_zipcode',
+				'plm_place_region',
+				'plm_place_postal_code',
 				'plm_place_country',
 			) as $opt_key ) {
 

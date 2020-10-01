@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					return 'not_blank';
 
-				case ( preg_match( '/^plm_place_(name|name_alt|desc|phone|street_address|city|state|zipcode)$/', $base_key ) ? true : false ):
+				case ( preg_match( '/^plm_place_(name|name_alt|desc|phone|street_address|city|state|postal_code|zipcode)$/', $base_key ) ? true : false ):
 				case ( preg_match( '/^plm_place_(phone|price_range|cuisine)$/', $base_key ) ? true : false ):
 
 					return 'ok_blank';
@@ -365,6 +365,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			 * place:telephone
 			 */
 			foreach ( WpssoPlmPlace::$place_mt as $key => $mt_name ) {
+
 				$mt_og[ $mt_name ] = isset( $place_opts[ $key ] ) && $place_opts[ $key ] !== 'none' ? $place_opts[ $key ] : '';
 			}
 

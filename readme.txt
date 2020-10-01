@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.18.0-dev.1 (TBD)**
+**Version 4.18.0-dev.1 (2020/10/01)**
 
 * **New Features**
 	* None.
@@ -121,8 +121,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Renamed the 'plm_addr_state' options key to 'plm_place_region'.
-	* Renamed the 'plm_addr_zipcode' options key to 'plm_place_postal_code'.
+	* Renamed the 'plm_addr_state' option key to 'plm_place_region'.
+	* Renamed the 'plm_addr_zipcode' option key to 'plm_place_postal_code'.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
@@ -144,6 +144,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.5.0.
 
 == Upgrade Notice ==
+
+= 4.18.0-dev.1 =
+
+(2020/10/01) Renamed the 'plm_addr_state' and 'plm_addr_zipcode' option key.
 
 = 4.17.2 =
 

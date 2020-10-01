@@ -112,6 +112,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.18.0-dev.1 (TBD)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the 'plm_addr_state' options key to 'plm_place_region'.
+	* Renamed the 'plm_addr_zipcode' options key to 'plm_place_postal_code'.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.4.
+	* WPSSO Core v8.5.0.
+
 **Version 4.17.2 (2020/09/15)**
 
 * **New Features**

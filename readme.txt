@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.18.0-b.1 (2020/10/01)**
+**Version 4.18.0-b.1 (2020/10/02)**
 
 * **New Features**
 	* None.
@@ -147,7 +147,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 4.18.0-b.1 =
 
-(2020/10/01) Renamed the 'plm_addr_state' and 'plm_addr_zipcode' option key.
+(2020/10/02) Renamed the 'plm_addr_state' and 'plm_addr_zipcode' option key.
 
 = 4.17.2 =
 

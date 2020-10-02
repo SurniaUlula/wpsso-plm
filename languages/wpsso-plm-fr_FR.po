@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 4.17.2\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.18.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-09-15 10:52-0700\n"
-"PO-Revision-Date: 2020-09-15 10:52-0700\n"
+"POT-Creation-Date: 2020-10-02 14:15-0700\n"
+"PO-Revision-Date: 2020-10-02 14:18-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -55,7 +55,7 @@ msgid "17:00"
 msgstr "17:00"
 
 #: gettext/gettext-lib-pro.php:6 lib/pro/admin/post-edit.php:48
-#: lib/script.php:49 lib/std/admin/post-edit.php:47
+#: lib/script.php:51 lib/std/admin/post-edit.php:47
 msgctxt "option label"
 msgid "Select a Place"
 msgstr "Choisir un endroit"
@@ -92,8 +92,8 @@ msgstr "Num. boîte postale"
 #: lib/pro/admin/post-edit.php:103 lib/pro/admin/post-edit.php:250
 #: lib/std/admin/post-edit.php:68 lib/submenu/plm-general.php:166
 msgctxt "option label"
-msgid "City"
-msgstr "Ville"
+msgid "City / Locality"
+msgstr "Ville / localité"
 
 #: gettext/gettext-lib-pro.php:12 gettext/gettext-lib-pro.php:48
 #: lib/pro/admin/post-edit.php:107 lib/pro/admin/post-edit.php:254
@@ -104,7 +104,7 @@ msgstr "État / Province"
 
 #: gettext/gettext-lib-pro.php:13 gettext/gettext-lib-pro.php:49
 #: lib/pro/admin/post-edit.php:111 lib/pro/admin/post-edit.php:258
-#: lib/std/admin/post-edit.php:76 lib/submenu/plm-general.php:176
+#: lib/submenu/plm-general.php:176
 msgctxt "option label"
 msgid "Zip / Postal Code"
 msgstr "Zip / code postal"
@@ -366,11 +366,11 @@ msgid "An optional city name for the Pinterest Rich Pin / Schema Place meta tags
 msgstr "Un nom de ville optionnel pour les balises méta Pinterest Rich Pin / Schema Place et balisage associées."
 
 #: lib/filters-messages.php:159
-msgid "An optional state or Province name for the Pinterest Rich Pin / Schema Place meta tags and related markup."
-msgstr "Un nom d'État ou de Province optionnel pour les balises méta Pinterest Rich Pin / Schema Place et balisage associées."
+msgid "An optional state or province name for the Pinterest Rich Pin / Schema Place meta tags and related markup."
+msgstr "Un nom d'État ou de Province optionnel pour les balises méta Pinterest Rich Pin / Schéma Place et balisage associées."
 
 #: lib/filters-messages.php:165
-msgid "An optional zip or postal code for the Pinterest Rich Pin / Schema Place meta tags and related markup."
+msgid "An optional postal or zip code for the Pinterest Rich Pin / Schema Place meta tags and related markup."
 msgstr "Un code postal ou zip optionnel pour les balises méta Pinterest Rich Pin / Schéma Place et balisage associées."
 
 #: lib/filters-messages.php:171
@@ -469,7 +469,7 @@ msgstr "L'ajout WPSSO JSON est requis pour ajouter ces URLs d'action de commande
 msgid "A default country to use when creating a new place."
 msgstr "Un pays par défaut à utiliser lors de la création d'un endroit nouveau."
 
-#: lib/filters-messages.php:301 lib/filters.php:667
+#: lib/filters-messages.php:301 lib/filters.php:668
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr "Schéma Place"
@@ -487,7 +487,7 @@ msgctxt "option value"
 msgid "Place #%d"
 msgstr "Endroit #%d"
 
-#: lib/filters.php:729
+#: lib/filters.php:730
 msgid "saving place \"%1$s\""
 msgstr "enregistrement de l'endroit \"%1$s\""
 
@@ -709,6 +709,11 @@ msgstr "Endroit"
 msgctxt "Post type description"
 msgid "Location, place, or venue"
 msgstr "Emplacement, endroit ou lieu"
+
+#: lib/std/admin/post-edit.php:76
+msgctxt "option label"
+msgid "Postal / Zip Code"
+msgstr "Code postal / zip"
 
 #: lib/submenu/plm-general.php:38
 msgctxt "metabox title"

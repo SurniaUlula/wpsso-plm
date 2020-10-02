@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.18.0-dev.2 (2020/10/01)**
+**Version 4.18.0-dev.3 (2020/10/01)**
 
 * **New Features**
 	* None.
@@ -126,7 +126,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
-	* WPSSO Core v8.5.0.
+	* WPSSO Core v8.7.0-dev.3.
 
 **Version 4.17.2 (2020/09/15)**
 
@@ -145,7 +145,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.18.0-dev.2 =
+= 4.18.0-dev.3 =
 
 (2020/10/01) Renamed the 'plm_addr_state' and 'plm_addr_zipcode' option key.
 

@@ -121,7 +121,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Refactored the add-on class to extend WpssoAddOn.
+	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
+	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
@@ -159,6 +161,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.5.0.
 
 == Upgrade Notice ==
+
+= 4.19.0-dev.1 =
+
+(TBD) Refactored the add-on class to extend WpssoAddOn.
 
 = 4.18.0 =
 

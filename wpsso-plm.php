@@ -40,20 +40,10 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 
 	class WpssoPlm extends WpssoAddOn {
 
-		/**
-		 * Library class object variables.
-		 */
 		public $filters;	// WpssoPlmFilters class.
-		public $reg;		// WpssoPlmRegister class.
 		public $script;		// WpssoPlmScript class.
 
-		/**
-		 * Reference Variables (config, options, modules, etc.).
-		 */
 		protected $p;
-		protected $ext   = 'wpssoplm';
-		protected $p_ext = 'plm';
-		protected $cf    = array();
 
 		private static $instance = null;
 

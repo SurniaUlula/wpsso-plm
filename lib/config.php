@@ -171,7 +171,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_file_path ) { 
+		public static function set_constants( $plugin_file ) { 
 
 			if ( defined( 'WPSSOPLM_VERSION' ) ) {	// Define constants only once.
 
@@ -183,11 +183,11 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOPLM_FILEPATH', $plugin_file_path );						
+			define( 'WPSSOPLM_FILEPATH', $plugin_file );						
 			define( 'WPSSOPLM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-plm/wpsso-plm.php.
-			define( 'WPSSOPLM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
+			define( 'WPSSOPLM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file ) ) ) );
 			define( 'WPSSOPLM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-plm.
-			define( 'WPSSOPLM_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
+			define( 'WPSSOPLM_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
 			define( 'WPSSOPLM_VERSION', $info[ 'version' ] );						
 
 			define( 'WPSSOPLM_CATEGORY_TAXONOMY', 'plm_category' );
@@ -236,7 +236,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			return $var_const;
 		}
 
-		public static function require_libs( $plugin_file_path ) {
+		public static function require_libs( $plugin_file ) {
 
 			require_once WPSSOPLM_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOPLM_PLUGINDIR . 'lib/place.php';

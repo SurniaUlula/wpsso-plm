@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.19.0-dev.3 (2020/10/12)**
+**Version 4.19.0-dev.4 (2020/10/12)**
 
 * **New Features**
 	* None.
@@ -126,7 +126,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
-	* WPSSO Core v8.8.0-dev.3.
+	* WPSSO Core v8.8.0-dev.4.
 
 **Version 4.18.0 (2020/10/02)**
 
@@ -161,7 +161,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.19.0-dev.3 =
+= 4.19.0-dev.4 =
 
 (2020/10/12) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 

@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 4.18.0\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.19.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-10-02 14:15-0700\n"
-"PO-Revision-Date: 2020-10-02 14:18-0700\n"
+"POT-Creation-Date: 2020-10-07 16:25-0700\n"
+"PO-Revision-Date: 2020-10-07 16:25-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -12,6 +12,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
+msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
+
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
+msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
 
 #: gettext/gettext-lib-config.php:6
 msgctxt "lib file description"
@@ -491,221 +499,221 @@ msgstr "Endroit #%d"
 msgid "saving place \"%1$s\""
 msgstr "enregistrement de l'endroit \"%1$s\""
 
-#: lib/register.php:141
+#: lib/register.php:140
 msgid "Categories"
 msgstr "Catégories"
 
-#: lib/register.php:142
+#: lib/register.php:141
 msgid "Category"
 msgstr "Catégorie"
 
-#: lib/register.php:143
+#: lib/register.php:142
 msgctxt "Admin menu name"
 msgid "Categories"
 msgstr "Catégories"
 
-#: lib/register.php:144
+#: lib/register.php:143
 msgid "All Categories"
 msgstr "Toutes catégories"
 
-#: lib/register.php:145
+#: lib/register.php:144
 msgid "Edit Category"
 msgstr "Modifier la catégorie"
 
-#: lib/register.php:146
+#: lib/register.php:145
 msgid "View Category"
 msgstr "Voir la catégorie"
 
-#: lib/register.php:147
+#: lib/register.php:146
 msgid "Update Category"
 msgstr "Mettre à jour la catégorie"
 
-#: lib/register.php:148
+#: lib/register.php:147
 msgid "Add New Category"
 msgstr "Ajouter une nouvelle catégorie"
 
-#: lib/register.php:149
+#: lib/register.php:148
 msgid "New Category Name"
 msgstr "Nom de la nouvelle catégorie"
 
-#: lib/register.php:150
+#: lib/register.php:149
 msgid "Parent Category"
 msgstr "Catégorie parente"
 
-#: lib/register.php:151
+#: lib/register.php:150
 msgid "Parent Category:"
 msgstr "Catégorie parente:"
 
-#: lib/register.php:152
+#: lib/register.php:151
 msgid "Search Categories"
 msgstr "Rechercher dans les catégories"
 
-#: lib/register.php:153
+#: lib/register.php:152
 msgid "Popular Categories"
 msgstr "Catégories populaires"
 
-#: lib/register.php:154
+#: lib/register.php:153
 msgid "Separate categories with commas"
 msgstr "Séparez les catégories avec des virgules"
 
-#: lib/register.php:155
+#: lib/register.php:154
 msgid "Add or remove categories"
 msgstr "Ajouter ou retirer des catégories"
 
-#: lib/register.php:156
+#: lib/register.php:155
 msgid "Choose from the most used"
 msgstr "Choisir parmi les plus utilisées"
 
-#: lib/register.php:157
+#: lib/register.php:156
 msgid "No categories found."
 msgstr "Aucune catégorie trouvée."
 
-#: lib/register.php:158
+#: lib/register.php:157
 msgid "← Back to categories"
 msgstr "← Retour aux catégories"
 
-#: lib/register.php:162
+#: lib/register.php:161
 msgctxt "Taxonomy label"
 msgid "Categories"
 msgstr "Catégories"
 
-#: lib/register.php:173
+#: lib/register.php:172
 msgctxt "Taxonomy description"
 msgid "Categories for Places"
 msgstr "Catégories d'endroits"
 
-#: lib/register.php:184
+#: lib/register.php:183
 msgid "Places"
 msgstr "Endroits"
 
-#: lib/register.php:185
+#: lib/register.php:184
 msgid "Place"
 msgstr "Endroit"
 
-#: lib/register.php:186
+#: lib/register.php:185
 msgid "Add New"
 msgstr "Ajouter"
 
-#: lib/register.php:187
+#: lib/register.php:186
 msgid "Add New Place"
 msgstr "Ajouter un nouvel endroit"
 
-#: lib/register.php:188
+#: lib/register.php:187
 msgid "Edit Place"
 msgstr "Modifier le lieu"
 
-#: lib/register.php:189
+#: lib/register.php:188
 msgid "New Place"
 msgstr "Nouvel endroit"
 
-#: lib/register.php:190
+#: lib/register.php:189
 msgid "View Place"
 msgstr "Voir l'endroit"
 
-#: lib/register.php:191
+#: lib/register.php:190
 msgid "View Places"
 msgstr "Voir les endroits"
 
-#: lib/register.php:192
+#: lib/register.php:191
 msgid "Search Places"
 msgstr "Rechercher dans les endroits"
 
-#: lib/register.php:193
+#: lib/register.php:192
 msgid "No places found"
 msgstr "Aucun endroit trouvé"
 
-#: lib/register.php:194
+#: lib/register.php:193
 msgid "No places found in Trash"
 msgstr "Aucun endroit trouvé dans la corbeille"
 
-#: lib/register.php:195
+#: lib/register.php:194
 msgid "Parent Place:"
 msgstr "Endroit parent:"
 
-#: lib/register.php:196
+#: lib/register.php:195
 msgid "All Places"
 msgstr "Tous les endroits"
 
-#: lib/register.php:197
+#: lib/register.php:196
 msgid "Place Archives"
 msgstr "Archives des endroits"
 
-#: lib/register.php:198
+#: lib/register.php:197
 msgid "Place Attributes"
 msgstr "Attributs de l'endroit"
 
-#: lib/register.php:199
+#: lib/register.php:198
 msgid "Insert into place"
 msgstr "Insérer dans l'endroit"
 
-#: lib/register.php:200
+#: lib/register.php:199
 msgid "Uploaded to this place"
 msgstr "Téléchargé à cet endroit"
 
-#: lib/register.php:201
+#: lib/register.php:200
 msgid "Place Image"
 msgstr "Image de l'endroit"
 
-#: lib/register.php:202
+#: lib/register.php:201
 msgid "Set place image"
 msgstr "Définir l'image de l'endroit"
 
-#: lib/register.php:203
+#: lib/register.php:202
 msgid "Remove place image"
 msgstr "Supprimer l'image de l'endroit"
 
-#: lib/register.php:204
+#: lib/register.php:203
 msgid "Use as place image"
 msgstr "Utiliser comme image d'endroit"
 
-#: lib/register.php:205
+#: lib/register.php:204
 msgctxt "Admin menu name"
 msgid "Places"
 msgstr "Endroits"
 
-#: lib/register.php:206
+#: lib/register.php:205
 msgid "Filter places"
 msgstr "Filtrer les endroits"
 
-#: lib/register.php:207
+#: lib/register.php:206
 msgid "Places list navigation"
 msgstr "Navigation de la liste des endroits"
 
-#: lib/register.php:208
+#: lib/register.php:207
 msgid "Places list"
 msgstr "Liste des endroits"
 
-#: lib/register.php:209
+#: lib/register.php:208
 msgctxt "Admin bar name"
 msgid "Place"
 msgstr "Endroit"
 
-#: lib/register.php:210
+#: lib/register.php:209
 msgid "Place published."
 msgstr "Endroit publié."
 
-#: lib/register.php:211
+#: lib/register.php:210
 msgid "Place published privately."
 msgstr "Endroit publié en privé."
 
-#: lib/register.php:212
+#: lib/register.php:211
 msgid "Place reverted to draft."
 msgstr "Endroit remis au brouillon."
 
-#: lib/register.php:213
+#: lib/register.php:212
 msgid "Place scheduled."
 msgstr "Endoit planifié."
 
-#: lib/register.php:214
+#: lib/register.php:213
 msgid "Place updated."
 msgstr "Endroit mis à jour."
 
-#: lib/register.php:218
+#: lib/register.php:217
 msgctxt "Post type label"
 msgid "Place"
 msgstr "Endroit"
 
-#: lib/register.php:220
+#: lib/register.php:219
 msgctxt "Post type description"
 msgid "Location, place, or venue"
 msgstr "Emplacement, endroit ou lieu"
@@ -769,14 +777,6 @@ msgstr "Pays par défaut"
 msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr "Afficher l'onglet sur articles de type"
-
-#: wpsso-plm.php:272
-msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
-msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
-
-#: wpsso-plm.php:285
-msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
-msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Place and Local SEO Markup"

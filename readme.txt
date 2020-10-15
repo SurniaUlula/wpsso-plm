@@ -13,7 +13,7 @@ Requires At Least: 4.4
 Tested Up To: 5.5.1
 Stable Tag: 4.18.0
 
-Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.
+Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.
 
 == Description ==
 
@@ -79,6 +79,8 @@ The Standard version is designed to satisfy the requirements of most standard Wo
 <h3>WPSSO Core Plugin Required</h3>
 
 WPSSO Place and Local SEO Markup (aka WPSSO PLM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+
+WPSSO Core and its add-ons make sure your content looks great on social sites and in search results, no matter how your URLs are crawled, shared, re-shared, posted, or embedded.
 
 == Installation ==
 

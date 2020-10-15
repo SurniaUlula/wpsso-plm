@@ -12,13 +12,13 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:160
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing "
 "plugin."
 msgstr ""
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:173
 msgid ""
 "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is "
 "currently installed)."
@@ -649,138 +649,138 @@ msgctxt "Taxonomy description"
 msgid "Categories for Places"
 msgstr ""
 
-#: lib/register.php:183
+#: lib/register.php:182
 msgid "Places"
 msgstr ""
 
-#: lib/register.php:184
+#: lib/register.php:183
 msgid "Place"
 msgstr ""
 
-#: lib/register.php:185
+#: lib/register.php:184
 msgid "Add New"
 msgstr ""
 
-#: lib/register.php:186
+#: lib/register.php:185
 msgid "Add New Place"
 msgstr ""
 
-#: lib/register.php:187
+#: lib/register.php:186
 msgid "Edit Place"
 msgstr ""
 
-#: lib/register.php:188
+#: lib/register.php:187
 msgid "New Place"
 msgstr ""
 
-#: lib/register.php:189
+#: lib/register.php:188
 msgid "View Place"
 msgstr ""
 
-#: lib/register.php:190
+#: lib/register.php:189
 msgid "View Places"
 msgstr ""
 
-#: lib/register.php:191
+#: lib/register.php:190
 msgid "Search Places"
 msgstr ""
 
-#: lib/register.php:192
+#: lib/register.php:191
 msgid "No places found"
 msgstr ""
 
-#: lib/register.php:193
+#: lib/register.php:192
 msgid "No places found in Trash"
 msgstr ""
 
-#: lib/register.php:194
+#: lib/register.php:193
 msgid "Parent Place:"
 msgstr ""
 
-#: lib/register.php:195
+#: lib/register.php:194
 msgid "All Places"
 msgstr ""
 
-#: lib/register.php:196
+#: lib/register.php:195
 msgid "Place Archives"
 msgstr ""
 
-#: lib/register.php:197
+#: lib/register.php:196
 msgid "Place Attributes"
 msgstr ""
 
-#: lib/register.php:198
+#: lib/register.php:197
 msgid "Insert into place"
 msgstr ""
 
-#: lib/register.php:199
+#: lib/register.php:198
 msgid "Uploaded to this place"
 msgstr ""
 
-#: lib/register.php:200
+#: lib/register.php:199
 msgid "Place Image"
 msgstr ""
 
-#: lib/register.php:201
+#: lib/register.php:200
 msgid "Set place image"
 msgstr ""
 
-#: lib/register.php:202
+#: lib/register.php:201
 msgid "Remove place image"
 msgstr ""
 
-#: lib/register.php:203
+#: lib/register.php:202
 msgid "Use as place image"
 msgstr ""
 
-#: lib/register.php:204
+#: lib/register.php:203
 msgctxt "Admin menu name"
 msgid "Places"
 msgstr ""
 
-#: lib/register.php:205
+#: lib/register.php:204
 msgid "Filter places"
 msgstr ""
 
-#: lib/register.php:206
+#: lib/register.php:205
 msgid "Places list navigation"
 msgstr ""
 
-#: lib/register.php:207
+#: lib/register.php:206
 msgid "Places list"
 msgstr ""
 
-#: lib/register.php:208
+#: lib/register.php:207
 msgctxt "Admin bar name"
 msgid "Place"
 msgstr ""
 
-#: lib/register.php:209
+#: lib/register.php:208
 msgid "Place published."
 msgstr ""
 
-#: lib/register.php:210
+#: lib/register.php:209
 msgid "Place published privately."
 msgstr ""
 
-#: lib/register.php:211
+#: lib/register.php:210
 msgid "Place reverted to draft."
 msgstr ""
 
-#: lib/register.php:212
+#: lib/register.php:211
 msgid "Place scheduled."
 msgstr ""
 
-#: lib/register.php:213
+#: lib/register.php:212
 msgid "Place updated."
 msgstr ""
 
-#: lib/register.php:217
+#: lib/register.php:216
 msgctxt "Post type label"
 msgid "Place"
 msgstr ""
 
-#: lib/register.php:219
+#: lib/register.php:218
 msgctxt "Post type description"
 msgid "Location, place, or venue"
 msgstr ""

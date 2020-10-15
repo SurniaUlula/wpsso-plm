@@ -180,7 +180,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 				case 'tooltip-plm_place_latitude':
 
 					$text = __( 'The numeric decimal degrees latitude for this place (required).', 'wpsso-plm' ) . ' ';
-					
+
 					$text .= __( 'You may use a service like <a href="http://www.gps-coordinates.net/">Google Maps GPS Coordinates</a> (as an example), to find the approximate GPS coordinates of a street address.', 'wpsso-plm' );
 
 					break;
@@ -188,7 +188,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 				case 'tooltip-plm_place_longitude':
 
 					$text = __( 'The numeric decimal degrees longitude for this place (required).', 'wpsso-plm' ) . ' ';
-					
+
 					$text .= __( 'You may use a service like <a href="http://www.gps-coordinates.net/">Google Maps GPS Coordinates</a> (as an example), to find the approximate GPS coordinates of a street address.', 'wpsso-plm' );
 
 					break;
@@ -212,7 +212,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 				case 'tooltip-plm_place_img_url':	// or Place Image URL.
 
 					$text = __( 'You can enter a place image URL (including the http:// prefix) instead of choosing an image ID &mdash; if a place image ID is specified, it has precedence and the image URL option is disabled.', 'wpsso-plm' ) . ' ';
-					
+
 					$text .= __( 'The image URL option allows you to use an image outside of a managed collection (WordPress Media Library or NextGEN Gallery), and/or a smaller logo style image.', 'wpsso-plm' ) . ' ';
 
 					$text .= __( 'The place image is used in the Schema LocalBusiness markup for the Schema "location" property.', 'wpsso-plm' ) . ' ';
@@ -284,7 +284,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 				case 'tooltip-plm_place_order_urls':
 
 					$text = __( 'A comma-delimited list of website and mobile app URLs to order products.', 'wpsso-plm' ) . ' ';
-					
+
 					$text .= __( 'The WPSSO JSON add-on is required to add these Order Action URL(s) to the Schema "potentialAction" property.', 'wpsso-plm' );
 
 					break;

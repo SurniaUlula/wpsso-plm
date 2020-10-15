@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_add_to_post'                => 0,
 					'plm_add_to_page'                => 1,
 					'plm_add_to_attachment'          => 0,
-					
+
 					/**
 					 * Link itemprop.
 					 */

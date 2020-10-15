@@ -174,7 +174,6 @@ if ( ! class_exists( 'WpssoPlmRegister' ) ) {
 			);
 
 			register_taxonomy( WPSSOPLM_CATEGORY_TAXONOMY, array( WPSSOPLM_PLACE_POST_TYPE ), $args );
-		
 		}
 
 		public function register_post_type_place() {

@@ -5,7 +5,7 @@
  */
 _x( 'Places', 'lib file description', 'wpsso-plm' );
 _x( 'WPSSO Place and Local SEO Markup', 'plugin name', 'wpsso-plm' );
-_x( 'Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place.', 'plugin description', 'wpsso-plm' );
+_x( 'Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.', 'plugin description', 'wpsso-plm' );
 _x( 'local.business', 'option value', 'wpsso-plm' );
 _x( 'wp', 'option value', 'wpsso-plm' );
 _x( '09:00', 'option value', 'wpsso-plm' );

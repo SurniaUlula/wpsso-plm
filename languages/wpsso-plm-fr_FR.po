@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 4.19.0\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 4.19.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-10-07 16:25-0700\n"
-"PO-Revision-Date: 2020-10-07 16:25-0700\n"
+"POT-Creation-Date: 2020-10-17 11:38-0700\n"
+"PO-Revision-Date: 2020-10-17 11:38-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,11 +13,11 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:161
 msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:179
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
 
@@ -33,8 +33,8 @@ msgstr "WPSSO balisage d'endroit et SEO local"
 
 #: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
-msgid "Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place."
-msgstr "Gérez des endroits et référencement local pour Facebook / Open Graph, Pinterest, Google entreprises locales et Schéma Place."
+msgid "Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business."
+msgstr "Gérez les endroits et référencement local de Schéma pour Facebook / Open Graph, Pinterest et entreprises locales Google."
 
 #: gettext/gettext-lib-config.php:9
 msgctxt "option value"
@@ -582,138 +582,138 @@ msgctxt "Taxonomy description"
 msgid "Categories for Places"
 msgstr "Catégories d'endroits"
 
-#: lib/register.php:183
+#: lib/register.php:182
 msgid "Places"
 msgstr "Endroits"
 
-#: lib/register.php:184
+#: lib/register.php:183
 msgid "Place"
 msgstr "Endroit"
 
-#: lib/register.php:185
+#: lib/register.php:184
 msgid "Add New"
 msgstr "Ajouter"
 
-#: lib/register.php:186
+#: lib/register.php:185
 msgid "Add New Place"
 msgstr "Ajouter un nouvel endroit"
 
-#: lib/register.php:187
+#: lib/register.php:186
 msgid "Edit Place"
 msgstr "Modifier le lieu"
 
-#: lib/register.php:188
+#: lib/register.php:187
 msgid "New Place"
 msgstr "Nouvel endroit"
 
-#: lib/register.php:189
+#: lib/register.php:188
 msgid "View Place"
 msgstr "Voir l'endroit"
 
-#: lib/register.php:190
+#: lib/register.php:189
 msgid "View Places"
 msgstr "Voir les endroits"
 
-#: lib/register.php:191
+#: lib/register.php:190
 msgid "Search Places"
 msgstr "Rechercher dans les endroits"
 
-#: lib/register.php:192
+#: lib/register.php:191
 msgid "No places found"
 msgstr "Aucun endroit trouvé"
 
-#: lib/register.php:193
+#: lib/register.php:192
 msgid "No places found in Trash"
 msgstr "Aucun endroit trouvé dans la corbeille"
 
-#: lib/register.php:194
+#: lib/register.php:193
 msgid "Parent Place:"
 msgstr "Endroit parent:"
 
-#: lib/register.php:195
+#: lib/register.php:194
 msgid "All Places"
 msgstr "Tous les endroits"
 
-#: lib/register.php:196
+#: lib/register.php:195
 msgid "Place Archives"
 msgstr "Archives des endroits"
 
-#: lib/register.php:197
+#: lib/register.php:196
 msgid "Place Attributes"
 msgstr "Attributs de l'endroit"
 
-#: lib/register.php:198
+#: lib/register.php:197
 msgid "Insert into place"
 msgstr "Insérer dans l'endroit"
 
-#: lib/register.php:199
+#: lib/register.php:198
 msgid "Uploaded to this place"
 msgstr "Téléchargé à cet endroit"
 
-#: lib/register.php:200
+#: lib/register.php:199
 msgid "Place Image"
 msgstr "Image de l'endroit"
 
-#: lib/register.php:201
+#: lib/register.php:200
 msgid "Set place image"
 msgstr "Définir l'image de l'endroit"
 
-#: lib/register.php:202
+#: lib/register.php:201
 msgid "Remove place image"
 msgstr "Supprimer l'image de l'endroit"
 
-#: lib/register.php:203
+#: lib/register.php:202
 msgid "Use as place image"
 msgstr "Utiliser comme image d'endroit"
 
-#: lib/register.php:204
+#: lib/register.php:203
 msgctxt "Admin menu name"
 msgid "Places"
 msgstr "Endroits"
 
-#: lib/register.php:205
+#: lib/register.php:204
 msgid "Filter places"
 msgstr "Filtrer les endroits"
 
-#: lib/register.php:206
+#: lib/register.php:205
 msgid "Places list navigation"
 msgstr "Navigation de la liste des endroits"
 
-#: lib/register.php:207
+#: lib/register.php:206
 msgid "Places list"
 msgstr "Liste des endroits"
 
-#: lib/register.php:208
+#: lib/register.php:207
 msgctxt "Admin bar name"
 msgid "Place"
 msgstr "Endroit"
 
-#: lib/register.php:209
+#: lib/register.php:208
 msgid "Place published."
 msgstr "Endroit publié."
 
-#: lib/register.php:210
+#: lib/register.php:209
 msgid "Place published privately."
 msgstr "Endroit publié en privé."
 
-#: lib/register.php:211
+#: lib/register.php:210
 msgid "Place reverted to draft."
 msgstr "Endroit remis au brouillon."
 
-#: lib/register.php:212
+#: lib/register.php:211
 msgid "Place scheduled."
 msgstr "Endoit planifié."
 
-#: lib/register.php:213
+#: lib/register.php:212
 msgid "Place updated."
 msgstr "Endroit mis à jour."
 
-#: lib/register.php:217
+#: lib/register.php:216
 msgctxt "Post type label"
 msgid "Place"
 msgstr "Endroit"
 
-#: lib/register.php:219
+#: lib/register.php:218
 msgctxt "Post type description"
 msgid "Location, place, or venue"
 msgstr "Emplacement, endroit ou lieu"
@@ -787,8 +787,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-plm/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-plm/"
 
 #. Description of the plugin/theme
-msgid "Manage Places and Local SEO for Facebook / Open Graph, Pinterest, Google Local Business and Schema Place."
-msgstr "Gérez des endroits et référencement local pour Facebook / Open Graph, Pinterest, Google entreprises locales et Schéma Place."
+msgid "Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business."
+msgstr "Gérez les endroits et référencement local de Schéma pour Facebook / Open Graph, Pinterest et entreprises locales Google."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"

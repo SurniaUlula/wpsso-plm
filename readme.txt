@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.4
 Tested Up To: 5.5.1
-Stable Tag: 4.18.0
+Stable Tag: 4.19.0
 
 Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.
 
@@ -130,44 +130,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.4.
 	* WPSSO Core v8.8.0.
 
-**Version 4.18.0 (2020/10/02)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the 'plm_addr_state' option key to 'plm_place_region'.
-	* Renamed the 'plm_addr_zipcode' option key to 'plm_place_postal_code'.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.7.0.
-
-**Version 4.17.2 (2020/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the French plugin translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Moved extracted translation strings from lib/gettext-*.php files to a new gettext/ folder.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.5.0.
-
 == Upgrade Notice ==
 
 = 4.19.0 =
 
 (2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
-
-= 4.18.0 =
-
-(2020/10/02) Renamed the 'plm_addr_state' and 'plm_addr_zipcode' option key.
 

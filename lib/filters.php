@@ -397,14 +397,15 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			 */
 			$place_defs = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ];
 
-			foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $weekday => $label ) {
+			foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $day_name => $day_label ) {
 
-				if ( ! empty( $place_opts[ 'plm_place_day_' . $weekday ] ) ) {
+				if ( ! empty( $place_opts[ 'plm_place_day_' . $day_name ] ) ) {
 
-					foreach ( array( 'open', 'close' ) as $hour ) {
+					foreach ( array( 'open', 'close' ) as $suffix ) {
 
-						$mt_key  = 'place:opening_hours:day:' . $weekday . ':' . $hour;
-						$opt_key = 'plm_place_day_' . $weekday . '_' . $hour;
+						$mt_key = 'place:opening_hours:day:' . $day_name . ':' . $suffix;
+
+						$opt_key = 'plm_place_day_' . $day_name . '_' . $suffix;
 
 						$mt_og[ $mt_key ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : $place_defs[ $opt_key ];
 					}
@@ -436,10 +437,12 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 						$mt_og[ $mt_name ] = SucomUtil::explode_csv( $place_opts[ $opt_key ] );
 
 					} else {
+
 						$mt_og[ $mt_name ] = $place_opts[ $opt_key ];
 					}
 
 				} else {
+
 					$mt_og[ $mt_name ] = '';
 				}
 			}

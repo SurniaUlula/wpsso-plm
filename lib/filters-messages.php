@@ -221,15 +221,17 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-plm_place_days':		// Open Days / Hours.
+				case 'tooltip-plm_place_timezone':	// Place Timezone.
 
-					$text = __( 'Select the days and hours this place is open.', 'wpsso-plm' );
+					$text = __( 'A timezone for the place open and close hour values.', 'wpsso-plm' ) . ' ';
+
+					$text .= __( 'The default timezone string is provided by WordPress.', 'wpsso-plm' );
 
 					break;
 
-				case 'tooltip-plm_place_midday_hours':	// Closes Mid-Day.
+				case 'tooltip-plm_place_days':		// Open Days / Hours.
 
-					$text = __( 'This place closes temporarily mid-day (for example, between 12:00 and 13:00 for lunch).', 'wpsso-plm' );
+					$text = __( 'Select the days and hours this place is open.', 'wpsso-plm' );
 
 					break;
 

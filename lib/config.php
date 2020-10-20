@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '4.19.1',	// Plugin version.
+					'version'     => '4.20.0-dev.2',	// Plugin version.
 					'opt_version' => '26',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Markup',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.8.1',
+							'min_version'   => '8.9.0-dev.2',
 						),
 					),
 
@@ -107,23 +107,24 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			),
 			'form' => array(
 				'plm_place_opts' => array(
-					'plm_place_schema_type'              => 'local.business',	// Place Schema Type
-					'plm_place_name'                     => '',			// Place Name
-					'plm_place_name_alt'                 => '',			// Place Altername Name
-					'plm_place_desc'                     => '',			// Place Description
-					'plm_place_street_address'           => '',			// Street Address
-					'plm_place_po_box_number'            => '',			// P.O. Box Number
-					'plm_place_city'                     => '',			// City
-					'plm_place_region'                   => '',			// State / Province
-					'plm_place_postal_code'              => '',			// Zip / Postal Code
-					'plm_place_country'                  => '',			// Country
-					'plm_place_phone'                    => '',			// Telephone
-					'plm_place_latitude'                 => '',			// Place Latitude
-					'plm_place_longitude'                => '',			// Place Longitude
-					'plm_place_altitude'                 => '',			// Place Altitude
-					'plm_place_img_id'                   => '',			// Place Image ID
+					'plm_place_schema_type'              => 'local.business',	// Place Schema Type.
+					'plm_place_name'                     => '',			// Place Name.
+					'plm_place_name_alt'                 => '',			// Place Altername Name.
+					'plm_place_desc'                     => '',			// Place Description.
+					'plm_place_street_address'           => '',			// Street Address.
+					'plm_place_po_box_number'            => '',			// P.O. Box Number.
+					'plm_place_city'                     => '',			// City.
+					'plm_place_region'                   => '',			// State / Province.
+					'plm_place_postal_code'              => '',			// Zip / Postal Code.
+					'plm_place_country'                  => '',			// Country.
+					'plm_place_phone'                    => '',			// Telephone.
+					'plm_place_latitude'                 => '',			// Place Latitude.
+					'plm_place_longitude'                => '',			// Place Longitude.
+					'plm_place_altitude'                 => '',			// Place Altitude.
+					'plm_place_img_id'                   => '',			// Place Image ID.
 					'plm_place_img_id_pre'               => 'wp',
-					'plm_place_img_url'                  => '',			// or Place Image URL
+					'plm_place_img_url'                  => '',			// or Place Image URL.
+					'plm_place_timezone'                 => '',			// Place Timezone (a default value is not required).
 					'plm_place_day_sunday'               => 0,
 					'plm_place_day_sunday_open'          => '09:00',
 					'plm_place_day_sunday_close'         => '17:00',
@@ -148,9 +149,9 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_place_day_publicholidays'       => 0,
 					'plm_place_day_publicholidays_open'  => '09:00',
 					'plm_place_day_publicholidays_close' => '17:00',
-					'plm_place_midday_close'             => '',		// Closes Mid-Day
+					'plm_place_midday_close'             => '',		// Closes Mid-Day.
 					'plm_place_midday_open'              => '',
-					'plm_place_season_from_date'         => '',		// Seasonal Dates
+					'plm_place_season_from_date'         => '',		// Seasonal Dates.
 					'plm_place_season_to_date'           => '',
 					'plm_place_service_radius'           => '',
 					'plm_place_currencies_accepted'      => '',

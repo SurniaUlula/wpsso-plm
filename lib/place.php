@@ -387,8 +387,11 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$md_opts = self::get_md_options( $mod );	// Always returns an array.
 
 			if ( is_array( $md_opts  ) ) {
-				foreach ( $wpsso->cf['form']['weekdays'] as $day => $label ) {
-					if ( ! empty( $md_opts[ 'plm_place_day_' . $day ] ) ) {
+
+				foreach ( $wpsso->cf[ 'form' ][ 'weekdays' ] as $day_name => $day_label ) {
+
+					if ( ! empty( $md_opts[ 'plm_place_day_' . $day_name ] ) ) {
+
 						return $md_opts;
 					}
 				}

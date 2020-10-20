@@ -413,6 +413,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			foreach ( array(
+				'plm_place_timezone'            => 'place:opening_hours:timezone',
 				'plm_place_midday_close'        => 'place:opening_hours:midday:close',
 				'plm_place_midday_open'         => 'place:opening_hours:midday:open',
 				'plm_place_season_from_date'    => 'place:opening_hours:season:from_date',

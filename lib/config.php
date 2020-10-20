@@ -184,12 +184,12 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOPLM_FILEPATH', $plugin_file );						
+			define( 'WPSSOPLM_FILEPATH', $plugin_file );
 			define( 'WPSSOPLM_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-plm/wpsso-plm.php.
 			define( 'WPSSOPLM_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file ) ) ) );
 			define( 'WPSSOPLM_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-plm.
 			define( 'WPSSOPLM_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
-			define( 'WPSSOPLM_VERSION', $info[ 'version' ] );						
+			define( 'WPSSOPLM_VERSION', $info[ 'version' ] );
 
 			define( 'WPSSOPLM_CATEGORY_TAXONOMY', 'plm_category' );
 			define( 'WPSSOPLM_PLACE_POST_TYPE', 'place' );

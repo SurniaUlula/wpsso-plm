@@ -543,7 +543,7 @@ msgstr ""
 msgid "A default country to use when creating a new place."
 msgstr ""
 
-#: lib/filters-messages.php:303 lib/filters.php:671
+#: lib/filters-messages.php:303 lib/filters.php:672
 msgctxt "metabox tab"
 msgid "Schema Place"
 msgstr ""
@@ -564,7 +564,7 @@ msgctxt "option value"
 msgid "Place #%d"
 msgstr ""
 
-#: lib/filters.php:733
+#: lib/filters.php:734
 msgid "saving place \"%1$s\""
 msgstr ""
 

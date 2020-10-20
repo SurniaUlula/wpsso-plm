@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -33,6 +34,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 		}
@@ -47,6 +49,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
@@ -54,14 +57,17 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$place_names = array();
 
 			if ( $add_none ) {
+
 				$first_names[ 'none' ] = $wpsso->cf['form']['place_select']['none'];
 			}
 
 			if ( $add_custom ) {
+
 				$first_names[ 'custom' ] = $wpsso->cf['form']['place_select']['custom'];
 			}
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->log( 'getting multi keys for plm_place_name' );
 			}
 
@@ -70,6 +76,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			if ( ! empty( $schema_type ) && is_string( $schema_type) ) {
 
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'removing places not in schema type: ' . $schema_type );
 				}
 
@@ -91,6 +98,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				}
 
 			} elseif ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->log( 'business type not provided - keeping all places' );
 			}
 
@@ -105,6 +113,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			}
 
 			if ( ! empty( $first_names ) ) {
+
 				$place_names = $first_names + $place_names;	// Combine arrays, preserving numeric key associations.
 			}
 
@@ -123,6 +132,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->log_args( array( 
 					'place_id' => $place_id,
 					'mixed'    => $mixed,
@@ -140,10 +150,11 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				if ( ! isset( $mixed[ 'obj' ] ) || ! is_object( $mixed[ 'obj' ] ) ) {
 
 					if ( $wpsso->debug->enabled ) {
+
 						$wpsso->debug->log( 'exiting early: no module object defined' );
 					}
 
-					return false; 
+					return false;
 				}
 
 				$md_opts = self::get_md_options( $mixed );	// Always returns and array.
@@ -160,6 +171,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				if ( isset( $local_cache[ $place_id ] ) ) {
 
 					if ( $wpsso->debug->enabled ) {
+
 						$wpsso->debug->log( 'returning options from static cache array for place ID ' . $place_id );
 					}
 
@@ -177,6 +189,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				}
 
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'saving options to static cache array for place ID ' . $place_id );
 				}
 
@@ -184,10 +197,11 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			}
 
 			if ( empty( $place_opts ) ) {
-				return false; 
-			} else {
-				return array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
+
+				return false;
 			}
+
+			return array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
 		}
 
 		/**
@@ -198,6 +212,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
@@ -244,12 +259,14 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
 			if ( ! isset( $mod[ 'obj' ] ) || ! is_object( $mod[ 'obj' ] ) ) {	// Just in case.
 
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'exiting early: no module object defined' );
 				}
 
@@ -261,6 +278,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			if ( isset( $local_cache[ $mod[ 'name' ] ][ $mod[ 'id' ] ] ) ) {
 
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'returning options from static cache array for ' . $mod[ 'name' ] . ' ID ' . $mod[ 'id' ] );
 				}
 
@@ -269,6 +287,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			} else {
 
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'getting new options for static cache array for ' . $mod[ 'name' ] . ' ID ' . $mod[ 'id' ] );
 				}
 
@@ -286,6 +305,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 					if ( false !== ( $place_opts = self::get_id( $md_opts[ 'plm_place_id' ] ) ) ) {
 
 						if ( $wpsso->debug->enabled ) {
+
 							$wpsso->debug->log( 'using place id ' . $md_opts[ 'plm_place_id' ] . ' options' );
 						}
 
@@ -298,21 +318,25 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				if ( ! empty( $md_opts ) ) { 
 
 					if ( $wpsso->debug->enabled ) {
+
 						$wpsso->debug->log( count( $md_opts ) . ' plm option keys found' );
 					}
 
 					if ( empty( $md_opts[ 'plm_place_country' ] ) ) {
+
 						$md_opts[ 'plm_place_country' ] = isset( $wpsso->options[ 'plm_def_country' ] ) ?
 							$wpsso->options['plm_def_country'] : 'none';
 					}
 
 				} elseif ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'no plm option keys found' );
 				}
 
 			}
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->log( 'result saved to static cache array for ' . $mod[ 'name' ] . ' ID ' . $mod[ 'id' ] );
 			}
 
@@ -324,6 +348,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
@@ -335,12 +360,14 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
 			if ( ! isset( $mod[ 'obj' ] ) || ! is_object( $mod[ 'obj' ] ) ) {	// Just in case.
 
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'exiting early: no module object defined' );
 				}
 
@@ -352,6 +379,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$place_id = isset( $md_opts[ 'plm_place_id' ] ) ? $md_opts[ 'plm_place_id' ] : 'none';
 
 			if ( $place_id === '' || $place_id === 'none' ) {	// Nothing to do.
+
 				return false;
 			}
 
@@ -363,6 +391,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
@@ -374,13 +403,17 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
 			if ( ! isset( $mod[ 'obj' ] ) || ! is_object( $mod[ 'obj' ] ) ) {	// Just in case.
+
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'exiting early: no module object defined' );
 				}
+
 				return false;
 			}
 
@@ -405,6 +438,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
@@ -416,12 +450,14 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			$wpsso =& Wpsso::get_instance();
 
 			if ( $wpsso->debug->enabled ) {
+
 				$wpsso->debug->mark();
 			}
 
 			if ( ! isset( $mod[ 'obj' ] ) || ! is_object( $mod[ 'obj' ] ) ) {	// Just in case.
 
 				if ( $wpsso->debug->enabled ) {
+
 					$wpsso->debug->log( 'exiting early: no module object defined' );
 				}
 

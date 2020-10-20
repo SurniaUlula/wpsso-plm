@@ -107,9 +107,9 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						$this->form->defaults[ 'plm_place_schema_type_' . $id ] = $def_schema_type;
 						$this->form->defaults[ 'plm_place_country_' . $id ]     = $this->form->defaults[ 'plm_def_country' ];
 
-						foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $day => $day_label ) {
+						foreach ( $weekdays as $day_name => $day_label ) {
 
-							$day_opt_pre = 'plm_place_day_' . $day;
+							$day_opt_pre = 'plm_place_day_' . $day_name;
 
 							$this->form->defaults[ $day_opt_pre . '_' . $id ]       = '0';
 							$this->form->defaults[ $day_opt_pre . '_open_' . $id ]  = '09:00';

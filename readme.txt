@@ -114,6 +114,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 4.20.0-dev.2 (2020/10/20)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a new "Place Timezone" option for the "Open Days / Hours" values.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.4.
+	* WPSSO Core v8.8.1.
+
 **Version 4.19.1 (2020/10/17)**
 
 * **New Features**
@@ -131,6 +146,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.8.1.
 
 == Upgrade Notice ==
+
+= 4.20.0-dev.2 =
+
+(2020/10/20) Added a new "Place Timezone" option for the "Open Days / Hours" values.
 
 = 4.19.1 =
 

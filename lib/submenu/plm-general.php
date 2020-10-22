@@ -107,17 +107,6 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						$this->form->defaults[ 'plm_place_schema_type_' . $id ] = $def_schema_type;
 						$this->form->defaults[ 'plm_place_country_' . $id ]     = $this->form->defaults[ 'plm_def_country' ];
 
-						foreach ( $weekdays as $day_name => $day_label ) {
-
-							$day_opt_pre = 'plm_place_day_' . $day_name;
-
-							$this->form->defaults[ $day_opt_pre . '_open_' . $id ]  = 'none';
-							$this->form->defaults[ $day_opt_pre . '_close_' . $id ] = 'none';
-						}
-
-						$this->form->defaults[ 'plm_place_midday_open_' . $id ]  = 'none';
-						$this->form->defaults[ 'plm_place_midday_close_' . $id ] = 'none';
-
 						$tr_hide_place_html = '<!-- place id ' . $id . ' -->' . 
 							'<tr class="hide_plm_place_id hide_plm_place_id_' . $id . '" style="display:none;">';
 

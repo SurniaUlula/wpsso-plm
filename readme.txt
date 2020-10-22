@@ -56,6 +56,7 @@ The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-sch
 	* Google Place ID
 	* Place Image ID
 	* or Place Image URL
+	* Place Timezone
 	* Open Days / Hours
 	* Closes Mid-Day
 	* Seasonal Dates
@@ -114,12 +115,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 4.20.0-dev.4 (2020/10/21)**
+**Version 5.0.0-dev.5 (2020/10/22)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Added a new "Place Timezone" option for the "Open Days / Hours" values.
+	* Added a new "Place Timezone" option.
+	* Added 'None' as a possible selection for the "Open Days / Hours" value.
+	* Removed the checkbox option for the "Open Days / Hours" weekdays.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -147,9 +150,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 4.20.0-dev.4 =
+= 5.0.0-dev.5 =
 
-(2020/10/21) Added a new "Place Timezone" option for the "Open Days / Hours" values.
+(2020/10/22) Added a new "Place Timezone" option for the "Open Days / Hours" values.
 
 = 4.19.1 =
 

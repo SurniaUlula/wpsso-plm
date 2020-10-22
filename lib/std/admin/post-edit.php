@@ -146,17 +146,17 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 				$day_label_transl = _x( $day_label, 'option value', 'wpsso' );
 
 				$open_close_html .= '<tr>' .
-					'<td class="blank checkbox">' . $form->get_no_checkbox( $day_opt_pre ) . '</td>' .
 					'<td class="blank weekday"><p>' . $day_label_transl . '</p></td>' . 
 					'<td class="blank" align="right"><p>' . __( 'Opens at', 'wpsso-plm' ) . '</p></td>' .
-					'<td class="blank">' . $form->get_no_select_time( $open_opt_key ) . '</td>' .
+					'<td class="blank">' . $form->get_no_select_time_none( $open_opt_key ) . '</td>' .
 					'<td class="blank" align="right"><p>' . __( 'and closes at', 'wpsso-plm' ) . '</p></td>' .
-					'<td class="blank">' . $form->get_no_select_time( $close_opt_key ) . '</td>' .
+					'<td class="blank">' . $form->get_no_select_time_none( $close_opt_key ) . '</td>' .
 					'</tr>';
 			}
 
 			$open_close_html .= '<tr>' .
-				'<td class="blank" colspan="3" align="right"><p>' . __( 'Closes mid-day at', 'wpsso-plm' ) . '</p></td>' .
+				'<td class="blank"><p>' . __( 'Every Midday', 'wpsso-plm' ) . '</p></td>' .
+				'<td class="blank" align="right"><p>' . __( 'Closes at', 'wpsso-plm' ) . '</p></td>' .
 				'<td class="blank">' . $form->get_no_select_time_none( 'plm_place_midday_close' ) . '</td>' .
 				'<td class="blank" align="right"><p>' . __( 'and re-opens at', 'wpsso-plm' ) . '</p></td>' .
 				'<td class="blank">' . $form->get_no_select_time_none( 'plm_place_midday_open' ) . '</td>' .
@@ -186,7 +186,7 @@ if ( ! class_exists( 'WpssoPlmStdAdminPostEdit' ) ) {
 			$table_rows[ 'plm_place_service_radius' ] = '' .
 				$form->get_th_html( _x( 'Service Radius', 'option label', 'wpsso-plm' ),
 					$css_class = 'medium', $css_id = 'plm_place_service_radius' ) .  
-				'<td class="blank">' . $form->get_no_input_value( '', $css_class = 'medium' ) . ' ' . 
+				'<td class="blank">' . $form->get_no_input_value( '', $css_class = 'short' ) . ' ' . 
 				_x( 'meters from location', 'option comment', 'wpsso-plm' ) . '</td>';
 
 			foreach ( array(

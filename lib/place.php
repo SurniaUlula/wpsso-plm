@@ -14,8 +14,6 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 	class WpssoPlmPlace {
 
-		private $p;
-
 		public static $place_mt = array(
 			'plm_place_name'           => 'place:name',
 			'plm_place_name_alt'       => 'place:name_alt',
@@ -29,14 +27,13 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			'plm_place_phone'          => 'place:telephone',
 		);
 
-		public function __construct( &$plugin ) {
+		public function __construct() {}
 
-			$this->p =& $plugin;
+		public static function get_ids( $schema_type = '' ) {
 
-			if ( $this->p->debug->enabled ) {
+			$place_names = self::get_names( $schema_type );
 
-				$this->p->debug->mark();
-			}
+			return array_keys( $place_names );
 		}
 
 		/**
@@ -58,12 +55,12 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 			if ( $add_none ) {
 
-				$first_names[ 'none' ] = $wpsso->cf['form']['place_select']['none'];
+				$first_names[ 'none' ] = $wpsso->cf[ 'form' ][ 'place_select' ][ 'none' ];
 			}
 
 			if ( $add_custom ) {
 
-				$first_names[ 'custom' ] = $wpsso->cf['form']['place_select']['custom'];
+				$first_names[ 'custom' ] = $wpsso->cf[ 'form' ][ 'place_select' ][ 'custom' ];
 			}
 
 			if ( $wpsso->debug->enabled ) {
@@ -92,6 +89,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 							continue;
 
 						} else {
+
 							unset( $place_names[ $place_id ] );
 						}
 					}
@@ -109,7 +107,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 				$next_num = SucomUtil::get_next_num( $place_names );
 
-				$place_names[$next_num] = $wpsso->cf['form']['place_select']['new'];
+				$place_names[ $next_num ] = $wpsso->cf[ 'form' ][ 'place_select' ][ 'new' ];
 			}
 
 			if ( ! empty( $first_names ) ) {
@@ -121,8 +119,11 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 		}
 
 		/**
-		 * Get a specific place id. Returns an array of localized values. If $place_id is 'custom' then $mixed must be a
-		 * $mod array.
+		 * Get a specific place id.
+		 * 
+		 * Returns an array of localized values.
+		 *
+		 * If $place_id is 'custom' then $mixed must be a $mod array.
 		 *
 		 * $place_id = 'custom' | place ID.
 		 * $mixed    = 'default' | 'current' | post ID | $mod array.
@@ -325,7 +326,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 					if ( empty( $md_opts[ 'plm_place_country' ] ) ) {
 
 						$md_opts[ 'plm_place_country' ] = isset( $wpsso->options[ 'plm_def_country' ] ) ?
-							$wpsso->options['plm_def_country'] : 'none';
+							$wpsso->options[ 'plm_def_country' ] : 'none';
 					}
 
 				} elseif ( $wpsso->debug->enabled ) {
@@ -384,101 +385,6 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 			}
 
 			return $md_opts;
-		}
-
-		public static function has_days( array $mod ) {
-
-			$wpsso =& Wpsso::get_instance();
-
-			if ( $wpsso->debug->enabled ) {
-
-				$wpsso->debug->mark();
-			}
-
-			return self::has_md_days( $mod );	// Returns false or place array.
-		}
-
-		public static function has_md_days( array $mod ) {
-
-			$wpsso =& Wpsso::get_instance();
-
-			if ( $wpsso->debug->enabled ) {
-
-				$wpsso->debug->mark();
-			}
-
-			if ( ! isset( $mod[ 'obj' ] ) || ! is_object( $mod[ 'obj' ] ) ) {	// Just in case.
-
-				if ( $wpsso->debug->enabled ) {
-
-					$wpsso->debug->log( 'exiting early: no module object defined' );
-				}
-
-				return false;
-			}
-
-			$md_opts = self::get_md_options( $mod );	// Always returns an array.
-
-			if ( is_array( $md_opts  ) ) {
-
-				foreach ( $wpsso->cf[ 'form' ][ 'weekdays' ] as $day_name => $day_label ) {
-
-					if ( ! empty( $md_opts[ 'plm_place_day_' . $day_name ] ) ) {
-
-						return $md_opts;
-					}
-				}
-			}
-
-			return false;
-		}
-
-		public static function has_geo( array $mod ) {
-
-			$wpsso =& Wpsso::get_instance();
-
-			if ( $wpsso->debug->enabled ) {
-
-				$wpsso->debug->mark();
-			}
-
-			return self::has_md_geo( $mod );	// Returns false or place array.
-		}
-
-		public static function has_md_geo( array $mod ) {
-
-			$wpsso =& Wpsso::get_instance();
-
-			if ( $wpsso->debug->enabled ) {
-
-				$wpsso->debug->mark();
-			}
-
-			if ( ! isset( $mod[ 'obj' ] ) || ! is_object( $mod[ 'obj' ] ) ) {	// Just in case.
-
-				if ( $wpsso->debug->enabled ) {
-
-					$wpsso->debug->log( 'exiting early: no module object defined' );
-				}
-
-				return false;
-			}
-
-			$md_opts = self::get_md_options( $mod );	// Always returns an array.
-
-			if ( is_array( $md_opts  ) ) {
-
-				/**
-				 * Allow for 0 degrees latitude (aka the Equator) and 0 degrees longitude (aka the Prime Meridian).
-				 */
-				if ( isset( $md_opts[ 'plm_place_latitude' ] ) && $md_opts[ 'plm_place_latitude' ] !== '' && 
-					isset( $md_opts[ 'plm_place_longitude' ] ) && $md_opts[ 'plm_place_longitude' ] !== '' ) {
-
-					return $md_opts;
-				}
-			}
-
-			return false;
 		}
 	}
 }

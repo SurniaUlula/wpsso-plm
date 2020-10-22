@@ -118,13 +118,13 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					return 'blank_num';
 
-				case ( preg_match( '/^plm_place_day_[a-z]+_(open|close)$/', $base_key ) ? true : false ):
+				case ( preg_match( '/^plm_place_(day_[a-z]+|midday)_(open|close)$/', $base_key ) ? true : false ):
 
-					return 'time';
+					return 'time';	// Empty or 'none' string, or time as hh:mm or hh:mm:ss.
 
 				case ( preg_match( '/^plm_place_season_(from|to)_date$/', $base_key ) ? true : false ):
 
-					return 'date';
+					return 'date';	// Empty or 'none' string, or date as yyyy-mm-dd.
 
 				case 'plm_place_menu_url':
 
@@ -135,7 +135,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					return 'csv_urls';
 
 				case 'plm_place_accept_res':
-				case ( preg_match( '/^plm_place_day_[a-z]+$/', $base_key ) ? true : false ):
 
 					return 'checkbox';
 			}
@@ -395,19 +394,20 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			/**
 			 * Non-standard meta tags for internal use.
 			 */
+			$weekdays =& $wpsso->cf[ 'form' ][ 'weekdays' ];
+
 			$place_defs = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ];
 
-			foreach ( $this->p->cf[ 'form' ][ 'weekdays' ] as $day_name => $day_label ) {
+			foreach ( $weekdays as $day_name => $day_label ) {
 
-				if ( ! empty( $place_opts[ 'plm_place_day_' . $day_name ] ) ) {
+				foreach ( array(
+					'plm_place_day_' . $day_name . '_open'  => 'place:opening_hours:day:' . $day_name . ':open',
+					'plm_place_day_' . $day_name . '_close' => 'place:opening_hours:day:' . $day_name . ':close',
+				) as $opt_key => $mt_name ) {
 
-					foreach ( array( 'open', 'close' ) as $suffix ) {
+					if ( ! empty( $place_opts[ $opt_key ] ) && 'none' !== $place_opts[ $opt_key ] ) {
 
-						$mt_key = 'place:opening_hours:day:' . $day_name . ':' . $suffix;
-
-						$opt_key = 'plm_place_day_' . $day_name . '_' . $suffix;
-
-						$mt_og[ $mt_key ] = isset( $place_opts[ $opt_key ] ) ? $place_opts[ $opt_key ] : $place_defs[ $opt_key ];
+						$mt_og[ $mt_name ] = $place_opts[ $opt_key ];
 					}
 				}
 			}

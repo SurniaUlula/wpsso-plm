@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Place and Local SEO Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Markup 4.20.0-dev.4\n"
+"Project-Id-Version: WPSSO Place and Local SEO Markup 5.0.0-dev.5\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -51,20 +51,17 @@ msgctxt "option value"
 msgid "wp"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:11 gettext/gettext-lib-config.php:13
-#: gettext/gettext-lib-config.php:15 gettext/gettext-lib-config.php:17
-#: gettext/gettext-lib-config.php:19 gettext/gettext-lib-config.php:21
-#: gettext/gettext-lib-config.php:23 gettext/gettext-lib-config.php:25
+#: gettext/gettext-lib-config.php:11 gettext/gettext-lib-config.php:12
+#: gettext/gettext-lib-config.php:13 gettext/gettext-lib-config.php:14
+#: gettext/gettext-lib-config.php:15 gettext/gettext-lib-config.php:16
+#: gettext/gettext-lib-config.php:17 gettext/gettext-lib-config.php:18
+#: gettext/gettext-lib-config.php:19 gettext/gettext-lib-config.php:20
+#: gettext/gettext-lib-config.php:21 gettext/gettext-lib-config.php:22
+#: gettext/gettext-lib-config.php:23 gettext/gettext-lib-config.php:24
+#: gettext/gettext-lib-config.php:25 gettext/gettext-lib-config.php:26
+#: gettext/gettext-lib-config.php:27 gettext/gettext-lib-config.php:28
 msgctxt "option value"
-msgid "09:00"
-msgstr ""
-
-#: gettext/gettext-lib-config.php:12 gettext/gettext-lib-config.php:14
-#: gettext/gettext-lib-config.php:16 gettext/gettext-lib-config.php:18
-#: gettext/gettext-lib-config.php:20 gettext/gettext-lib-config.php:22
-#: gettext/gettext-lib-config.php:24 gettext/gettext-lib-config.php:26
-msgctxt "option value"
-msgid "17:00"
+msgid "none"
 msgstr ""
 
 #: gettext/gettext-lib-pro.php:6 lib/pro/admin/post-edit.php:53
@@ -73,243 +70,249 @@ msgctxt "option label"
 msgid "Select a Place"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:7 gettext/gettext-lib-pro.php:43
-#: lib/pro/admin/post-edit.php:90 lib/pro/admin/post-edit.php:276
-#: lib/std/admin/post-edit.php:57 lib/submenu/plm-general.php:135
+#: gettext/gettext-lib-pro.php:7 gettext/gettext-lib-pro.php:44
+#: lib/pro/admin/post-edit.php:92 lib/pro/admin/post-edit.php:278
+#: lib/std/admin/post-edit.php:57 lib/submenu/plm-general.php:137
 msgctxt "option label"
 msgid "Place Schema Type"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:8 gettext/gettext-lib-pro.php:44
-#: lib/pro/admin/post-edit.php:98 lib/pro/admin/post-edit.php:282
-#: lib/std/admin/post-edit.php:63 lib/submenu/plm-general.php:149
+#: gettext/gettext-lib-pro.php:8 gettext/gettext-lib-pro.php:45
+#: lib/pro/admin/post-edit.php:100 lib/pro/admin/post-edit.php:284
+#: lib/std/admin/post-edit.php:63 lib/submenu/plm-general.php:151
 msgctxt "option label"
 msgid "Place Alternate Name"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:9 gettext/gettext-lib-pro.php:45
-#: lib/pro/admin/post-edit.php:103 lib/pro/admin/post-edit.php:288
-#: lib/std/admin/post-edit.php:68 lib/submenu/plm-general.php:160
+#: gettext/gettext-lib-pro.php:9 gettext/gettext-lib-pro.php:46
+#: lib/pro/admin/post-edit.php:105 lib/pro/admin/post-edit.php:290
+#: lib/std/admin/post-edit.php:68 lib/submenu/plm-general.php:162
 msgctxt "option label"
 msgid "Street Address"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:10 gettext/gettext-lib-pro.php:46
-#: lib/pro/admin/post-edit.php:108 lib/pro/admin/post-edit.php:294
-#: lib/std/admin/post-edit.php:73 lib/submenu/plm-general.php:165
+#: gettext/gettext-lib-pro.php:10 gettext/gettext-lib-pro.php:47
+#: lib/pro/admin/post-edit.php:110 lib/pro/admin/post-edit.php:296
+#: lib/std/admin/post-edit.php:73 lib/submenu/plm-general.php:167
 msgctxt "option label"
 msgid "P.O. Box Number"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:11 gettext/gettext-lib-pro.php:47
-#: lib/pro/admin/post-edit.php:113 lib/pro/admin/post-edit.php:299
-#: lib/std/admin/post-edit.php:78 lib/submenu/plm-general.php:170
+#: gettext/gettext-lib-pro.php:11 gettext/gettext-lib-pro.php:48
+#: lib/pro/admin/post-edit.php:115 lib/pro/admin/post-edit.php:301
+#: lib/std/admin/post-edit.php:78 lib/submenu/plm-general.php:172
 msgctxt "option label"
 msgid "City / Locality"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:12 gettext/gettext-lib-pro.php:48
-#: lib/pro/admin/post-edit.php:118 lib/pro/admin/post-edit.php:304
-#: lib/std/admin/post-edit.php:83 lib/submenu/plm-general.php:175
+#: gettext/gettext-lib-pro.php:12 gettext/gettext-lib-pro.php:49
+#: lib/pro/admin/post-edit.php:120 lib/pro/admin/post-edit.php:306
+#: lib/std/admin/post-edit.php:83 lib/submenu/plm-general.php:177
 msgctxt "option label"
 msgid "State / Province"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:13 gettext/gettext-lib-pro.php:49
-#: lib/pro/admin/post-edit.php:123 lib/pro/admin/post-edit.php:309
-#: lib/submenu/plm-general.php:180
+#: gettext/gettext-lib-pro.php:13 gettext/gettext-lib-pro.php:50
+#: lib/pro/admin/post-edit.php:125 lib/pro/admin/post-edit.php:311
+#: lib/submenu/plm-general.php:182
 msgctxt "option label"
 msgid "Zip / Postal Code"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:14 gettext/gettext-lib-pro.php:50
-#: lib/pro/admin/post-edit.php:128 lib/pro/admin/post-edit.php:314
-#: lib/std/admin/post-edit.php:93 lib/submenu/plm-general.php:185
+#: gettext/gettext-lib-pro.php:14 gettext/gettext-lib-pro.php:51
+#: lib/pro/admin/post-edit.php:130 lib/pro/admin/post-edit.php:316
+#: lib/std/admin/post-edit.php:93 lib/submenu/plm-general.php:187
 msgctxt "option label"
 msgid "Country"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:15 gettext/gettext-lib-pro.php:51
-#: lib/pro/admin/post-edit.php:133 lib/pro/admin/post-edit.php:319
-#: lib/std/admin/post-edit.php:98 lib/submenu/plm-general.php:190
+#: gettext/gettext-lib-pro.php:15 gettext/gettext-lib-pro.php:52
+#: lib/pro/admin/post-edit.php:135 lib/pro/admin/post-edit.php:321
+#: lib/std/admin/post-edit.php:98 lib/submenu/plm-general.php:192
 msgctxt "option label"
 msgid "Telephone"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:16 gettext/gettext-lib-pro.php:52
-#: lib/pro/admin/post-edit.php:138 lib/pro/admin/post-edit.php:324
-#: lib/std/admin/post-edit.php:103 lib/submenu/plm-general.php:195
+#: gettext/gettext-lib-pro.php:16 gettext/gettext-lib-pro.php:53
+#: lib/pro/admin/post-edit.php:140 lib/pro/admin/post-edit.php:326
+#: lib/std/admin/post-edit.php:103 lib/submenu/plm-general.php:197
 msgctxt "option label"
 msgid "Place Latitude"
 msgstr ""
 
 #: gettext/gettext-lib-pro.php:17 gettext/gettext-lib-pro.php:19
-#: gettext/gettext-lib-pro.php:53 gettext/gettext-lib-pro.php:55
-#: lib/pro/admin/post-edit.php:141 lib/pro/admin/post-edit.php:147
-#: lib/pro/admin/post-edit.php:327 lib/pro/admin/post-edit.php:333
+#: gettext/gettext-lib-pro.php:54 gettext/gettext-lib-pro.php:56
+#: lib/pro/admin/post-edit.php:143 lib/pro/admin/post-edit.php:149
+#: lib/pro/admin/post-edit.php:329 lib/pro/admin/post-edit.php:335
 #: lib/std/admin/post-edit.php:106 lib/std/admin/post-edit.php:112
-#: lib/submenu/plm-general.php:198 lib/submenu/plm-general.php:204
+#: lib/submenu/plm-general.php:200 lib/submenu/plm-general.php:206
 msgctxt "option comment"
 msgid "decimal degrees"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:18 gettext/gettext-lib-pro.php:54
-#: lib/pro/admin/post-edit.php:144 lib/pro/admin/post-edit.php:330
-#: lib/std/admin/post-edit.php:109 lib/submenu/plm-general.php:201
+#: gettext/gettext-lib-pro.php:18 gettext/gettext-lib-pro.php:55
+#: lib/pro/admin/post-edit.php:146 lib/pro/admin/post-edit.php:332
+#: lib/std/admin/post-edit.php:109 lib/submenu/plm-general.php:203
 msgctxt "option label"
 msgid "Place Longitude"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:20 gettext/gettext-lib-pro.php:56
-#: lib/pro/admin/post-edit.php:150 lib/pro/admin/post-edit.php:336
-#: lib/std/admin/post-edit.php:115 lib/submenu/plm-general.php:207
+#: gettext/gettext-lib-pro.php:20 gettext/gettext-lib-pro.php:57
+#: lib/pro/admin/post-edit.php:152 lib/pro/admin/post-edit.php:338
+#: lib/std/admin/post-edit.php:115 lib/submenu/plm-general.php:209
 msgctxt "option label"
 msgid "Place Altitude"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:21 gettext/gettext-lib-pro.php:57
-#: lib/pro/admin/post-edit.php:153 lib/pro/admin/post-edit.php:339
-#: lib/std/admin/post-edit.php:118 lib/submenu/plm-general.php:210
+#: gettext/gettext-lib-pro.php:21 gettext/gettext-lib-pro.php:58
+#: lib/pro/admin/post-edit.php:155 lib/pro/admin/post-edit.php:341
+#: lib/std/admin/post-edit.php:118 lib/submenu/plm-general.php:212
 msgctxt "option comment"
 msgid "meters above sea level"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:22 gettext/gettext-lib-pro.php:58
-#: lib/pro/admin/post-edit.php:156 lib/pro/admin/post-edit.php:342
-#: lib/std/admin/post-edit.php:121 lib/submenu/plm-general.php:223
+#: gettext/gettext-lib-pro.php:22 gettext/gettext-lib-pro.php:59
+#: lib/pro/admin/post-edit.php:158 lib/pro/admin/post-edit.php:344
+#: lib/std/admin/post-edit.php:121 lib/submenu/plm-general.php:225
 msgctxt "option label"
 msgid "Place Timezone"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:23 gettext/gettext-lib-pro.php:59
-#: lib/pro/admin/post-edit.php:186 lib/pro/admin/post-edit.php:372
-#: lib/std/admin/post-edit.php:151 lib/submenu/plm-general.php:253
+#: gettext/gettext-lib-pro.php:23 gettext/gettext-lib-pro.php:60
+#: lib/pro/admin/post-edit.php:187 lib/pro/admin/post-edit.php:373
+#: lib/std/admin/post-edit.php:150 lib/submenu/plm-general.php:254
 msgid "Opens at"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:24 gettext/gettext-lib-pro.php:60
-#: lib/pro/admin/post-edit.php:188 lib/pro/admin/post-edit.php:374
-#: lib/std/admin/post-edit.php:153 lib/submenu/plm-general.php:255
+#: gettext/gettext-lib-pro.php:24 gettext/gettext-lib-pro.php:61
+#: lib/pro/admin/post-edit.php:189 lib/pro/admin/post-edit.php:375
+#: lib/std/admin/post-edit.php:152 lib/submenu/plm-general.php:256
 msgid "and closes at"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:25 gettext/gettext-lib-pro.php:61
-#: lib/pro/admin/post-edit.php:194 lib/pro/admin/post-edit.php:380
-#: lib/std/admin/post-edit.php:159 lib/submenu/plm-general.php:261
-msgid "Closes mid-day at"
+#: gettext/gettext-lib-pro.php:25 gettext/gettext-lib-pro.php:62
+#: lib/pro/admin/post-edit.php:195 lib/pro/admin/post-edit.php:381
+#: lib/std/admin/post-edit.php:158 lib/submenu/plm-general.php:262
+msgid "Every Midday"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:26 gettext/gettext-lib-pro.php:62
+#: gettext/gettext-lib-pro.php:26 gettext/gettext-lib-pro.php:63
 #: lib/pro/admin/post-edit.php:196 lib/pro/admin/post-edit.php:382
-#: lib/std/admin/post-edit.php:161 lib/submenu/plm-general.php:263
+#: lib/std/admin/post-edit.php:159 lib/submenu/plm-general.php:263
+msgid "Closes at"
+msgstr ""
+
+#: gettext/gettext-lib-pro.php:27 gettext/gettext-lib-pro.php:64
+#: lib/pro/admin/post-edit.php:198 lib/pro/admin/post-edit.php:384
+#: lib/std/admin/post-edit.php:161 lib/submenu/plm-general.php:265
 msgid "and re-opens at"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:27 gettext/gettext-lib-pro.php:63
-#: lib/pro/admin/post-edit.php:203 lib/pro/admin/post-edit.php:389
-#: lib/std/admin/post-edit.php:168 lib/submenu/plm-general.php:270
+#: gettext/gettext-lib-pro.php:28 gettext/gettext-lib-pro.php:65
+#: lib/pro/admin/post-edit.php:205 lib/pro/admin/post-edit.php:391
+#: lib/std/admin/post-edit.php:168 lib/submenu/plm-general.php:272
 msgctxt "option label"
 msgid "Open Days / Hours"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:28 gettext/gettext-lib-pro.php:64
-#: lib/pro/admin/post-edit.php:208 lib/pro/admin/post-edit.php:394
-#: lib/std/admin/post-edit.php:173 lib/submenu/plm-general.php:275
+#: gettext/gettext-lib-pro.php:29 gettext/gettext-lib-pro.php:66
+#: lib/pro/admin/post-edit.php:210 lib/pro/admin/post-edit.php:396
+#: lib/std/admin/post-edit.php:173 lib/submenu/plm-general.php:277
 msgctxt "option label"
 msgid "Seasonal Dates"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:29 gettext/gettext-lib-pro.php:65
-#: lib/pro/admin/post-edit.php:211 lib/pro/admin/post-edit.php:397
-#: lib/std/admin/post-edit.php:176 lib/submenu/plm-general.php:278
+#: gettext/gettext-lib-pro.php:30 gettext/gettext-lib-pro.php:67
+#: lib/pro/admin/post-edit.php:213 lib/pro/admin/post-edit.php:399
+#: lib/std/admin/post-edit.php:176 lib/submenu/plm-general.php:280
 msgid "Open seasonally from"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:30 gettext/gettext-lib-pro.php:66
-#: lib/pro/admin/post-edit.php:213 lib/pro/admin/post-edit.php:399
-#: lib/std/admin/post-edit.php:178 lib/submenu/plm-general.php:280
+#: gettext/gettext-lib-pro.php:31 gettext/gettext-lib-pro.php:68
+#: lib/pro/admin/post-edit.php:215 lib/pro/admin/post-edit.php:401
+#: lib/std/admin/post-edit.php:178 lib/submenu/plm-general.php:282
 msgid "until"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:31 gettext/gettext-lib-pro.php:67
-#: lib/pro/admin/post-edit.php:215 lib/pro/admin/post-edit.php:401
-#: lib/std/admin/post-edit.php:180 lib/submenu/plm-general.php:282
+#: gettext/gettext-lib-pro.php:32 gettext/gettext-lib-pro.php:69
+#: lib/pro/admin/post-edit.php:217 lib/pro/admin/post-edit.php:403
+#: lib/std/admin/post-edit.php:180 lib/submenu/plm-general.php:284
 msgid "inclusively"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:32 gettext/gettext-lib-pro.php:68
-#: lib/pro/admin/post-edit.php:219 lib/pro/admin/post-edit.php:405
-#: lib/std/admin/post-edit.php:184 lib/submenu/plm-general.php:286
+#: gettext/gettext-lib-pro.php:33 gettext/gettext-lib-pro.php:70
+#: lib/pro/admin/post-edit.php:221 lib/pro/admin/post-edit.php:407
+#: lib/std/admin/post-edit.php:184 lib/submenu/plm-general.php:288
 msgctxt "metabox title"
 msgid "Local Business"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:33 gettext/gettext-lib-pro.php:69
-#: lib/pro/admin/post-edit.php:222 lib/pro/admin/post-edit.php:408
-#: lib/std/admin/post-edit.php:187 lib/submenu/plm-general.php:289
+#: gettext/gettext-lib-pro.php:34 gettext/gettext-lib-pro.php:71
+#: lib/pro/admin/post-edit.php:224 lib/pro/admin/post-edit.php:410
+#: lib/std/admin/post-edit.php:187 lib/submenu/plm-general.php:291
 msgctxt "option label"
 msgid "Service Radius"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:34 gettext/gettext-lib-pro.php:70
-#: lib/pro/admin/post-edit.php:226 lib/pro/admin/post-edit.php:412
-#: lib/std/admin/post-edit.php:190 lib/submenu/plm-general.php:292
+#: gettext/gettext-lib-pro.php:35 gettext/gettext-lib-pro.php:72
+#: lib/pro/admin/post-edit.php:228 lib/pro/admin/post-edit.php:414
+#: lib/std/admin/post-edit.php:190 lib/submenu/plm-general.php:294
 msgctxt "option comment"
 msgid "meters from location"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:35 gettext/gettext-lib-pro.php:71
-#: lib/pro/admin/post-edit.php:229 lib/pro/admin/post-edit.php:415
-#: lib/std/admin/post-edit.php:193 lib/submenu/plm-general.php:295
+#: gettext/gettext-lib-pro.php:36 gettext/gettext-lib-pro.php:73
+#: lib/pro/admin/post-edit.php:231 lib/pro/admin/post-edit.php:417
+#: lib/std/admin/post-edit.php:193 lib/submenu/plm-general.php:297
 msgctxt "option label"
 msgid "Currencies Accepted"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:36 gettext/gettext-lib-pro.php:72
-#: lib/pro/admin/post-edit.php:230 lib/pro/admin/post-edit.php:416
-#: lib/std/admin/post-edit.php:194 lib/submenu/plm-general.php:296
+#: gettext/gettext-lib-pro.php:37 gettext/gettext-lib-pro.php:74
+#: lib/pro/admin/post-edit.php:232 lib/pro/admin/post-edit.php:418
+#: lib/std/admin/post-edit.php:194 lib/submenu/plm-general.php:298
 msgctxt "option label"
 msgid "Payment Accepted"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:37 gettext/gettext-lib-pro.php:73
-#: lib/pro/admin/post-edit.php:231 lib/pro/admin/post-edit.php:417
-#: lib/std/admin/post-edit.php:195 lib/submenu/plm-general.php:297
+#: gettext/gettext-lib-pro.php:38 gettext/gettext-lib-pro.php:75
+#: lib/pro/admin/post-edit.php:233 lib/pro/admin/post-edit.php:419
+#: lib/std/admin/post-edit.php:195 lib/submenu/plm-general.php:299
 msgctxt "option label"
 msgid "Price Range"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:38 gettext/gettext-lib-pro.php:74
-#: lib/pro/admin/post-edit.php:240 lib/pro/admin/post-edit.php:427
-#: lib/std/admin/post-edit.php:204 lib/submenu/plm-general.php:306
+#: gettext/gettext-lib-pro.php:39 gettext/gettext-lib-pro.php:76
+#: lib/pro/admin/post-edit.php:242 lib/pro/admin/post-edit.php:429
+#: lib/std/admin/post-edit.php:204 lib/submenu/plm-general.php:308
 msgctxt "metabox title"
 msgid "Food Establishment"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:39 gettext/gettext-lib-pro.php:75
-#: lib/pro/admin/post-edit.php:243 lib/pro/admin/post-edit.php:430
-#: lib/std/admin/post-edit.php:207 lib/submenu/plm-general.php:309
+#: gettext/gettext-lib-pro.php:40 gettext/gettext-lib-pro.php:77
+#: lib/pro/admin/post-edit.php:245 lib/pro/admin/post-edit.php:432
+#: lib/std/admin/post-edit.php:207 lib/submenu/plm-general.php:311
 msgctxt "option label"
 msgid "Accepts Reservations"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:40 gettext/gettext-lib-pro.php:76
-#: lib/pro/admin/post-edit.php:248 lib/pro/admin/post-edit.php:435
-#: lib/std/admin/post-edit.php:212 lib/submenu/plm-general.php:314
+#: gettext/gettext-lib-pro.php:41 gettext/gettext-lib-pro.php:78
+#: lib/pro/admin/post-edit.php:250 lib/pro/admin/post-edit.php:437
+#: lib/std/admin/post-edit.php:212 lib/submenu/plm-general.php:316
 msgctxt "option label"
 msgid "Serves Cuisine"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:41 gettext/gettext-lib-pro.php:77
-#: lib/pro/admin/post-edit.php:253 lib/pro/admin/post-edit.php:440
-#: lib/std/admin/post-edit.php:217 lib/submenu/plm-general.php:319
+#: gettext/gettext-lib-pro.php:42 gettext/gettext-lib-pro.php:79
+#: lib/pro/admin/post-edit.php:255 lib/pro/admin/post-edit.php:442
+#: lib/std/admin/post-edit.php:217 lib/submenu/plm-general.php:321
 msgctxt "option label"
 msgid "Food Menu URL"
 msgstr ""
 
-#: gettext/gettext-lib-pro.php:42 gettext/gettext-lib-pro.php:78
-#: lib/pro/admin/post-edit.php:258 lib/pro/admin/post-edit.php:445
-#: lib/std/admin/post-edit.php:222 lib/submenu/plm-general.php:324
+#: gettext/gettext-lib-pro.php:43 gettext/gettext-lib-pro.php:80
+#: lib/pro/admin/post-edit.php:260 lib/pro/admin/post-edit.php:447
+#: lib/std/admin/post-edit.php:222 lib/submenu/plm-general.php:326
 msgctxt "option label"
 msgid "Order Action URL(s)"
 msgstr ""
@@ -559,7 +562,7 @@ msgstr ""
 msgid "Select an existing place or enter a custom place below."
 msgstr ""
 
-#: lib/filters.php:194
+#: lib/filters.php:193
 msgctxt "option value"
 msgid "Place #%d"
 msgstr ""
@@ -807,42 +810,42 @@ msgctxt "metabox tab"
 msgid "Add-on Settings"
 msgstr ""
 
-#: lib/submenu/plm-general.php:98
+#: lib/submenu/plm-general.php:100
 msgctxt "option label"
 msgid "Edit a Place"
 msgstr ""
 
-#: lib/submenu/plm-general.php:132
+#: lib/submenu/plm-general.php:134
 msgctxt "option comment"
 msgid "delete this place"
 msgstr ""
 
-#: lib/submenu/plm-general.php:143
+#: lib/submenu/plm-general.php:145
 msgctxt "option label"
 msgid "Place Name"
 msgstr ""
 
-#: lib/submenu/plm-general.php:155
+#: lib/submenu/plm-general.php:157
 msgctxt "option label"
 msgid "Place Description"
 msgstr ""
 
-#: lib/submenu/plm-general.php:213
+#: lib/submenu/plm-general.php:215
 msgctxt "option label"
 msgid "Place Image ID"
 msgstr ""
 
-#: lib/submenu/plm-general.php:218
+#: lib/submenu/plm-general.php:220
 msgctxt "option label"
 msgid "or Place Image URL"
 msgstr ""
 
-#: lib/submenu/plm-general.php:335
+#: lib/submenu/plm-general.php:337
 msgctxt "option label"
 msgid "Default Country"
 msgstr ""
 
-#: lib/submenu/plm-general.php:349
+#: lib/submenu/plm-general.php:351
 msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr ""

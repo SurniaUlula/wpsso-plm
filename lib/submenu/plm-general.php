@@ -89,6 +89,8 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 					$weekdays =& $this->p->cf[ 'form' ][ 'weekdays' ];
 
+					$def_schema_type = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ][ 'plm_place_schema_type' ];
+
 					$place_names_select = WpssoPlmPlace::get_names( $schema_type = '', $add_none = false, $add_new = true, $add_custom = false );
 					$place_types_select = $this->p->util->get_form_cache( 'place_types_select' );
 
@@ -102,8 +104,6 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 					foreach ( $place_names_select as $id => $name ) {
 
-						$def_schema_type = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ][ 'plm_place_schema_type' ];
-
 						$this->form->defaults[ 'plm_place_schema_type_' . $id ] = $def_schema_type;
 						$this->form->defaults[ 'plm_place_country_' . $id ]     = $this->form->defaults[ 'plm_def_country' ];
 
@@ -111,10 +111,12 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 							$day_opt_pre = 'plm_place_day_' . $day_name;
 
-							$this->form->defaults[ $day_opt_pre . '_' . $id ]       = '0';
-							$this->form->defaults[ $day_opt_pre . '_open_' . $id ]  = '09:00';
-							$this->form->defaults[ $day_opt_pre . '_close_' . $id ] = '17:00';
+							$this->form->defaults[ $day_opt_pre . '_open_' . $id ]  = 'none';
+							$this->form->defaults[ $day_opt_pre . '_close_' . $id ] = 'none';
 						}
+
+						$this->form->defaults[ 'plm_place_midday_open_' . $id ]  = 'none';
+						$this->form->defaults[ 'plm_place_midday_close_' . $id ] = 'none';
 
 						$tr_hide_place_html = '<!-- place id ' . $id . ' -->' . 
 							'<tr class="hide_plm_place_id hide_plm_place_id_' . $id . '" style="display:none;">';
@@ -248,17 +250,17 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 							$day_label_transl = _x( $day_label, 'option value', 'wpsso' );
 
 							$open_close_html .= '<tr>' .
-								'<td>' . $this->form->get_checkbox( $day_opt_pre . '_' . $id ) . '</td>' .
 								'<td class="weekday"><p>' . $day_label_transl . '</p></td>' .
 								'<td align="right"><p>' . __( 'Opens at', 'wpsso-plm' ) . '</p></td>' .
-								'<td>' . $this->form->get_select_time( $open_opt_key ) . '</td>' .
+								'<td>' . $this->form->get_select_time_none( $open_opt_key ) . '</td>' .
 								'<td align="right"><p>' . __( 'and closes at', 'wpsso-plm' ) . '</p></td>' .
-								'<td>' . $this->form->get_select_time( $close_opt_key ) . '</td>' .
+								'<td>' . $this->form->get_select_time_none( $close_opt_key ) . '</td>' .
 								'</tr>';
 						}
 
 						$open_close_html .= '<tr>' .
-							'<td colspan="3" align="right"><p>' . __( 'Closes mid-day at', 'wpsso-plm' ) . '</p></td>' .
+							'<td><p>' . __( 'Every Midday', 'wpsso-plm' ) . '</p></td>' .
+							'<td align="right"><p>' . __( 'Closes at', 'wpsso-plm' ) . '</p></td>' .
 							'<td>' . $this->form->get_select_time_none( 'plm_place_midday_close_' . $id ) . '</td>' .
 							'<td align="right"><p>' . __( 'and re-opens at', 'wpsso-plm' ) . '</p></td>' .
 							'<td>' . $this->form->get_select_time_none( 'plm_place_midday_open_' . $id ) . '</td>' .
@@ -288,7 +290,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						$table_rows[ 'plm_place_service_radius_' . $id ] = $tr_hide_local_business_html .
 							$this->form->get_th_html( _x( 'Service Radius', 'option label', 'wpsso-plm' ), 
 								$css_class = '', $css_id = 'plm_place_service_radius' ) .  
-							'<td>' . $this->form->get_input( 'plm_place_service_radius_' . $id, $css_class = 'medium' ) . ' ' . 
+							'<td>' . $this->form->get_input( 'plm_place_service_radius_' . $id, $css_class = 'short' ) . ' ' . 
 							_x( 'meters from location', 'option comment', 'wpsso-plm' ) . '</td>';
 
 						foreach ( array(

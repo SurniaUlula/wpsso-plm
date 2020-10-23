@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.0.0-dev.5 (2020/10/22)**
+**Version 5.0.0-dev.6 (2020/10/23)**
 
 * **New Features**
 	* None.
@@ -150,9 +150,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.0.0-dev.5 =
+= 5.0.0-dev.6 =
 
-(2020/10/22) Added a new "Place Timezone" option for the "Open Days / Hours" values.
+(2020/10/23) Added a new "Place Timezone" option for the "Open Days / Hours" values.
 
 = 4.19.1 =
 

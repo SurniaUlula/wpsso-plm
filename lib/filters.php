@@ -14,9 +14,9 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 	class WpssoPlmFilters {
 
-		private $p;
-		private $msgs;		// WpssoPlmFiltersMessages class object.
-		private $upg;		// WpssoPlmFiltersUpgrade class object.
+		private $p;	// Wpsso class object.
+		private $msgs;	// WpssoPlmFiltersMessages class object.
+		private $upg;	// WpssoPlmFiltersUpgrade class object.
 
 		public function __construct( &$plugin ) {
 
@@ -394,7 +394,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			/**
 			 * Non-standard meta tags for internal use.
 			 */
-			$weekdays =& $wpsso->cf[ 'form' ][ 'weekdays' ];
+			$weekdays =& $this->p->cf[ 'form' ][ 'weekdays' ];
 
 			$place_defs = WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ];
 

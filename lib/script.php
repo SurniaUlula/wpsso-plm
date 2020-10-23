@@ -14,7 +14,8 @@ if ( ! class_exists( 'WpssoPlmScript' ) ) {
 
 	class WpssoPlmScript {
 
-		private $p;
+		private $p;	// Wpsso class object.
+
 		private $tb_notices;
 
 		public function __construct( &$plugin ) {

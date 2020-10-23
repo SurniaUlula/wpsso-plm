@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.4
  * Tested Up To: 5.5.1
- * Version: 5.0.0-dev.5
+ * Version: 5.0.0-dev.6
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -40,12 +40,12 @@ if ( ! class_exists( 'WpssoPlm' ) ) {
 
 	class WpssoPlm extends WpssoAddOn {
 
-		public $filters;	// WpssoPlmFilters class.
-		public $script;		// WpssoPlmScript class.
+		public $filters;	// WpssoPlmFilters class object.
+		public $script;		// WpssoPlmScript class object.
 
-		protected $p;
+		protected $p;	// Wpsso class object.
 
-		private static $instance = null;
+		private static $instance = null;	// WpssoPlm class object.
 
 		public function __construct() {
 

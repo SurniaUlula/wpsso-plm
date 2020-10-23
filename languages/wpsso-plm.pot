@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Place and Local SEO Markup package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Markup 5.0.0-dev.5\n"
+"Project-Id-Version: WPSSO Place and Local SEO Markup 5.0.0-dev.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -12,13 +12,13 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:161
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:162
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing "
 "plugin."
 msgstr ""
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:179
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:180
 msgid ""
 "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is "
 "currently installed)."
@@ -65,7 +65,7 @@ msgid "none"
 msgstr ""
 
 #: gettext/gettext-lib-pro.php:6 lib/pro/admin/post-edit.php:53
-#: lib/script.php:51 lib/std/admin/post-edit.php:52
+#: lib/script.php:52 lib/std/admin/post-edit.php:52
 msgctxt "option label"
 msgid "Select a Place"
 msgstr ""

@@ -161,14 +161,16 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			$place_last_num = SucomUtil::get_last_num( $place_names );
 
-			foreach ( $place_names as $place_id => $name ) {
+			foreach ( $place_names as $place_id => $place_name ) {
 
-				$name = trim( $name );
+				$place_id_locale = SucomUtil::get_key_locale( $place_id, $opts );
+
+				$place_name = trim( $place_name );
 
 				/**
 				 * Remove empty "New Place".
 				 */
-				if ( ! empty( $opts[ 'plm_place_delete_' . $place_id ] ) || ( $name === '' && $place_id === $place_last_num ) ) {
+				if ( ! empty( $opts[ 'plm_place_delete_' . $place_id ] ) || ( '' === $place_name && $place_last_num === $place_id ) ) {
 
 					/**
 					 * Maybe reset the currently selected place ID.
@@ -187,23 +189,37 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				}
 
 				/**
-				 * Make sure each place has a name.
+				 * Just in case, make the default locale plm_place_name option has a value.
 				 */
-				if ( $name === '' ) {	// Just in case.
-					$name = sprintf( _x( 'Place #%d', 'option value', 'wpsso-plm' ), $place_id );
+				if ( empty( $opts[ 'plm_place_name_' . $place_id ] ) ) {
+
+					if ( empty( $place_name ) ) {
+
+						$place_name = sprintf( _x( 'Place #%d', 'option value', 'wpsso-plm' ), $place_id );
+					}
+
+					$opts[ 'plm_place_name_' . $place_id ] = $place_name;
 				}
 
-				$opts[ 'plm_place_name_' . $place_id ] = $name;
+				/**
+				 * The plm_place_img options are localized.
+				 */
+				if ( empty( $opts[ 'plm_place_img_id_' . $place_id_locale ] ) ) {	// Image id 0 is not valid.
 
-				if ( ! empty( $opts[ 'plm_place_img_id_' . $place_id ] ) ) {	// Image id 0 is not valid.
+					unset(
+						$opts[ 'plm_place_img_id_' . $place_id_locale ],
+						$opts[ 'plm_place_img_id_pre_' . $place_id_locale ]
+					);
+
+				} else {
 
 					/**
 					 * Remove the image url options if we have an image id.
 					 */
 					unset(
-						$opts[ 'plm_place_img_url_' . $place_id ],
-						$opts[ 'plm_place_img_url:width_' . $place_id ],
-						$opts[ 'plm_place_img_url:height_' . $place_id ]
+						$opts[ 'plm_place_img_url_' . $place_id_locale ],
+						$opts[ 'plm_place_img_url:width_' . $place_id_locale ],
+						$opts[ 'plm_place_img_url:height_' . $place_id_locale ]
 					);
 
 					/**

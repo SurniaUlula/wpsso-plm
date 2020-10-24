@@ -322,11 +322,6 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 				case 'plm-settings':
 
-					$table_rows[ 'plm_def_country' ] = '' . 
-						$this->form->get_th_html( _x( 'Default Country', 'option label', 'wpsso-plm' ), 
-							$css_class = '', $css_id = 'plm_def_country' ) . 
-						'<td>' . $this->form->get_select_country( 'plm_def_country' ) . '</td>';
-
 					$add_to_checkboxes = '';
 
 					foreach ( SucomUtilWP::get_post_types( 'objects' ) as $obj ) {
@@ -340,6 +335,11 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 						$this->form->get_th_html( _x( 'Show Tab on Post Types', 'option label', 'wpsso-plm' ), 
 							$css_class = '', $css_id = 'plm_add_to' ) . 
 						'<td>' . $add_to_checkboxes . '</td>';
+
+					$table_rows[ 'plm_def_country' ] = '' . 
+						$this->form->get_th_html( _x( 'Default Country', 'option label', 'wpsso-plm' ), 
+							$css_class = '', $css_id = 'plm_def_country' ) . 
+						'<td>' . $this->form->get_select_country( 'plm_def_country' ) . '</td>';
 
 					break;
 

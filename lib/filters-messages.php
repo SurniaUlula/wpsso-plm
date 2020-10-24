@@ -49,11 +49,6 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 		public function filter_messages_info( $text, $msg_key ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			if ( strpos( $msg_key, 'info-plm-' ) !== 0 ) {
 
 				return $text;
@@ -85,11 +80,6 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 		}
 
 		public function filter_messages_tooltip( $text, $msg_key ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( strpos( $msg_key, 'tooltip-plm_' ) !== 0 ) {
 
@@ -312,11 +302,6 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 		}
 
 		public function filter_messages_tooltip_meta( $text, $msg_key ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( strpos( $msg_key, 'tooltip-meta-plm_' ) !== 0 ) {
 

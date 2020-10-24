@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.0.0-b.1 (2020/10/23)**
+**Version 5.0.0-rc.1 (2020/10/24)**
 
 * **New Features**
 	* None.
@@ -124,13 +124,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added 'None' as a possible selection for the "Open Days / Hours" value.
 	* Removed the checkbox option for the "Open Days / Hours" weekdays.
 * **Bugfixes**
-	* None.
+	* Fixed saving of the "Place Name" option value for non-default locale.
 * **Developer Notes**
 	* None.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
-	* WPSSO Core v8.8.1.
+	* WPSSO Core v8.9.0.
 
 **Version 4.19.1 (2020/10/17)**
 
@@ -150,9 +150,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.0.0-b.1 =
+= 5.0.0-rc.1 =
 
-(2020/10/23) Added a new "Place Timezone" option for the "Open Days / Hours" values.
+(2020/10/24) Added a new "Place Timezone" option for the "Open Days / Hours" values.
 
 = 4.19.1 =
 

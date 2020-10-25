@@ -164,7 +164,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_file ) { 
+		public static function set_constants( $plugin_file ) {
 
 			if ( defined( 'WPSSOPLM_VERSION' ) ) {	// Define constants only once.
 
@@ -211,7 +211,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			}
 		}
 
-		public static function get_variable_constants() { 
+		public static function get_variable_constants() {
 
 			$var_const = array();
 

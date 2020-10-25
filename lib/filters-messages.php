@@ -213,9 +213,9 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 				case 'tooltip-plm_place_timezone':	// Place Timezone.
 
-					$text = __( 'A timezone for the place open and close hour values.', 'wpsso-plm' ) . ' ';
+					$text = __( 'A timezone for the place open and close hours.', 'wpsso-plm' ) . ' ';
 
-					$text .= __( 'The default timezone string is provided by WordPress.', 'wpsso-plm' );
+					$text .= __( 'The default timezone is provided by WordPress.', 'wpsso-plm' );
 
 					break;
 

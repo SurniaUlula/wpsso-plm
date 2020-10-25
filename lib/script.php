@@ -40,8 +40,8 @@ if ( ! class_exists( 'WpssoPlmScript' ) ) {
 
 			$version = WpssoPlmConfig::get_version();
 
-			wp_register_script( 'plm-metabox', 
-				WPSSOPLM_URLPATH . 'js/jquery-plm-metabox.' . $file_ext, 
+			wp_register_script( 'plm-metabox',
+				WPSSOPLM_URLPATH . 'js/jquery-plm-metabox.' . $file_ext,
 					array( 'jquery' ), $version, true );
 
 			wp_enqueue_script( 'plm-metabox' );

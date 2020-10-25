@@ -478,11 +478,11 @@ msgid ""
 msgstr ""
 
 #: lib/filters-messages.php:216
-msgid "A timezone for the place open and close hour values."
+msgid "A timezone for the place open and close hours."
 msgstr ""
 
 #: lib/filters-messages.php:218
-msgid "The default timezone string is provided by WordPress."
+msgid "The default timezone is provided by WordPress."
 msgstr ""
 
 #: lib/filters-messages.php:224

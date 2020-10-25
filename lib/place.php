@@ -316,7 +316,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 				$md_opts = SucomUtil::preg_grep_keys( '/^plm_/', $md_opts );	// Only return plm options.
 
-				if ( ! empty( $md_opts ) ) { 
+				if ( ! empty( $md_opts ) ) {
 
 					if ( $wpsso->debug->enabled ) {
 

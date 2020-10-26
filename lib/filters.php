@@ -275,10 +275,15 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			return array_merge( $md_defs, WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], array(
-				'plm_place_id'      => 'none',
-				'plm_place_country' => $this->p->options[ 'plm_def_country' ],
-			) );
+			$md_defs = array_merge(
+				$md_defs,
+				WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
+				array(
+					'plm_place_country' => $this->p->options[ 'plm_def_country' ],
+				) 
+			);
+
+			return $md_defs;
 		}
 
 		public function filter_get_post_options( array $md_opts, $post_id, array $mod ) {
@@ -429,6 +434,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			}
 
 			foreach ( array(
+				'plm_place_id'                  => 'place:opening_hours:id',
 				'plm_place_timezone'            => 'place:opening_hours:timezone',
 				'plm_place_midday_close'        => 'place:opening_hours:midday:close',
 				'plm_place_midday_open'         => 'place:opening_hours:midday:open',

@@ -142,11 +142,12 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 			$place_opts = array();
 
-			if ( $place_id === '' || $place_id === 'none' ) {	// Just in case.
+			if ( '' === $place_id || 'none' === $place_id ) {	// Just in case.
 
 				return false;
-
-			} elseif ( $place_id === 'custom' ) {
+			}
+			
+			if ( 'custom' === $place_id ) {
 
 				if ( ! isset( $mixed[ 'obj' ] ) || ! is_object( $mixed[ 'obj' ] ) ) {
 
@@ -165,18 +166,29 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 					$place_opts[ $opt_key ] = SucomUtil::get_key_value( $opt_key, $md_opts, $mixed );
 				}
 
-			} elseif ( is_numeric( $place_id ) ) {
+				if ( empty( $place_opts ) ) {
+
+					return false;
+				}
+
+				return array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
+
+			}
+			
+			if ( is_numeric( $place_id ) ) {
 
 				static $local_cache = array();	// Cache for single page load.
 
-				if ( isset( $local_cache[ $place_id ] ) ) {
+				$locale = get_locale( $mixed );
+
+				if ( isset( $local_cache[ $place_id ][ $locale ] ) ) {
 
 					if ( $wpsso->debug->enabled ) {
 
 						$wpsso->debug->log( 'returning options from static cache array for place ID ' . $place_id );
 					}
 
-					return $local_cache[ $place_id ];
+					return $local_cache[ $place_id ][ $locale ];
 				}
 
 				/**
@@ -189,20 +201,24 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 					$place_opts[ $opt_key ] = SucomUtil::get_key_value( $opt_pre . $place_id, $wpsso->options, $mixed );
 				}
 
+				if ( empty( $place_opts ) ) {
+
+					$place_opts = false;
+
+				} else {
+
+					$place_opts = array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
+				}
+
 				if ( $wpsso->debug->enabled ) {
 
 					$wpsso->debug->log( 'saving options to static cache array for place ID ' . $place_id );
 				}
 
-				$local_cache[ $place_id ] = $place_opts;
+				return $local_cache[ $place_id ][ $locale ] = $place_opts;
 			}
 
-			if ( empty( $place_opts ) ) {
-
-				return false;
-			}
-
-			return array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
+			return false;
 		}
 
 		/**
@@ -379,7 +395,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 			$place_id = isset( $md_opts[ 'plm_place_id' ] ) ? $md_opts[ 'plm_place_id' ] : 'none';
 
-			if ( $place_id === '' || $place_id === 'none' ) {	// Nothing to do.
+			if ( '' == $place_id || 'none' === $place_id ) {	// Nothing to do.
 
 				return false;
 			}

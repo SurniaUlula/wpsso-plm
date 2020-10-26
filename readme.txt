@@ -115,7 +115,22 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.0.0 (2020/20/26)**
+**Version 5.1.0-dev.10 (2020/10/26)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Refactored the `WpssoPlmPlace::get_id()` method to include the place ID.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.4.
+	* WPSSO Core v8.10.0-dev.10.
+
+**Version 5.0.0 (2020/10/26)**
 
 * **New Features**
 	* None.
@@ -150,9 +165,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 5.1.0-dev.10 =
+
+(2020/10/26) Refactored the `WpssoPlmPlace::get_id()` method to include the place ID.
+
 = 5.0.0 =
 
-(2020/20/26) Added a new "Place Timezone" option for the "Open Days / Hours" values.
+(2020/10/26) Added a new "Place Timezone" option for the "Open Days / Hours" values.
 
 = 4.19.1 =
 

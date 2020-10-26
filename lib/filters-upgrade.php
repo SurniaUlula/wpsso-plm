@@ -247,6 +247,8 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 
 			if ( $prev_version > 0 && $prev_version <= 36 ) {
 
+				$weekdays =& $this->p->cf[ 'form' ][ 'weekdays' ];
+
 				foreach ( $weekdays as $day_name => $day_label ) {
 
 					if ( empty( $opts[ 'plm_place_day_' . $day_name ] ) ) {	// Weekday is disabled.

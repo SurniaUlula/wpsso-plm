@@ -183,7 +183,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 					/**
 					 * Remove the place, including all localized keys.
 					 */
-					$opts = SucomUtil::preg_grep_keys( '/^plm_place_.*_' . $place_id . '(#.*)?$/', $opts, $invert = true );
+					$opts = SucomUtil::preg_grep_keys( $key_pattern = '/^plm_place_.*_' . $place_id . '(#.*)?$/', $opts, $invert = true );
 
 					continue;	// Check the next place.
 				}
@@ -234,7 +234,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				}
 			}
 
-			$opts = SucomUtil::preg_grep_keys( '/^plm_place_delete_/', $opts, $invert = true );	// Just in case.
+			$opts = SucomUtil::preg_grep_keys( $key_pattern = '/^plm_place_delete_/', $opts, $invert = true );	// Just in case.
 
 			return $opts;
 		}
@@ -653,7 +653,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 				if ( is_array( $plm_place_opts ) ) {	// Just in case.
 
-					return SucomUtil::preg_grep_keys( '/^plm_place_/', $plm_place_opts, false, 'place_' );	// Rename plm_place to place.
+					return SucomUtil::preg_grep_keys( $key_pattern = '/^plm_place_/', $plm_place_opts, $invert = false, $replace = 'place_' );
 				}
 			}
 
@@ -713,7 +713,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			if ( $place_id === '' || $place_id === 'none' ) {	// Nothing to do.
 
-				$md_opts = SucomUtil::preg_grep_keys( '/^plm_place_/', $md_opts, true );
+				$md_opts = SucomUtil::preg_grep_keys( $key_pattern = '/^plm_place_/', $md_opts, $invert = true );
 
 				return $md_opts;
 

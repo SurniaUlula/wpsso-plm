@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '5.1.0-dev.10',	// Plugin version.
+					'version'     => '5.1.0-b.1',	// Plugin version.
 					'opt_version' => '37',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Markup',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.10.0-dev.10',
+							'min_version'   => '8.10.0-b.1',
 						),
 					),
 

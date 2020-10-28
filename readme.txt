@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.1.0-rc.1 (2020/10/28)**
+**Version 5.1.0 (2020/10/28)**
 
 * **New Features**
 	* None.
@@ -128,7 +128,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.4.
-	* WPSSO Core v8.10.0-rc.1.
+	* WPSSO Core v8.10.0.
 
 **Version 5.0.0 (2020/10/26)**
 
@@ -165,7 +165,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.1.0-rc.1 =
+= 5.1.0 =
 
 (2020/10/28) Refactored the `WpssoPlmPlace::get_id()` method to include the place ID.
 

@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.4
 Tested Up To: 5.5.2
-Stable Tag: 5.0.0
+Stable Tag: 5.1.0
 
 Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.
 
@@ -147,22 +147,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.4.
 	* WPSSO Core v8.9.0.
 
-**Version 4.19.1 (2020/10/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
-* **Bugfixes**
-	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
-* **Developer Notes**
-	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
-	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.8.1.
-
 == Upgrade Notice ==
 
 = 5.1.0 =
@@ -172,8 +156,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 5.0.0 =
 
 (2020/10/26) Added a new "Place Timezone" option for the "Open Days / Hours" values.
-
-= 4.19.1 =
-
-(2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 

@@ -1,4 +1,4 @@
-=== Place and Local SEO Markup | WPSSO Add-on ===
+=== WPSSO Place and Local SEO Markup ===
 Plugin Name: WPSSO Place and Local SEO Markup
 Plugin Slug: wpsso-plm
 Text Domain: wpsso-plm

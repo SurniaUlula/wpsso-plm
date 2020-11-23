@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.1.0 (2020/10/28)**
+**Version 5.1.1 (2020/11/23)**
 
 * **New Features**
 	* None.
@@ -149,9 +149,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.1.0 =
+= 5.1.1 =
 
-(2020/10/28) Refactored the `WpssoPlmPlace::get_id()` method to include the place ID.
+(2020/11/23) Refactored the `WpssoPlmPlace::get_id()` method to include the place ID.
 
 = 5.0.0 =
 

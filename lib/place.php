@@ -168,10 +168,16 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 				if ( empty( $place_opts ) ) {
 
-					return false;
+					$place_opts = false;
+
+				} else {
+
+					$place_opts = array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
+
+					$place_opts[ 'plm_place_id' ] = $place_id;
 				}
 
-				return array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
+				return $place_opts;
 
 			}
 			
@@ -208,6 +214,8 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				} else {
 
 					$place_opts = array_merge( WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ], $place_opts );	// Complete the array.
+
+					$place_opts[ 'plm_place_id' ] = $place_id;
 				}
 
 				if ( $wpsso->debug->enabled ) {
@@ -341,15 +349,13 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 					if ( empty( $md_opts[ 'plm_place_country' ] ) ) {
 
-						$md_opts[ 'plm_place_country' ] = isset( $wpsso->options[ 'plm_def_country' ] ) ?
-							$wpsso->options[ 'plm_def_country' ] : 'none';
+						$md_opts[ 'plm_place_country' ] = isset( $wpsso->options[ 'plm_def_country' ] ) ? $wpsso->options[ 'plm_def_country' ] : 'none';
 					}
 
 				} elseif ( $wpsso->debug->enabled ) {
 
 					$wpsso->debug->log( 'no plm option keys found' );
 				}
-
 			}
 
 			if ( $wpsso->debug->enabled ) {

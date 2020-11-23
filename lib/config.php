@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '5.1.0',	// Plugin version.
+					'version'     => '5.1.1',	// Plugin version.
 					'opt_version' => '37',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Markup',

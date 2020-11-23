@@ -275,13 +275,8 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			$md_defs = array_merge(
-				$md_defs,
-				WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
-				array(
-					'plm_place_country' => $this->p->options[ 'plm_def_country' ],
-				) 
-			);
+			$md_defs = array_merge( $md_defs, WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
+				array( 'plm_place_country' => $this->p->options[ 'plm_def_country' ] ) );
 
 			return $md_defs;
 		}

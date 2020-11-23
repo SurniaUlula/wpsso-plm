@@ -53,7 +53,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$metabox_id = 'plm';
 
-			$tabs = apply_filters( $this->p->lca . '_' . $metabox_id . '_tabs', array( 
+			$tabs = apply_filters( 'wpsso_' . $metabox_id . '_tabs', array( 
 				'place'    => _x( 'Manage Places', 'metabox tab', 'wpsso-plm' ),
 				'settings' => _x( 'Add-on Settings', 'metabox tab', 'wpsso-plm' ),
 			) );
@@ -70,7 +70,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 				} else {
 
-					$filter_name = $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows';
+					$filter_name = 'wpsso_' . $metabox_id . '_' . $tab_key . '_rows';
 
 					$table_rows[ $tab_key ] = apply_filters( $filter_name, $this->get_table_rows( $metabox_id, $tab_key ), $this->form );
 				}

@@ -146,7 +146,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 				return false;
 			}
-			
+
 			if ( 'custom' === $place_id ) {
 
 				if ( ! isset( $mixed[ 'obj' ] ) || ! is_object( $mixed[ 'obj' ] ) ) {
@@ -180,7 +180,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 				return $place_opts;
 
 			}
-			
+
 			if ( is_numeric( $place_id ) ) {
 
 				static $local_cache = array();	// Cache for single page load.

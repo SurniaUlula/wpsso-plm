@@ -36,13 +36,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				$this->p->debug->mark();
 			}
 
-			/**
-			 * Instantiate the WpssoPlmFiltersUpgrade class object.
-			 */
-			if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
-
-				require_once WPSSOPLM_PLUGINDIR . 'lib/filters-upgrade.php';
-			}
+			require_once WPSSOPLM_PLUGINDIR . 'lib/filters-upgrade.php';
 
 			$this->upg = new WpssoPlmFiltersUpgrade( $plugin );
 
@@ -63,13 +57,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			if ( is_admin() ) {
 
-				/**
-				 * Instantiate the WpssoPlmFiltersMessages class object.
-				 */
-				if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
-
-					require_once WPSSOPLM_PLUGINDIR . 'lib/filters-messages.php';
-				}
+				require_once WPSSOPLM_PLUGINDIR . 'lib/filters-messages.php';
 
 				$this->msgs = new WpssoPlmFiltersMessages( $plugin );
 

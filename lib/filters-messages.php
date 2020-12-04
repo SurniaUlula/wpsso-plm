@@ -15,27 +15,21 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 	class WpssoPlmFiltersMessages {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoPlm class object.
 
 		/**
 		 * Instantiated by WpssoPlmFilters->__construct().
 		 */
-		public function __construct( &$plugin ) {
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
+			$this->a =& $addon;
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
-			if ( is_admin() ) {
-
-				$this->p->util->add_plugin_filters( $this, array( 
-					'messages_info'         => 2,
-					'messages_tooltip'      => 2,
-					'messages_tooltip_meta' => 2,
-				) );
-			}
+			$this->p->util->add_plugin_filters( $this, array( 
+				'messages_info'         => 2,
+				'messages_tooltip'      => 2,
+				'messages_tooltip_meta' => 2,
+			) );
 		}
 
 		public function filter_messages_info( $text, $msg_key ) {
@@ -280,8 +274,9 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 				case 'tooltip-plm_add_to':
 
+					$metabox_tab = _x( 'Schema Place', 'metabox tab', 'wpsso-plm' );
+
 					$metabox_title = _x( $this->p->cf[ 'meta' ][ 'title' ], 'metabox title', 'wpsso' );	// Use wpsso's text domain.
-					$metabox_tab   = _x( 'Schema Place', 'metabox tab', 'wpsso-plm' );
 
 					$text = sprintf( __( 'A "%1$s" tab can be added to the %2$s metabox on Posts, Pages, and custom post types, allowing you to select or enter place information for the webpage content (ie. street address, GPS coordinates, opening hours, etc.).', 'wpsso-plm' ), $metabox_tab, $metabox_title );
 

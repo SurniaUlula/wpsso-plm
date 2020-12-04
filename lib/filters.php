@@ -15,10 +15,14 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 	class WpssoPlmFilters {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoPlm class object.
 		private $msgs;	// WpssoPlmFiltersMessages class object.
 		private $upg;	// WpssoPlmFiltersUpgrade class object.
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoPlm->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			static $do_once = null;
 
@@ -30,15 +34,11 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 			$do_once = true;
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			require_once WPSSOPLM_PLUGINDIR . 'lib/filters-upgrade.php';
 
-			$this->upg = new WpssoPlmFiltersUpgrade( $plugin );
+			$this->upg = new WpssoPlmFiltersUpgrade( $plugin, $addon );
 
 			$this->p->util->add_plugin_filters( $this, array( 
 				'option_type'                                => 2,
@@ -59,7 +59,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 				require_once WPSSOPLM_PLUGINDIR . 'lib/filters-messages.php';
 
-				$this->msgs = new WpssoPlmFiltersMessages( $plugin );
+				$this->msgs = new WpssoPlmFiltersMessages( $plugin, $addon );
 
 				$this->p->util->add_plugin_filters( $this, array( 
 					'form_cache_place_names'  => 1,
@@ -69,11 +69,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		}
 
 		public function filter_option_type( $type, $base_key ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( ! empty( $type ) ) {
 
@@ -134,11 +129,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		 * $network is true if saving multisite network settings.
 		 */
 		public function filter_save_setting_options( array $opts, $network, $upgrading ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( $network ) {
 
@@ -229,22 +219,12 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 		public function filter_save_post_options( $md_opts, $post_id, $rel_id, $mod ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$this->update_post_md_opts( $md_opts, $post_id, $mod );	// Modifies the $md_opts array.
 
 			return $md_opts;
 		}
 
 		public function filter_get_defaults( $defs ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			/**
 			 * Add options using a key prefix array and post type names.
@@ -258,11 +238,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 		public function filter_get_md_defaults( $md_defs ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$md_defs = array_merge( $md_defs, WpssoPlmConfig::$cf[ 'form' ][ 'plm_place_opts' ],
 				array( 'plm_place_country' => $this->p->options[ 'plm_def_country' ] ) );
 
@@ -271,22 +246,12 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 		public function filter_get_post_options( array $md_opts, $post_id, array $mod ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$this->update_post_md_opts( $md_opts, $post_id, $mod );	// Modifies the $md_opts array.
 
 			return $md_opts;
 		}
 
 		public function filter_og_type( $og_type, $mod, $is_custom ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( $is_custom ) {
 
@@ -329,11 +294,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		}
 
 		public function filter_og_seed( array $mt_og, array $mod ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			$place_opts = WpssoPlmPlace::has_place( $mod );	// Returns false or place array.
 
@@ -458,11 +418,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 		public function filter_schema_meta_itemprop( $mt_schema, $mod, $mt_og, $page_type_id ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$place_opts = WpssoPlmPlace::has_place( $mod );	// Returns false or place array.
 
 			if ( empty( $place_opts ) ) {
@@ -543,11 +498,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 		public function filter_json_array_schema_type_ids( $type_ids, $mod ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$place_opts = WpssoPlmPlace::has_place( $mod );	// Returns false or place array.
 
 			if ( empty( $place_opts ) ) {
@@ -586,11 +536,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 		public function filter_json_prop_https_schema_org_potentialaction( $action_data, $mod, $mt_og, $page_type_id, $is_main ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			if ( ! $is_main ) {
 
 				return $action_data;
@@ -611,11 +556,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		}
 
 		public function filter_get_place_options( $place_opts, $mod, $place_id ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( false !== $place_opts ) {	// First come, first served.
 
@@ -648,11 +588,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		 */
 		public function filter_form_cache_place_names( $mixed ) {
 
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
-
 			$ret = WpssoPlmPlace::get_names();
 
 			if ( is_array( $mixed ) ) {
@@ -664,11 +599,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		}
 
 		public function filter_post_document_meta_tabs( $tabs, $mod, $metabox_id ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			if ( $metabox_id === $this->p->cf[ 'meta' ][ 'id' ] ) {
 
@@ -682,11 +612,6 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 		}
 
 		private function update_post_md_opts( &$md_opts, $post_id, $mod ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			$place_id = isset( $md_opts[ 'plm_place_id' ] ) ? $md_opts[ 'plm_place_id' ] : 'none';
 

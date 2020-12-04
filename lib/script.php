@@ -15,17 +15,15 @@ if ( ! class_exists( 'WpssoPlmScript' ) ) {
 	class WpssoPlmScript {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoPlm class object.
 
-		private $tb_notices;
-
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoPlm->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			$this->p->util->add_plugin_actions( $this, array(
 				'admin_enqueue_scripts_editing_page' => 2,

@@ -15,18 +15,15 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 	class WpssoPlmFiltersUpgrade {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoPlm class object.
 
 		/**
 		 * Instantiated by WpssoPlmFilters->__construct().
 		 */
-		public function __construct( &$plugin ) {
+		public function __construct( &$plugin, &$addon ) {
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			$this->p->util->add_plugin_filters( $this, array( 
 				'rename_options_keys'    => 1,
@@ -37,11 +34,6 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 		}
 
 		public function filter_rename_options_keys( $options_keys ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			$options_keys[ 'wpssoplm' ] = array(
 				16 => array(
@@ -116,11 +108,6 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 		}
 
 		public function filter_rename_md_options_keys( $options_keys ) {
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
 
 			$options_keys[ 'wpssoplm' ] = array(
 				8 => array(

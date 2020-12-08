@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.
  * Requires PHP: 5.6
- * Requires At Least: 4.4
+ * Requires At Least: 4.5
  * Tested Up To: 5.6
  * Version: 5.2.0
  * 

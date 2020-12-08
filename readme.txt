@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-plm/assets/
 Tags: local seo, local business, restaurant, meta tags, schema.org, location, place, address, venue, business hours, knowledge graph
 Contributors: jsmoriss
 Requires PHP: 5.6
-Requires At Least: 4.4
+Requires At Least: 4.5
 Tested Up To: 5.6
 Stable Tag: 5.2.0
 
@@ -127,7 +127,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Included the `$addon` argument for library class constructors.
 * **Requires At Least**
 	* PHP v5.6.
-	* WordPress v4.4.
+	* WordPress v4.5.
 	* WPSSO Core v8.14.1.
 
 **Version 5.1.1 (2020/11/23)**

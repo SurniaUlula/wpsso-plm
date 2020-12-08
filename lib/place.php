@@ -126,7 +126,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 		 * If $place_id is 'custom' then $mixed must be a $mod array.
 		 *
 		 * $place_id = 'custom' | place ID.
-		 * $mixed    = 'default' | 'current' | post id | $mod array.
+		 * $mixed    = 'default' | 'current' | post ID | $mod array.
 		 */
 		public static function get_id( $place_id, $mixed = 'current' ) {
 

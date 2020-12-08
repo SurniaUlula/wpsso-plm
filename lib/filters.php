@@ -192,7 +192,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 				} else {
 
 					/**
-					 * Remove the image url options if we have an image id.
+					 * Remove the image URL options if we have an image ID.
 					 */
 					unset(
 						$opts[ 'plm_place_img_url_' . $place_id_locale ],

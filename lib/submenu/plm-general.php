@@ -324,7 +324,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 					$add_to_checkboxes = '';
 
-					foreach ( SucomUtilWP::get_post_types( 'objects' ) as $obj ) {
+					foreach ( SucomUtilWP::get_post_types( $output = 'objects' ) as $obj ) {
 
 						$add_to_checkboxes .= '<p>' . $this->form->get_checkbox( 'plm_add_to_' . $obj->name ) . ' ' .
 							( empty( $obj->label ) ? '' : $obj->label ) . 	// Just in case.

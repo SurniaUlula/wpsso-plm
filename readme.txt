@@ -122,13 +122,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Improvements**
 	* None.
 * **Bugfixes**
-	* Fixed the 'WpssoPlmFiltersUpgrade->filter_upgraded_md_options' method.
+	* Fixed the 'WpssoPlmFiltersUpgrade->filter_upgraded_md_options' filter that incorrectly cleared post, term, and user metadata options on upgrade.
 * **Developer Notes**
 	* None.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.
-	* WPSSO Core v8.16.0.
+	* WPSSO Core v8.18.0.
 
 **Version 5.2.0 (2020/12/04)**
 
@@ -178,6 +178,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.9.0.
 
 == Upgrade Notice ==
+
+= 5.2.1-rc.1 =
+
+(2020/12/22) Fixed the 'WpssoPlmFiltersUpgrade->filter_upgraded_md_options' filter that incorrectly cleared post, term, and user metadata options on upgrade.
 
 = 5.2.0 =
 

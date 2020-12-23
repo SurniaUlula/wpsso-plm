@@ -191,9 +191,7 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 
 		public function filter_upgraded_options( $opts, $defs ) {
 
-			$version_key = 'plugin_wpssoplm_opt_version';
-
-			$prev_version = empty( $opts[ $version_key ] ) ? 0 : $opts[ $version_key ];
+			$prev_version = empty( $opts[ 'plugin_wpssoplm_opt_version' ] ) ? 0 : $opts[ 'plugin_wpssoplm_opt_version' ];
 
 			if ( $prev_version > 0 && $prev_version <= 36 ) {
 
@@ -219,9 +217,7 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 
 		public function filter_upgraded_md_options( $md_opts ) {
 
-			$version_key = 'plugin_wpssoplm_opt_version';
-
-			$prev_version = empty( $opts[ $version_key ] ) ? 0 : $opts[ $version_key ];
+			$prev_version = empty( $md_opts[ 'plugin_wpssoplm_opt_version' ] ) ? 0 : $md_opts[ 'plugin_wpssoplm_opt_version' ];
 
 			if ( $prev_version > 0 && $prev_version <= 36 ) {
 
@@ -229,10 +225,10 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 
 				foreach ( $weekdays as $day_name => $day_label ) {
 
-					if ( empty( $opts[ 'plm_place_day_' . $day_name ] ) ) {	// Weekday is disabled.
+					if ( empty( $md_opts[ 'plm_place_day_' . $day_name ] ) ) {	// Weekday is disabled.
 
-						$opts[ 'plm_place_day_' . $day_name . '_open' ]  = 'none';
-						$opts[ 'plm_place_day_' . $day_name . '_close' ] = 'none';
+						$md_opts[ 'plm_place_day_' . $day_name . '_open' ]  = 'none';
+						$md_opts[ 'plm_place_day_' . $day_name . '_close' ] = 'none';
 					}
 				}
 			}

@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.2.1-rc.1 (2020/12/22)**
+**Version 5.2.1 (2020/12/22)**
 
 * **New Features**
 	* None.
@@ -179,7 +179,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.2.1-rc.1 =
+= 5.2.1 =
 
 (2020/12/22) Fixed the 'WpssoPlmFiltersUpgrade->filter_upgraded_md_options' filter that incorrectly cleared post, term, and user metadata options on upgrade.
 

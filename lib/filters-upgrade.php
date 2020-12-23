@@ -232,6 +232,8 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					}
 				}
 			}
+
+			return $md_opts;
 		}
 	}
 }

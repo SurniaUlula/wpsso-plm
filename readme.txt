@@ -115,6 +115,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.2.1-rc.1 (2020/12/22)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* Fixed the 'WpssoPlmFiltersUpgrade->filter_upgraded_md_options' method.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.5.
+	* WPSSO Core v8.16.0.
+
 **Version 5.2.0 (2020/12/04)**
 
 * **New Features**

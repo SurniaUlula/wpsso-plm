@@ -667,6 +667,9 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 			$this->p->util->maybe_set_ref( $settings_page_link, $mod = false, $context_transl );
 
+			/**
+			 * $size_names can be a keyword (ie. 'opengraph' or 'schema'), a registered size name, or an array of size names.
+			 */
 			$mt_images = $this->p->media->get_mt_opts_images( $opts, $size_names = 'schema', $img_pre = 'plm_place_img', $opt_num );
 
 			$this->p->util->maybe_unset_ref( $settings_page_link );

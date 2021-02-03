@@ -29,7 +29,7 @@
 <h3>WPSSO PLM Standard Features</h3>
 
 <ul>
-<li><p>Extends the features of the WPSSO Core plugin.</p></li>
+<li><p>Extends the features of the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p></li>
 <li><p>Provides place / location information to WPSSO Core, the WPSSO ORG add-on, and the WPSSO JSON add-on.</p></li>
 <li><p>Manage one or more places:</p>
 

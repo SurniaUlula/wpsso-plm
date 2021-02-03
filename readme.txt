@@ -31,7 +31,7 @@ The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-sch
 
 <h3>WPSSO PLM Standard Features</h3>
 
-* Extends the features of the WPSSO Core plugin.
+* Extends the features of the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 * Provides place / location information to WPSSO Core, the WPSSO ORG add-on, and the WPSSO JSON add-on.
 

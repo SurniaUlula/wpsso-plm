@@ -74,6 +74,8 @@
 </ul></li>
 </ul>
 
+<p>The Place and Local SEO Markup Standard add-on is designed to satisfy the requirements of most standard WordPress sites. If your site includes posts / pages about specific places, then you may want to get the <a href="https://wpsso.com/extend/plugins/wpsso-plm/">WPSSO PLM Premium add-on</a> to select specific places for your post / page content.</p>
+
 <p><strong>[Premium]</strong> Includes a Schema Place tab in the Document SSO metabox to select an existing place or enter custom place information for post / page content about specific places and locations.</p>
 
 <h3>WPSSO Core Plugin Required</h3>

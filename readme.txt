@@ -31,43 +31,43 @@ The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-sch
 
 <h3>WPSSO PLM Standard Features</h3>
 
-* Extends the features of the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+Extends the features of the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (required plugin).
 
-* Provides place / location information to WPSSO Core, the WPSSO ORG add-on, and the WPSSO JSON add-on.
+Provides place / location information to WPSSO Core, the WPSSO ORG add-on, and the WPSSO JSON add-on.
 
-* Manage one or more places:
+Manage one or more places:
 
-	* Place Schema Type
-	* Place Name
-	* Place Alternate Name
-	* Place Description
-	* Street Address
-	* P.O. Box Number
-	* City
-	* State / Province
-	* Zip / Postal Code
-	* Country
-	* Telephone
-	* Place Latitude
-	* Place Longitude
-	* Place Altitude
-	* Google Place ID
-	* Place Image ID
-	* or Place Image URL
-	* Place Timezone
-	* Open Days / Hours
-	* Closes Mid-Day
-	* Seasonal Dates
-	* Local Business:
-		* Service Radius
-		* Currencies Accepted
-		* Payment Accepted
-		* Price Range
-	* Food Establishment:
-		* Accepts Reservations
-		* Serves Cuisine
-		* Food Menu URL
-		* Order Action URL(s)
+* Place Schema Type
+* Place Name
+* Place Alternate Name
+* Place Description
+* Street Address
+* P.O. Box Number
+* City
+* State / Province
+* Zip / Postal Code
+* Country
+* Telephone
+* Place Latitude
+* Place Longitude
+* Place Altitude
+* Google Place ID
+* Place Image ID
+* or Place Image URL
+* Place Timezone
+* Open Days / Hours
+* Closes Mid-Day
+* Seasonal Dates
+* Local Business:
+	* Service Radius
+	* Currencies Accepted
+	* Payment Accepted
+	* Price Range
+* Food Establishment:
+	* Accepts Reservations
+	* Serves Cuisine
+	* Food Menu URL
+	* Order Action URL(s)
 
 <h3>WPSSO PLM Premium Features</h3>
 
@@ -77,9 +77,7 @@ The Standard version is designed to satisfy the requirements of most standard Wo
 
 <h3>WPSSO Core Plugin Required</h3>
 
-WPSSO Place and Local SEO Markup (aka WPSSO PLM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
-
-WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how webpages are shared, re-shared, messaged, posted, embedded, or crawled.
+WPSSO Place and Local SEO Markup (aka WPSSO PLM) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/). WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how webpages are shared, re-shared, messaged, posted, embedded, or crawled.
 
 == Installation ==
 

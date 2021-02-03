@@ -29,7 +29,7 @@ The [WPSSO Organization add-on](https://wordpress.org/plugins/wpsso-organization
 
 The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) can use place information for the Schema Event location, Schema Job Posting location, and the Schema Place type (and its sub-types) for post / page content about specific places and locations.
 
-<h3>WPSSO PLM Standard Features</h3>
+<h3>WPSSO PLM Add-on Features</h3>
 
 Extends the features of the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (required plugin).
 
@@ -69,11 +69,7 @@ Manage one or more places:
 	* Food Menu URL
 	* Order Action URL(s)
 
-<h3>WPSSO PLM Premium Features</h3>
-
-The Standard version is designed to satisfy the requirements of most standard WordPress sites / blogs. If your site includes posts / pages about specific places, then you may want the Premium version to select specific places for your post / page content. You may also want to activate the WPSSO Schema JSON-LD Markup add-on to express place information as Schema Place markup in JSON-LD format.
-
-* Includes a Schema Place tab in the Document SSO metabox to select an existing place, or customize place information, for post / page content about specific places and locations.
+**[Premium]** Includes a Schema Place tab in the Document SSO metabox to select an existing place or enter custom place information for post / page content about specific places and locations.
 
 <h3>WPSSO Core Plugin Required</h3>
 

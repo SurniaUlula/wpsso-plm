@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 7.0
 Requires At Least: 4.5
 Tested Up To: 5.6.2
-Stable Tag: 5.2.1
+Stable Tag: 5.2.2
 
 Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.
 

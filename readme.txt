@@ -1,4 +1,4 @@
-=== WPSSO Place and Local SEO Markup ===
+=== WPSSO Place and Local SEO Markup Facebook, Pinterest and Google ===
 Plugin Name: WPSSO Place and Local SEO Markup
 Plugin Slug: wpsso-plm
 Text Domain: wpsso-plm

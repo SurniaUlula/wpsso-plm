@@ -1,4 +1,4 @@
-<h1>WPSSO Place and Local SEO Markup</h1>
+<h1>WPSSO Place and Local SEO Markup Facebook, Pinterest and Google</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Place and Local SEO Markup</td></tr>

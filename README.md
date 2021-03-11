@@ -20,7 +20,7 @@
 
 <p><strong>Provides place and location information for WPSSO Core and its add-ons:</strong></p>
 
-<p>The <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> can use place information for Facebook / Open Graph location, Pinterest Rich Pin place and Local SEO meta tags.</p>
+<p>The <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> can use place information for Facebook / Open Graph location, Pinterest Rich Pin place, and Local SEO meta tags.</p>
 
 <p>The <a href="https://wordpress.org/plugins/wpsso-organization/">WPSSO Organization add-on</a> can assign places to organizations (ie. content publisher, event organizer, etc.).</p>
 

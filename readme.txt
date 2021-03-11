@@ -1,4 +1,4 @@
-=== WPSSO Place and Local SEO Markup for Facebook, Pinterest and Google ===
+=== WPSSO Place and Local SEO Markup for Facebook, Pinterest, and Google ===
 Plugin Name: WPSSO Place and Local SEO Markup
 Plugin Slug: wpsso-plm
 Text Domain: wpsso-plm
@@ -17,7 +17,7 @@ Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Goo
 
 == Description ==
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-plm/assets/icon-256x256.png"> <strong>Let Facebook, Pinterest and Google know about your places and locations:</strong></p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-plm/assets/icon-256x256.png"> <strong>Let Facebook, Pinterest, and Google know about your places and locations:</strong></p>
 
 Add Facebook / Open Graph location, Pinterest Rich Pin place and Google Local Business / SEO markup.
 

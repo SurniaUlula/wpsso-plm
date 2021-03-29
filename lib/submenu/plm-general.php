@@ -120,7 +120,7 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 						$table_rows[ 'plm_place_delete_' . $id ] = $tr_hide_place_html . $this->form->get_th_html() . 
 							'<td>' . $this->form->get_checkbox( 'plm_place_delete_' . $id ) . ' ' .
-							'<em>' . _x( 'delete this place', 'option comment', 'wpsso-plm' ) . '</em></td>';
+							_x( 'delete this place', 'option comment', 'wpsso-plm' ) . '</td>';
 
 						$table_rows[ 'plm_place_schema_type_' . $id ] = $tr_hide_place_html . 
 							$this->form->get_th_html( _x( 'Place Schema Type', 'option label', 'wpsso-plm' ),

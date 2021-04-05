@@ -1,4 +1,4 @@
-=== WPSSO Place and Local SEO Markup for Facebook, Pinterest, and Google ===
+=== WPSSO Place and Local SEO Markup ===
 Plugin Name: WPSSO Place and Local SEO Markup
 Plugin Slug: wpsso-plm
 Text Domain: wpsso-plm
@@ -109,6 +109,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.2.3 (2021/04/05)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Removed the mention of Facebook from the plugin name.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.5.
+	* WPSSO Core v8.25.2.
+
 **Version 5.2.2 (2021/02/25)**
 
 * **New Features**
@@ -187,6 +202,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.9.0.
 
 == Upgrade Notice ==
+
+= 5.2.3 =
+
+(2021/04/05) Removed the mention of Facebook from the plugin name.
 
 = 5.2.2 =
 

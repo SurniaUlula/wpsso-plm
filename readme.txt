@@ -25,7 +25,7 @@ Add Facebook / Open Graph location, Pinterest Rich Pin place, and Google Local B
 
 The [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) can use place information for Facebook / Open Graph location, Pinterest Rich Pin place, and Local SEO meta tags.
 
-The [WPSSO Organization add-on](https://wordpress.org/plugins/wpsso-organization/) can assign places to organizations (ie. content publisher, event organizer, etc.).
+The [WPSSO Organization add-on](https://wordpress.org/plugins/wpsso-organization/) can assign place information to its organizations (ie. content publisher, event organizer, etc.).
 
 The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) can use place information for the Schema Event location, Schema Job Posting location, and the Schema Place type (and its sub-types) for post / page content about specific places and locations.
 

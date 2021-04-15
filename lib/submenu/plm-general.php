@@ -322,19 +322,10 @@ if ( ! class_exists( 'WpssoPlmSubmenuPlmGeneral' ) && class_exists( 'WpssoAdmin'
 
 				case 'plm-settings':
 
-					$add_to_checkboxes = '';
-
-					foreach ( SucomUtilWP::get_post_types( $output = 'objects' ) as $obj ) {
-
-						$add_to_checkboxes .= '<p>' . $this->form->get_checkbox( 'plm_add_to_' . $obj->name ) . ' ' .
-							( empty( $obj->label ) ? '' : $obj->label ) . 	// Just in case.
-							( empty( $obj->description ) ? '' : ' (' . $obj->description . ')' ) . '</p>';
-					}
-
 					$table_rows[ 'plm_add_to' ] = '' . 
 						$this->form->get_th_html( _x( 'Show Tab on Post Types', 'option label', 'wpsso-plm' ),
 							$css_class = '', $css_id = 'plm_add_to' ) . 
-						'<td>' . $add_to_checkboxes . '</td>';
+						'<td>' . $this->form->get_checklist_post_types( $name_prefix = 'plm_add_to' ) . '</td>';
 
 					$table_rows[ 'plm_def_country' ] = '' . 
 						$this->form->get_th_html( _x( 'Default Country', 'option label', 'wpsso-plm' ),

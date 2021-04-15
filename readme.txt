@@ -109,6 +109,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.3.0-dev.1 (2021/04/15)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Added support for `SucomForm->get_checklist_post_types()` in the add-on settings page.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.5.
+	* WPSSO Core v8.26.3-dev.1.
+
 **Version 5.2.3 (2021/04/05)**
 
 * **New Features**
@@ -203,6 +218,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
+= 5.3.0-dev.1 =
+
+(2021/04/15) Added support for `SucomForm->get_checklist_post_types()` in the add-on settings page.
+ 
 = 5.2.3 =
 
 (2021/04/05) Removed the mention of Facebook from the plugin name.

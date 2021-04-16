@@ -109,7 +109,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.3.0-dev.3 (2021/04/16)**
+**Version 5.3.0-b.1 (2021/04/16)**
 
 * **New Features**
 	* None.
@@ -122,7 +122,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.
-	* WPSSO Core v8.26.3-dev.3.
+	* WPSSO Core v8.26.3-b.1.
 
 **Version 5.2.3 (2021/04/05)**
 
@@ -218,7 +218,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.3.0-dev.3 =
+= 5.3.0-b.1 =
 
 (2021/04/16) Added support for `SucomForm->get_checklist_post_types()` in the add-on settings page.
  

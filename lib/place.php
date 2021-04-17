@@ -185,7 +185,7 @@ if ( ! class_exists( 'WpssoPlmPlace' ) ) {
 
 				static $local_cache = array();	// Cache for single page load.
 
-				$locale = get_locale( $mixed );
+				$locale = SucomUtil::get_locale( $mixed );
 
 				if ( isset( $local_cache[ $place_id ][ $locale ] ) ) {
 

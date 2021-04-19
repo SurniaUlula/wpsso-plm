@@ -89,7 +89,7 @@ WPSSO Place and Local SEO Markup (aka WPSSO PLM) is an add-on for the [WPSSO Cor
 == Screenshots ==
 
 01. The WPSSO PLM settings page includes options to manage location addresses, geo location, business hours, service radius, price and currency information, restaurant menu URL, and more.
-02. When editing a post/page, the Schema Place tab provides additional options to manage location addresses, geo location, business hours, service radius, price and currency information, and more (Premium add-on).
+02. When editing a post/page, the Schema Place tab provides additional options to manage location addresses, geo location, business hours, service radius, price and currency information, and more (Premium version shown).
 
 == Changelog ==
 

@@ -143,7 +143,7 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					'plm_addr_business_type'            => 'plm_place_schema_type',
 					'plm_addr_business_phone'           => '',
 					'plm_addr_img_id'                   => 'plm_place_img_id',
-					'plm_addr_img_id_pre'               => 'plm_place_img_id_lib',
+					'plm_addr_img_id_pre'               => 'plm_place_img_id_pre',
 					'plm_addr_img_url'                  => 'plm_place_img_url',
 					'plm_addr_day_sunday'               => 'plm_place_day_sunday',
 					'plm_addr_day_sunday_open'          => 'plm_place_day_sunday_open',
@@ -183,9 +183,6 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 				25 => array(
 					'plm_place_state'   => 'plm_place_region',
 					'plm_place_zipcode' => 'plm_place_postal_code',
-				),
-				37 => array(
-					'plm_place_img_id_pre' => 'plm_place_img_id_lib',
 				),
 			);
 

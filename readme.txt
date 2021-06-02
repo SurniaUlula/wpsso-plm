@@ -109,6 +109,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 5.4.0-dev.1 (TBD)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v4.5.
+	* WPSSO Core v8.26.3.
+
 **Version 5.3.0 (2021/04/17)**
 
 * **New Features**
@@ -217,6 +232,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.9.0.
 
 == Upgrade Notice ==
+
+= 5.4.0-dev.1 =
+
+(TBD) None.
 
 = 5.3.0 =
 

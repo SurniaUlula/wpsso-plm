@@ -18,7 +18,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
 					'version'     => '5.3.0',	// Plugin version.
-					'opt_version' => '37',		// Increment when changing default option values.
+					'opt_version' => '38',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Markup',
 					'desc'        => 'Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.',
@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 					'plm_place_longitude'                => '',			// Place Longitude.
 					'plm_place_altitude'                 => '',			// Place Altitude.
 					'plm_place_img_id'                   => '',			// Place Image ID.
-					'plm_place_img_id_pre'               => 'wp',
+					'plm_place_img_id_lib'               => 'wp',
 					'plm_place_img_url'                  => '',			// or Place Image URL.
 					'plm_place_timezone'                 => '',			// Place Timezone (a default value is not required).
 					'plm_place_day_sunday_open'          => 'none',

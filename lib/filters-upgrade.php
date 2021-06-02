@@ -102,9 +102,6 @@ if ( ! class_exists( 'WpssoPlmFiltersUpgrade' ) ) {
 					'plm_place_state'   => 'plm_place_region',
 					'plm_place_zipcode' => 'plm_place_postal_code',
 				),
-				37 => array(
-					'plm_place_img_id_pre' => 'plm_place_img_id_lib',
-				),
 			);
 
 			return $options_keys;

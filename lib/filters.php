@@ -186,7 +186,7 @@ if ( ! class_exists( 'WpssoPlmFilters' ) ) {
 
 					unset(
 						$opts[ 'plm_place_img_id_' . $place_id_locale ],
-						$opts[ 'plm_place_img_id_lib_' . $place_id_locale ]
+						$opts[ 'plm_place_img_id_pre_' . $place_id_locale ]
 					);
 
 				} else {

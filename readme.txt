@@ -221,7 +221,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 5.3.0 =
 
 (2021/04/17) Added support for `SucomForm->get_checklist_post_types()` in the add-on settings page.
- 
+
 = 5.2.3 =
 
 (2021/04/05) Removed the mention of Facebook from the plugin name.

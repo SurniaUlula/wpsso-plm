@@ -118,7 +118,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Renamed all '*_img_id_pre' option keys to '*_img_id_lib' for WPSSO 8.30.0.
+	* Renamed all '\*_img_id_pre' option keys to '\*_img_id_lib' for WPSSO 8.30.0.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.

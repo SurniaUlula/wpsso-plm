@@ -109,7 +109,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.4.0-dev.4 (2021/06/04)**
+**Version 5.4.0-b.1 (2021/06/07)**
 
 * **New Features**
 	* None.
@@ -118,11 +118,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Renamed all '\*_img_id_pre' option keys to '\*_img_id_lib' for WPSSO 8.30.0.
+	* Renamed '\*_img_id_pre' option keys to '\*_img_id_lib' for WPSSO 8.30.0.
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.
-	* WPSSO Core v8.30.0-dev.4.
+	* WPSSO Core v8.30.0-b.1.
 
 **Version 5.3.0 (2021/04/17)**
 
@@ -233,9 +233,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.4.0-dev.4 =
+= 5.4.0-b.1 =
 
-(2021/06/04) Renamed option keys for WPSSO 8.30.0.
+(2021/06/07) Renamed option keys for WPSSO 8.30.0.
 
 = 5.3.0 =
 

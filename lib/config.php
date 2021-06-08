@@ -17,8 +17,8 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssoplm' => array(			// Plugin acronym.
-					'version'     => '5.4.0-b.2',	// Plugin version.
-					'opt_version' => '39',		// Increment when changing default option values.
+					'version'     => '5.4.0-rc.1',	// Plugin version.
+					'opt_version' => '40',		// Increment when changing default option values.
 					'short'       => 'WPSSO PLM',	// Short plugin name.
 					'name'        => 'WPSSO Place and Local SEO Markup',
 					'desc'        => 'Manage Schema Places and Local SEO for Facebook / Open Graph, Pinterest, and Google Local Business.',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoPlmConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.30.0-b.2',
+							'min_version'   => '8.30.0-rc.1',
 						),
 					),
 

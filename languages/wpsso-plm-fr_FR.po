@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Place and Local SEO Meta 5.2.0\n"
+"Project-Id-Version: WPSSO Place and Local SEO Meta 5.4.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-plm\n"
-"POT-Creation-Date: 2020-12-08 06:25-0800\n"
-"PO-Revision-Date: 2020-12-08 06:25-0800\n"
+"POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-06-08 16:53-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:178
@@ -467,7 +467,7 @@ msgstr "Cet établissement alimentaire accepte des réservations."
 
 #: lib/filters-messages.php:251
 msgid "The menu URL for this food establishment."
-msgstr "URL du menu de l'établissement alimentaire"
+msgstr "L'URL du menu de cet établissement de restauration."
 
 #: lib/filters-messages.php:257
 msgid "The cuisine served by this food establishment."
@@ -776,12 +776,12 @@ msgctxt "option label"
 msgid "or Place Image URL"
 msgstr "ou URL d'image de l'endroit"
 
-#: lib/submenu/plm-general.php:335
+#: lib/submenu/plm-general.php:326
 msgctxt "option label"
 msgid "Show Tab on Post Types"
 msgstr "Afficher l'onglet sur articles de type"
 
-#: lib/submenu/plm-general.php:340
+#: lib/submenu/plm-general.php:331
 msgctxt "option label"
 msgid "Default Country"
 msgstr "Pays par défaut"

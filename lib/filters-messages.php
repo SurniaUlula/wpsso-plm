@@ -49,7 +49,7 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 					$text .= __( 'You may select a place, or enter custom place information, to further describe the content subject.', 'wpsso-plm' ) . ' ';
 
-					$text .= sprintf( __( 'If you select a place, make sure the content subject is about a single specific place or location &mdash; For example, <a href="%s">The Eiffel Tower</a>.', 'wpsso-plm' ), __( 'https://en.wikipedia.org/wiki/Eiffel_Tower', 'wpsso-plm' ) ) . ' ';
+					$text .= sprintf( __( 'If you select a place, make sure the content subject is about a single specific place or location - for example, <a href="%s">The Eiffel Tower</a>.', 'wpsso-plm' ), __( 'https://en.wikipedia.org/wiki/Eiffel_Tower', 'wpsso-plm' ) ) . ' ';
 
 					$text .= __( 'Selecting a place will set the webpage Open Graph type to "place" and the Schema type to the one selected below.', 'wpsso-plm' );
 
@@ -180,19 +180,19 @@ if ( ! class_exists( 'WpssoPlmFiltersMessages' ) ) {
 
 					$text .= __( 'The place image is used in the Schema LocalBusiness markup for the Schema "location" property.', 'wpsso-plm' ) . ' ';
 
-					$text .= __( 'The place image is not used when a place is selected for the post, page, or custom post type content &mdash; in this case, the custom and/or featured image is used.', 'wpsso-plm' );
+					$text .= __( 'The place image is not used when a place is selected for the post, page, or custom post type content - in this case, the custom and/or featured image is used.', 'wpsso-plm' );
 
 					break;
 
 				case 'tooltip-plm_place_img_url':	// or Place Image URL.
 
-					$text = __( 'You can enter a place image URL (including the http:// prefix) instead of choosing an image ID &mdash; if a place image ID is specified, it has precedence and the image URL option is disabled.', 'wpsso-plm' ) . ' ';
+					$text = __( 'You can enter a place image URL (including the http:// prefix) instead of choosing an image ID - if a place image ID is specified, it has precedence and the image URL option is disabled.', 'wpsso-plm' ) . ' ';
 
 					$text .= __( 'The image URL option allows you to use an image outside of a managed collection (WordPress Media Library or NextGEN Gallery), and/or a smaller logo style image.', 'wpsso-plm' ) . ' ';
 
 					$text .= __( 'The place image is used in the Schema LocalBusiness markup for the Schema "location" property.', 'wpsso-plm' ) . ' ';
 
-					$text .= __( 'The place image is not used when a place is selected for the post, page, or custom post type content &mdash; in this case, the custom and/or featured image is used.', 'wpsso-plm' );
+					$text .= __( 'The place image is not used when a place is selected for the post, page, or custom post type content - in this case, the custom and/or featured image is used.', 'wpsso-plm' );
 
 					break;
 

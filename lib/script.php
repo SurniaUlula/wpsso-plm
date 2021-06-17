@@ -40,7 +40,7 @@ if ( ! class_exists( 'WpssoPlmScript' ) ) {
 
 			wp_register_script( 'plm-metabox',
 				WPSSOPLM_URLPATH . 'js/jquery-plm-metabox.' . $file_ext,
-					array( 'jquery' ), $version, true );
+					array( 'jquery', 'sucom-admin-page' ), $version, $in_footer = true );
 
 			wp_enqueue_script( 'plm-metabox' );
 		}

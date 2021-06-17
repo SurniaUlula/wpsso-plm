@@ -83,9 +83,8 @@ function plmPlaceSchemaType() {
 			place_opt_ext = '';
 		}
 
-		var place_id_label = sucomAdminPageL10n._option_labels[ 'plm_place_id' ];
-
-		var linked_to_label = sucomAdminPageL10n._linked_to_msg.replace( /%s/, place_id_label );
+		var place_id_label  = sucomAdminPageL10n._option_labels[ 'plm_place_id' ];
+		var linked_to_label = sucomAdminPageL10n._linked_to_transl.formatUnicorn( place_id_label );
 
 		/**
 		 * Check the Schema Type value.
@@ -93,7 +92,7 @@ function plmPlaceSchemaType() {
 		var select_place_schema_type = jQuery( 'select#select_plm_place_schema_type' + place_opt_ext );
 		var place_schema_type_id     = select_place_schema_type.val();
 
-		select_schema_type.after( '<div id="schema_type_linked" class="dashicons dashicons-admin-links linked_to_msg" title="' + linked_to_label + '"></div>' );
+		select_schema_type.after( '<div id="schema_type_linked" class="dashicons dashicons-admin-links linked_to_label" title="' + linked_to_label + '"></div>' );
 		select_schema_type.prop( 'disabled', true );
 
 		if ( place_schema_type_id !== schema_type_id ) {
@@ -104,7 +103,7 @@ function plmPlaceSchemaType() {
 		/**
 		 * Check the Schema Type value.
 		 */
-		select_schema_org_org.after( '<div id="schema_org_org_linked" class="dashicons dashicons-admin-links linked_to_msg" title="' + linked_to_label + '"></div>' );
+		select_schema_org_org.after( '<div id="schema_org_org_linked" class="dashicons dashicons-admin-links linked_to_label" title="' + linked_to_label + '"></div>' );
 		select_schema_org_org.prop( 'disabled', true );
 
 		if ( 'none' !== schema_org_org_id ) {

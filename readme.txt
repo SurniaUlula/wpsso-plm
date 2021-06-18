@@ -109,7 +109,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 5.4.1-rc.1 (2021/06/18)**
+**Version 5.4.1 (2021/06/18)**
 
 * **New Features**
 	* None.
@@ -122,7 +122,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.0.
 	* WordPress v4.5.
-	* WPSSO Core v8.31.0-rc.1.
+	* WPSSO Core v8.31.0.
 
 **Version 5.4.0 (2021/06/08)**
 
@@ -248,7 +248,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 5.4.1-rc.1 =
+= 5.4.1 =
 
 (2021/06/18) Added an 'sucom-admin-page' script dependency for the 'plm-metabox' script.
 

@@ -516,7 +516,7 @@ msgid "Category"
 msgstr "Catégorie"
 
 #: lib/register.php:142
-msgctxt "Admin menu name"
+msgctxt "admin menu name"
 msgid "Categories"
 msgstr "Catégories"
 
@@ -675,7 +675,7 @@ msgid "Use as place image"
 msgstr "Utiliser comme image d'endroit"
 
 #: lib/register.php:203
-msgctxt "Admin menu name"
+msgctxt "admin menu name"
 msgid "Places"
 msgstr "Endroits"
 
@@ -692,7 +692,7 @@ msgid "Places list"
 msgstr "Liste des endroits"
 
 #: lib/register.php:207
-msgctxt "Admin bar name"
+msgctxt "admin bar name"
 msgid "Place"
 msgstr "Endroit"
 

@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-plm/assets/
 Tags: local seo, local business, open graph, meta tags, schema, restaurant, facebook, pinterest, google
 Contributors: jsmoriss
 Requires PHP: 7.0
-Requires At Least: 4.5
+Requires At Least: 5.0
 Tested Up To: 5.7.2
 Stable Tag: 5.4.1
 
@@ -121,8 +121,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Added an 'sucom-admin-page' script dependency for the 'plm-metabox' script.
 * **Requires At Least**
 	* PHP v7.0.
-	* WordPress v4.5.
-	* WPSSO Core v8.31.0.
+	* WordPress v5.0.
+	* WPSSO Core v8.34.0.
 
 **Version 5.4.0 (2021/06/08)**
 
